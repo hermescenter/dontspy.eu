@@ -1,0 +1,25 @@
+{
+	"name": "pico-theme",
+	"version": "0.0.1",
+	"description": "Hugo theme with Tailwindcss",
+	"repository": "https://github.com/negrel/hugo-theme-pico",
+	"author": "Alexandre Negrel",
+	"license": "MIT",
+	"scripts": {
+		"build": "hugo --gc",
+		"dev": "hugo server ."
+	},
+	"dependencies": {
+		"autoprefixer": "^10.4.13",
+		"postcss": "^8.4.20",
+		"postcss-cli": "^10.1.0",
+		"postcss-import": "^15.1.0",
+		"tailwindcss": "^3.2.4"
+	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"maintained node versions",
+		"not dead"
+	]
+}

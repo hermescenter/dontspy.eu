@@ -1,2 +1,9 @@
+# Node and main package stuff
 node_modules
 nocodb
+
+# Hugo related stuff
+site/node_modules
+site/public
+site/resources
+site/.hugo_build.lock
