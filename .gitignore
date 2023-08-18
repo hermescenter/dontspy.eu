@@ -1,9 +1,15 @@
-# Node and main package stuff
+# Node stuff
 node_modules
-nocodb
+
+# Nocodb stuff
+.env
 
 # Hugo related stuff
 site/node_modules
 site/public
 site/resources
 site/.hugo_build.lock
+
+# Python related stuff
+py/venv
+py/fclone
