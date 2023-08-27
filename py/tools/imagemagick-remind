@@ -1,0 +1,3 @@
+convert UVDL-2.jpg -resize 1000x output.jpg
+
+by specify only the width 1000x the width is set and the height is attributed to keep same ratio
