@@ -16,8 +16,9 @@ subtitle = "subtitle"
 # Specializzata. Mentre in homepage questo blocco
 # non c'è.
 before_map = """
-* **Biometric** identification **is currently protected** by GDPR.
-* We are violating GDPR as an **act of civil disobedience** to talk in advance about the incumbet threat.
+* **Biometric identification** is currently protected by GDPR.
+* We are violating GDPR as an **act of civil disobedience** to speak out in advance about the imminent threat.
+* We don't encourage anyone to repeat this action outside of this campaign. **When you work with us, we protect your anonymity** by default.
 ### ↓ [Map of European Faces](/rbi#euromap)
 ### ↓ [Upload new Faces](/rbi#nocoform)
 ### The European Council Biometric ↓[Open Data](/rbi#opendata)
@@ -31,12 +32,11 @@ type = "rbi"
 
 ## Upload new Faces
 
-* **Don't try to upload your "cat" picture**, as we use this open source [Face Recognition](https://github.com/ageitgey/face_recognition) library, and if the face doesn't match the expected Politician, it gets automatically deleted.
-* **Pictures with more than one face** gets automatically deleted too.
-* If you want to upload a politician face that is not available in our index, check which are our criteria to [pick the meaningful five](/blog/five-selected-politicians-per-country). 
+* Don't try to upload your "cat" picture, as we use this [open source face recognition library](https://github.com/ageitgey/face_recognition), and if the face doesn't match the expected politician, it will be automatically deleted.
+* **Pictures with more than one face** will also be automatically deleted.
+* If you want to upload a politician's face that is not available in our index, check what our criteria are to [pick the five most meaningful](/blog/five-meaningful-figures/) ones.
 
 </section>
-
 
 <section id="opendata">
 
