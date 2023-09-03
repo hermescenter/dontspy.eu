@@ -1,0 +1,74 @@
+<style>
+  svg {
+    background-color: #f1f1f1;
+    display: block;
+    width: 100%;
+  }
+
+  .svg-container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  path {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 0.5;
+  }
+
+  path:hover {
+    fill: #bada55;
+  }
+</style>
+
+<section id="euromap" class="mx-auto flex flex-wrap items-center">
+  <div class="text-center w-full">
+    <h1 class="my-0 text-4xl sm:text-5xl md:text-6xl">
+      {{ .Title }}
+    </h1>
+    {{ with .Params.subtitle}}
+    <h2 class="font-light mt-0">{{ . }}</h2>
+    {{ end }}
+  </div>
+
+  <div class="svg-container">
+    <svg id="map" width="800" height="600"></svg>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    const geoJson = '/json/europe.geo.json';
+    document.addEventListener('DOMContentLoaded', function () {
+      d3.json(geoJson).then(function (geojson) {
+        var svg = d3.select('#map');
+        var map = svg.append('g');
+
+        // Projection and path generator
+        var projection = d3.geoMercator().fitSize([800, 600], geojson);
+        var path = d3.geoPath().projection(projection);
+
+        // Render the map using the loaded GeoJSON data
+        map.selectAll('path')
+          .data(geojson.features)
+          .enter()
+          .append('path')
+          .attr('d', path)
+          .on('mouseover', handleMouseOver)
+          .on('click', handleClick);
+
+        function handleMouseOver(event, d) {
+          var countryName = d.properties.name;
+          console.log('Mouseover:', countryName);
+          // Additional actions for mouseover event
+        }
+
+        function handleClick(event, d) {
+          var countryName = d.properties.name;
+          console.log('Click:', countryName);
+          // Additional actions for click event
+        }
+      });
+    });
+  </script>
+
+</section>

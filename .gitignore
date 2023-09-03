@@ -4,6 +4,9 @@ node_modules
 # Nocodb stuff
 .env
 
+# Microstuff
+.vscode
+
 # Hugo related stuff
 site/node_modules
 site/public

@@ -1,13 +1,13 @@
 +++
-title = "About rbi"
+title = "Face Recognition or Remote Biometric Identification"
+
+subtitle = "subtitle"
+
+
+material= "[We can put other stuff](/clickable?)"
 
 type = "rbi"
 +++
 
-cia cio
 
-<h1>cdcsdcdscds</h1>
-
-<script>
-console.log('sex')
-</script>
+and this is content

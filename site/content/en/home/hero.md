@@ -25,7 +25,9 @@ hero_media = "/img/portrait.jpg"
 
 +++
 
-# Artificial Intelligence must serve the people and not surveil them!
 
-We anticipate the problems of Real Time Biometry if get allowed in the AIAct
+# We are anticipating the problems of Real Time Biometrics, if it is allowed in the AIAct, by using it over the ministries that decide our future!
 
+---
+
+# Artificial Intelligence must serve the people and not to surveil them!
