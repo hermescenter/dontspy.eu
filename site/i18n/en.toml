@@ -8,10 +8,11 @@ other = "About"
 other = "Contatti"
 
 [blog]
-other = "Blog & Updates"
+# other = "Blog & Updates"
+other = "Updates"
 
 [rbi]
-other = "RBI simulation"
+other = "Faces"
 
 [deepfake]
 other = "Deepfake"

@@ -20,14 +20,17 @@ hero_media = "/img/portrait.jpg"
 	primary = true
 
 [[btn]]
-  url = "#timeline"
+  url = "/about#timeline"
   label = 'Know more'
 
 +++
 
-
-# We are anticipating the problems of Real Time Biometrics, if it is allowed in the AIAct, by using it over the ministries that decide our future!
+# We are anticipating the problems of Remote Biometric Identification (RBI) if it gets allowed in the AIAct.
 
 ---
 
-# Artificial Intelligence must serve the people and not to surveil them!
+# We are doing [Facial Recognition](/rbi) and [Deepfake](/deepfake) on all the ministries that will decide our future! We are also [recruiting whistleblowers](/leak-to-us).
+
+---
+
+# We are doing this for an Artificial Intelligence that is designed to serve the people, not enslave, surveil and exploit.

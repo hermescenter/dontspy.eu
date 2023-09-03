@@ -1,5 +1,5 @@
 +++
-title = "Campaign updates & AIAct progresses"
+title = "News & Updates"
 
 # Default banner
 [cascade]

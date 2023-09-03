@@ -1,5 +1,5 @@
 +++
-title = "Past campaign completed!"
+title = "how the European Parliament action was completed"
 subtitle = "500+ European Member of Parliament were face analyzed"
 
 # Nota per Alessandra: la tag 'campaign' deve esserci perchè appaia in homepage,

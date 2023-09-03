@@ -6,9 +6,9 @@ date_format = "Jan 2006"
 [[period]]
   title = "[The first campaign](https://dontspyonus.eu)"
   subtitle = "We targeted all the European Parliament"
-  date_start = "2023-06-01"
-  date_end = ""
-  description = "[500+ faces scanned, we tested the flow](https://dontspyonus.eu/post/squared-faces/). The operation ended when EP released their sattisfactoty AIAct proposal."
+  date_start = "2023-04-01"
+  date_end = "2023-06-14"
+  description = "[500+ faces scanned, we tested the flow](https://dontspyonus.eu/post/squared-faces/). The operation ended when EP released an AIAct that can be considered a decent achievement."
 
 [[period]]
   title = "European Surveillane lobby push forward"
