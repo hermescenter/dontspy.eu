@@ -18,7 +18,8 @@ subtitle = "subtitle"
 before_map = """
 * **Biometric identification** is currently protected by GDPR.
 * We are violating GDPR as an **act of civil disobedience** to speak out in advance about the imminent threat.
-* We don't encourage anyone to repeat this action outside of this campaign. **When you work with us, we protect your anonymity** by default.
+* We don't encourage anyone to repeat this action outside of this campaign. **If you submit pictures to us, we protect your anonymity**.
+
 ### ↓ [Map of European Faces](/rbi#euromap)
 ### ↓ [Upload new Faces](/rbi#nocoform)
 ### The European Council Biometric ↓[Open Data](/rbi#opendata)

@@ -12,7 +12,7 @@ banner = 'img/PutinPinkHorse.jpeg'
 
 At this stage of the trilogue, **not all political figures are equal**.
 
-![a Barbie-inspired Vladimir Putin naked on a pink horse](/img/PutinPinkHorse.jpeg)
+![a Barbie-inspired Putin, naked on a pink horse ‒ the fakes we like ‒ but not the Politician we need.](/img/PutinPinkHorse.jpeg)
 
 # We have chosen to include these five:
 
