@@ -16,3 +16,6 @@ site/.hugo_build.lock
 # Python related stuff
 py/venv
 py/fclone
+
+# Internal settings
+config/express.json

@@ -14,7 +14,7 @@ At this stage of the trilogue, **not all political figures are equal**.
 
 ![a Barbie-inspired Putin, naked on a pink horse ‒ the fakes we like ‒ but not the Politician we need.](/img/PutinPinkHorse.jpeg)
 
-# We have chosen to include these five:
+# In the DONTSPY.EU campaign, we have chosen to look for these five figures in each member state:
 
 * The **Prime Minister**, as the main reference point of any national council of ministers.
 * The **Ministries of the Interior**, because it is under them that the lobbies for surveillance exert their forces.

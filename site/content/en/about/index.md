@@ -33,16 +33,32 @@ date_format = "Jan 2006"
   description = "We run a campaign to collect signature, and push the European Parliament in ban face recognition! Despite the format notice of interested raised by authorities and representative, the surveillance lobbying didn't stop."
 +++
 
-# Who are we
 
-TODO, we can also recycle the logos and the table from the footer of [dontspyonus.eu](https://dontspyonus.eu).
+# Founding Organizations
+
+{{<founding-organizations>}}
+
+# Who works on this
+
+* Alessandra Bormioli, punto di contatto per il coordinamento, comunicazione 
+* Claudio Agosti, ideatore della campagna e sviluppatore della parte tecnologica
+* Davide Del Monte, coordinamento interno, fundraising e deepfake
+* Martina Turola, policy advocacy, comunicazione e lobbying
 
 # What we do
 
-TODO
+* Hermes Center è l'organizzazione italiana per i diritti umani in rete, negli anni ha abbracciato pioneristicamente diverse lotte a cavallo tra il digitiale e la politica. E' parte della rete di EDRi con la quale si è coordinata per questa azione.
+* info.nodes è un'associazione che produce marla e...
+* TheGoodLobby è un'associazione che ...
 
 # Why we do it
 
-TODO
+Nonostante le azioni possano essere al limite della disobbedienza civile _nota, se lo diciamo qui dobbiamo essere consistenti con quello detto in [rbi](/rbi)_, riteniamo che i rischi del fingerprint biometrico siano fortemente sottostimati a fronte di una narrativa securitaria, ed di una percezione dell'efficenza di questi sistemi che viene da hollywood invece che da efettivi utilizzi sul pubblico.
+
+il riconoscimento facciale è un problema perchè ... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
 
 # Contacts
+
+mail: `press@dontspy.eu` --> Alessandra devo fare questo alias e devo iscriverti
+
+# What lead us here...
