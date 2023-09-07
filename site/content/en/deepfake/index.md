@@ -4,6 +4,19 @@ title = "Deepfakes!? Why?"
 type = "deepfake"
 +++
 
+### This page is half english half italian, to help review.
+
+* i Deepfake sono possibili perchè prima viene estratta l'impronta biometrica facciale dalla vittima, e poi questa viene incollata in un nuovo corpo (che agisce come un contenitore). Il problema è che spesso questo non succede perchè la persona ha voluto o ha acconsentito, per questo ci riferiamo a loro come vittima.
+* La biometria facciale dovrebbe essere bannata, perchè a parte il chiaro possibile abuso nel campo della sorveglianza, è anche abilitate e necessaria per la creazione di deepfake. E' infatti l'utilizzo di codice che estrae e tratta feature biometriche parte del problema\*, è la sua diffusione avulsa dall'analisi del rischio ad aver creato questa situazione.
+* Se l'RBI (Identificazione Biometrica Remota) diventa legittima, questo include anche l'accesso a banche dati digitali. Sistemi come Clearview or PimEyes, citati esempi nell'infografica sottostanti, agiscono sulla base di questa possibilità. Una soluzione avversariale, ma alla portata di tutti a quel punto, sarebbe quella di inquinare i portali fotografici con foto false, in modo da far si che il business di profilazione facciale venga danneggiato al punto di non rendere questi prodotti affidabili sul mercato. Sarebbe un caso limite che speriamo di non dover raggiungere, ma stiamo provando tool e spiegazioni che vadano a giustificare questa azione.
+* i deepfake sono, a buona ragione, associate a delle pratiche nocive di disinformazione e di aggressione alle vittime di questi prodotti. Noi fermamente condanniamo questi abusi, e per questo prendiamo come ipotetiche vittime cinque delle persone più potenti, difese, e responsabili per questo, affinchè sollevare il problema senza nuocere effettivamente a queste persone.
+
+---
+
+
+
+---
+
 * **Deepfake is possible because a facial fingerprint is extracted from the victim** and then pasted onto a new host. The problem is when the victim does not consent and is unaware.
 * **Facial fingerprinting should be banned** because, besides the abuse of targeted surveillance, it enables the production of deepfakes, or more abstractly, the production of other quasi-realistic human features[*](/deepfake#not-just-faces).
 * **If RBI is allowed to exist, the only solution would be to pollute the Internet with fake faces**, as explained in the infographic below. We hope society never gets to that point!
@@ -15,4 +28,20 @@ type = "deepfake"
 
 `*` In this regard, we can assume that any human characteristic that can be used to identify a person by digital or natural means should be equally protected. Tools that produce a subject's voice are used to defraud their families and colleagues. A comprehensive AIAct should see these highly personal and persistent characteristics as those that can only be used strictly under the consent and control of the data subject.
 
+# Italiano
+
+`*` In astratto è possibile assumere che ogni caratteristica umana, legata indissolubilmente all'individuo (il volto, la voce) vada distinta da altri dati personali identificativi e vada protetta quanto l'impronta facciale. Del resto ci sono già in circolazione strumenti che permettono l'emulazione di queste caratteristiche e sono utilizzati per produrre frodi. Un AIAct che consideri queste tendenze e tuteli dall'estrazione, il processo, e la riproduzione di queste feature identificativi, sarebbe in grado di catturare l'essenza del problema.
+
+
 </section>
+
+
+# Spiegare che i deepfake possono essere uploadati qui
+
+
+<iframe class="nc-embed"
+  src="https://db.dontspy.eu/dashboard/#/nc/form/c3b84882-e7b4-4839-a4ff-71661a59b2f7?embed"
+  frameborder="0"
+  width="100%"
+  height="700"
+  style="background: transparent; border: 1px solid #ddd"></iframe>
