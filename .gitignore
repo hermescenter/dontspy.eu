@@ -19,3 +19,5 @@ py/fclone
 
 # Internal settings
 config/express.json
+
+data/photos

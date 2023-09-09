@@ -7,6 +7,7 @@ const express = require('express');
 const cors = require('cors');
 const _ = require('lodash');
 const moment = require('moment');
+const debug = require('debug')('bin:express');
 
 const NocoDBClient = require('../lib/nocoio');
 const settings = require('../config/express.json');
@@ -47,5 +48,6 @@ app.get('/api/euromap', cors(), async function (req, res) {
      * political figure actually configured there. We expose this
      * API to the public while the nocodb stay locked behind a token */
     const data = await client.findMany('subjects');
+    debug("REMIND you should strip some fields from the %d objects", data.length);
     res.json(data);
 });
