@@ -10,7 +10,9 @@ paginate = 10
 theme = 'pico'
 # Title of the website is used for the meta tag title
 # and the square icon (not the favicon)
-title = "Don't Spy EU"
+
+# title = "Don't Spy EU"
+title = "Work In Progress!"
 
 [markup.goldmark.renderer]
   unsafe = true

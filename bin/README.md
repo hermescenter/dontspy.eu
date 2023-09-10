@@ -8,7 +8,7 @@
 ## Watchers
 
 * `photos-checker.js', which is run with a certain periodicity and pulls the last uploaded images into the `photos' table. This table is populated by another script
-* `contributions-checker.js', which is run on a regular basis and pulls the latest contributions from the trusted input source.
+* `contributions-importer.js', which is run on a regular basis and pulls the latest contributions from the trusted input source.
 input source, and splitting photo + people.
 
 Both watchers need to be executed inside a virtual python env, as they wrap execution of python and node. Both of them use `lib/checkerstd.js`
