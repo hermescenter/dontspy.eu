@@ -21,3 +21,4 @@ py/fclone
 config/express.json
 
 data/photos
+data/json
