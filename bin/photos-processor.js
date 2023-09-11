@@ -3,10 +3,10 @@ const _ = require('lodash');
 const { execSync } = require("child_process");
 const fs = require('fs');
 const path = require('path');
-const mongodb = require('mongodb');
 
 const NocoDBClient = require('../lib/nocoio');
 const checkerstd = require('../lib/checkerstd');
+const countries = require('../lib/countries');
 const debug = require('debug')('bin:photos-processor');
 
 /* Load the settings because we need the nocoio api key */
@@ -72,24 +72,28 @@ async function main() {
         const o = {
             ..._.pick(subject, ['Name', 'Surname', 'Country', 'OfficialRole']),
             ..._.pick(photo, ['Id', 'Description', 'priority', 'analyzed', 'isfake', 'reviewed']),
-            image: photo.image[0],
+            image: _.omit(photo.image[0], ['title']), // I'm just thinking that we shouldn't leak that to the public
             rbi: _.omit(rbi, ['id', 'fname'])
         };
         o.CreatedAt = new Date(photo.CreatedAt);
 
+        const countryDetails = _.find(countries, { name: o.Country });
+        /* we pick Two letter and Three ltter country code */
+        o.three = countryDetails.three;
+        o.two = countryDetails.two;
+
         safety.push(o);
 
-//        const result = await client.updateOne('photos', photo.Id, { analyzed: true });
-//        debug("Photo %d updated", result.Id);
+        const result = await client.updateOne('photos', photo.Id, { analyzed: true });
+        debug("Photo %d updated", result.Id);
     }
 
     /* now we can save the safety array to mongodb */
-    const dbc = await connectMongoDB();
+    const dbc = await checkerstd.connectMongoDB();
     const collection = dbc.db('dontspy').collection('safety');
     const result = await collection.insertMany(safety);
     debug("Inserted %d documents into the collection", result.insertedCount);
     await dbc.close();
-
 }
 
 async function performRBI(imagePath, photoId) {
@@ -108,21 +112,5 @@ async function performRBI(imagePath, photoId) {
     /* read the json file outfile */
     return JSON.parse(fs.readFileSync(outfile, 'utf8'));
 }
-
-async function connectMongoDB() {
-    /* this function connect to the mongodb database */
-    const uri = "mongodb://localhost:27017";
-    const client = new mongodb.MongoClient(uri);
-    return client.connect();
-}
-
-
-/* --- command list:
-
-python3 py/tools/draw_box_and_details_on_face.py --source /tmp/Alessio\ Butti.jpg --output AB.jpg  --config config/boxes.json 
-
-
-
- */
 
 main();
