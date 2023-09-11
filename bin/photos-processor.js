@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 const _ = require('lodash');
-const { exec } = require("child_process");
+const { execSync } = require("child_process");
 const fs = require('fs');
 const path = require('path');
+const mongodb = require('mongodb');
 
 const NocoDBClient = require('../lib/nocoio');
 const checkerstd = require('../lib/checkerstd');
@@ -46,8 +47,10 @@ async function main() {
 
     // TODO check and 'confirm_face_ownership'
 
+    /* because nocodb isn't giving all the reliabilty I would like to have from a DB, 
+     * all the photos + subjects + RBI are also stored in mongodb. one column. 'safety' */
+    const safety = [];
     /* after we can analyze the photo and produce the copy with the lines of the facial features */
-
     for (const photo of filtered) {
         // console.log(photo);
         debug("Analyzing photo %s (%o)", photo.Id, photo.subject);
@@ -57,30 +60,60 @@ async function main() {
         /* we've to execute python and a script by passing some parameters */
 
         const rbi = await performRBI(imagePath, photo.Id);
+        if (!rbi) {
+            debug("Skipping photo %s because of error", photo.Id);
+            continue;
+        }
         debug("RBI: %O", rbi);
-        //        const result = await client.updateOne('photos', photo.id, { reviewed: true });
-        // debug("Photo %s updated", photo.id);
+
+        const subject = await client.findOne('subjects', _.first(photo.subject).Id);
+
+        /* I'm using pick because noco add system fields to the object */
+        const o = {
+            ..._.pick(subject, ['Name', 'Surname', 'Country', 'OfficialRole']),
+            ..._.pick(photo, ['Id', 'Description', 'priority', 'analyzed', 'isfake', 'reviewed']),
+            image: photo.image[0],
+            rbi: _.omit(rbi, ['id', 'fname'])
+        };
+        o.CreatedAt = new Date(photo.CreatedAt);
+
+        safety.push(o);
+
+//        const result = await client.updateOne('photos', photo.Id, { analyzed: true });
+//        debug("Photo %d updated", result.Id);
     }
+
+    /* now we can save the safety array to mongodb */
+    const dbc = await connectMongoDB();
+    const collection = dbc.db('dontspy').collection('safety');
+    const result = await collection.insertMany(safety);
+    debug("Inserted %d documents into the collection", result.insertedCount);
+    await dbc.close();
+
 }
 
 async function performRBI(imagePath, photoId) {
-
-    /* now we use exec to run python3 ./py/tools/analyze.py --photo-id 1 --photo-path ./data/photos/1.jpg */
-    const clunky = `node_modules/@vladmandic/face-api/demo/duckface-analyzer.js`;
+    // this function uses the same tool adopted in previous campaign
+    const longExecName = `node_modules/@vladmandic/face-api/demo/duckface-analyzer.js`;
     const outfile = path.join('data', 'json', `${photoId}.json`);
-    const command = `node ${clunky} --source ${imagePath} --output ${outfile}`;
+    const command = `node ${longExecName} --source ${imagePath} --output ${outfile}`;
     debug("Executing command %s", command);
-    await exec(command, (error, stdout, stderr) => {
+    execSync(command, (error) => {
         if (error) {
             console.log(`error: ${error.message}`);
-            return;
+            return null;
         }
-        console.log(stdout);
+        debug("RBI script executed");
     });
     /* read the json file outfile */
-    const retval = JSON.parse(fs.readFileSync(outfile, 'utf8'));
-    return retval;
+    return JSON.parse(fs.readFileSync(outfile, 'utf8'));
+}
 
+async function connectMongoDB() {
+    /* this function connect to the mongodb database */
+    const uri = "mongodb://localhost:27017";
+    const client = new mongodb.MongoClient(uri);
+    return client.connect();
 }
 
 
