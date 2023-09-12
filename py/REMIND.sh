@@ -4,7 +4,7 @@ echo "source venv/bin/activate"
 
 # Requirements / TODO
 
-# apt install python3.10-venv
+# apt install python3.10-venv python3.10-pip
 # apt install libavdevice-dev libavfilter-dev libavformat-dev
 # apt install libavcodec-dev libswresample-dev libswscale-dev
 # apt install libavutil-dev cmake
