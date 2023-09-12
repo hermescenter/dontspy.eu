@@ -3,6 +3,7 @@ node_modules
 
 # Nocodb stuff
 .env
+nc/
 
 # Microstuff
 .vscode
