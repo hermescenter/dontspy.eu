@@ -74,3 +74,6 @@ app.get('/api/available/:filter?', cors(), async function (req, res) {
         res.status(500).send(error.message);
     }
 });
+
+/* the files under folder /data need to be reachable from the web */
+app.use('/data', express.static('data'));

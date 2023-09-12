@@ -3,6 +3,7 @@ const _ = require('lodash');
 const { execSync } = require("child_process");
 const fs = require('fs');
 const path = require('path');
+const yargs = require('yargs');
 
 const NocoDBClient = require('../lib/nocoio');
 const checkerstd = require('../lib/checkerstd');
@@ -11,6 +12,15 @@ const debug = require('debug')('bin:photos-processor');
 
 /* Load the settings because we need the nocoio api key */
 const config = require('../config/express.json');
+
+const argv = yargs
+  .option('update', {
+    alias: 'u',
+    description: 'mark the photo as analyzed',
+    type: 'boolean',
+  })
+  .showHelpOnFail(true)
+  .argv;
 
 /* As explained in README, the goal of this file is to check 
  * new photos and analyze them via python scripts. they 
@@ -72,7 +82,7 @@ async function main() {
         const o = {
             ..._.pick(subject, ['Name', 'Surname', 'Country', 'OfficialRole']),
             ..._.pick(photo, ['Id', 'Description', 'priority', 'analyzed', 'isfake', 'reviewed']),
-            image: _.omit(photo.image[0], ['title']), // I'm just thinking that we shouldn't leak that to the public
+            image: imagePath,
             rbi: _.omit(rbi, ['id', 'fname'])
         };
         o.CreatedAt = new Date(photo.CreatedAt);
@@ -84,8 +94,12 @@ async function main() {
 
         safety.push(o);
 
-        const result = await client.updateOne('photos', photo.Id, { analyzed: true });
-        debug("Photo %d updated", result.Id);
+        if(argv.update) {
+            const result = await client.updateOne('photos', photo.Id, { analyzed: true });
+            debug("Photo %d updated", result.Id);
+        } else {
+            debug("Photo %d not updated because the option --update wasn't set", photo.Id);
+        }
     }
 
     /* now we can save the safety array to mongodb */

@@ -17,6 +17,21 @@ type = 'country'
   box-sizing: border-box; /* This ensures padding doesn't add extra width */
 }
 
+.official-role {
+  background-color: #d6ffd6;
+  font-size: 0.8em;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.deepfake-label {
+  background-color: #ead9ff;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 0.7em;
+  margin-bottom: 1em;
+}
+
 .picture-description {
   display: flex;
   flex-wrap: wrap; /* This will allow wrapping in case of small devices */

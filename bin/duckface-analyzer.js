@@ -39,6 +39,10 @@ const argv = yargs
   .showHelpOnFail(true)
   .argv;
 
+if(!fs.existsSync(argv.source)) {
+  throw new Error(`File ${argv.source} does not exist`);
+}
+
 const options = {
   source_image: argv.source,
 };
