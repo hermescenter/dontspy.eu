@@ -9,7 +9,7 @@ date = "2023-09-01"
 description = "The last effort in trying to forbit RBI for good"
 
 # Comment next line and the default banner wil be used.
-banner = 'img/composed-icons.png'
+banner = '/img/composed-icons.png'
 +++
 
 # This piece summarizes the difficulties in EU policy lobbying is this from Joe McNamee: [How the European Parliament will vote for and against biometric mass surveillance](https://www.linkedin.com/pulse/how-european-parliament-vote-against-biometric-mass-joe-mcnamee).

@@ -7,7 +7,7 @@ date = "2023-09-02"
 description = "Who are the five politicians we want for every member state? Let's review their roles"
 
 # Comment next line and the default banner wil be used.
-banner = 'img/PutinPinkHorse.jpeg'
+banner = '/img/PutinPinkHorse.jpeg'
 +++
 
 At this stage of the trilogue, **not all political figures are equal**.

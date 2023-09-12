@@ -12,7 +12,7 @@ date = "2023-06-25"
 description = "The preliminary campaign we made"
 
 # Comment next line and the default banner wil be used.
-banner = 'img/thethreeEMP.png'
+banner = '/img/thethreeEMP.png'
 
 +++
 
