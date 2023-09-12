@@ -8,11 +8,9 @@ languageCode = 'en-us'
 # Number of blog post per page
 paginate = 10
 theme = 'pico'
-# Title of the website is used for the meta tag title
-# and the square icon (not the favicon)
 
-# title = "Don't Spy EU"
-title = "Work In Progress!"
+# Title of the website is used for the meta tag title
+title = "Don't Spy EU"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -26,8 +24,8 @@ title = "Work In Progress!"
   # Homepage description
   # For blog page description you can overwrite it 
   # in the front matter
-  description = "Boilerplate website"
-  email = "mail@example.com"
+  description = "We need a full ban of remote biometry identification"
+  email = "team@dontspy.eu"
   favicon = '/favicon.ico'
   # Dark mode support
   # Supported value are :
@@ -41,42 +39,42 @@ title = "Work In Progress!"
   alt = "email icon"
   icon = "/icons/email.svg"
   name = "email"
-  url = "mailto:mail@example.com"
+  url = "mailto:team@dontspy.eu"
 
 [[params.social]]
   alt = "github icon"
   blank = true
   icon = "/icons/github.svg"
   name = "github"
-  url = "https://github.com/"
+  url = "https://github.com/hermescenter/dontspy.eu"
 
-[[params.social]]
-  alt = "medium icon"
-  blank = true
-  icon = "/icons/medium.svg"
-  name = "medium"
-  url = "https://medium.com/"
+# [[params.social]]
+#   alt = "medium icon"
+#   blank = true
+#   icon = "/icons/medium.svg"
+#   name = "medium"
+#   url = "https://medium.com/"
 
-[[params.social]]
-  alt = "stack-overflow icon"
-  blank = true
-  icon = "/icons/stack-overflow.svg"
-  name = "stack-overflow"
-  url = "https://stackoverflow.com/"
+# [[params.social]]
+#   alt = "stack-overflow icon"
+#   blank = true
+#   icon = "/icons/stack-overflow.svg"
+#   name = "stack-overflow"
+#   url = "https://stackoverflow.com/"
 
-[[params.social]]
-  alt = "twitter icon"
-  blank = true
-  icon = "/icons/twitter.svg"
-  name = "twitter"
-  url = "https://twitter.com/"
+# [[params.social]]
+#   alt = "twitter icon"
+#   blank = true
+#   icon = "/icons/twitter.svg"
+#   name = "twitter"
+#   url = "https://twitter.com/"
 
-[[params.social]]
-  alt = "facebook icon"
-  blank = true
-  icon = "/icons/facebook.svg"
-  name = "facebook"
-  url = "https://facebook.com/"
+# [[params.social]]
+#   alt = "facebook icon"
+#   blank = true
+#   icon = "/icons/facebook.svg"
+#   name = "facebook"
+#   url = "https://facebook.com/"
 
 # Navigation bar
 [menu]
