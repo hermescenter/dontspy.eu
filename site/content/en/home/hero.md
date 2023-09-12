@@ -11,17 +11,15 @@ hero_media = "/img/portrait.jpg"
 
 # Buttons
 # Add as much button as you want
-[[btn]]
-	# The url of the button
-  url = "/rbi"
-	# The text of the button
-  label = "Take action"
-	# Primary color
-	primary = true
+
+# [[btn]]
+#   url = "/rbi"
+#   label = "Take action"
+#   primary = true
 
 [[btn]]
-  url = "/about#timeline"
-  label = 'Know more'
+  url = "/about"
+  label = 'The Policy Reccomendation'
 
 +++
 

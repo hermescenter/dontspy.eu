@@ -89,6 +89,10 @@ async function main() {
 
         const countryDetails = _.find(countries, { name: o.Country });
         /* we pick Two letter and Three ltter country code */
+        if(!countryDetails) {
+            debug("Unable to find country details for %s", o.Country);
+            process.exit(1);
+        }
         o.three = countryDetails.three;
         o.two = countryDetails.two;
 
