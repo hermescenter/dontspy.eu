@@ -38,7 +38,7 @@ type = "rbi"
 * If you want to upload a politician's face that is not available in our index, check what our criteria are to [pick the five most meaningful](/blog/five-meaningful-figures/) ones.
 
 <iframe class="nc-embed"
-  src="https://db.dontspy.eu/dashboard/#/nc/form/bf2949c3-56f3-4574-8d44-13b90551a995?embed"
+  src="https://dontspy.eu/dashboard/#/nc/form/bf2949c3-56f3-4574-8d44-13b90551a995?embed"
   frameborder="0"
   width="100%"
   height="1000"

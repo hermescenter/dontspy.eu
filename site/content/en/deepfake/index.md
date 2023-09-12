@@ -40,7 +40,7 @@ type = "deepfake"
 
 
 <iframe class="nc-embed"
-  src="https://db.dontspy.eu/dashboard/#/nc/form/c3b84882-e7b4-4839-a4ff-71661a59b2f7?embed"
+  src="https://dontspy.eu/dashboard/#/nc/form/c3b84882-e7b4-4839-a4ff-71661a59b2f7?embed"
   frameborder="0"
   width="100%"
   height="700"
