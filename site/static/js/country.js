@@ -20,4 +20,52 @@ async function loadMaterial() {
   console.log(data);
   /* now we can populate the table */
 
+  const grouped = _.groupBy(data, 'OfficialRole');
+
+  const displayOrder = ['Prime Minister', 'AIAct Gov Representative', 'Interior Minister', 'Justice Minister', 'Defense Minister'];
+
+  const formatted = _.compact(_.map(displayOrder, (role) => {
+    const pictures = grouped[role];
+    if (!pictures) {
+      return null;
+    }
+    return {
+      text: `${role} ${pictures[0].Name} ${pictures[0].Surname}`,
+      items: _.map(pictures, (photo) => {
+        return {
+          src: `https://db.dontspy.eu/${photo.image.path}`,
+          description: JSON.stringify(photo.rbi)
+        };
+      })
+    };
+  }));
+
+  console.log(formatted);
+  _.each(formatted, populateData);
+}
+
+function populateData(data) {
+  const container = document.querySelector('.container');
+
+  // Assuming data.text contains the text entry
+  const textEntry = document.createElement('h1');
+  textEntry.textContent = data.text;
+  container.appendChild(textEntry);
+
+  // Assuming data.items is an array of objects with img and description
+  data.items.forEach(item => {
+    const pictureDescription = document.createElement('div');
+    pictureDescription.classList.add('picture-description');
+
+    const img = document.createElement('img');
+    img.src = item.src;
+    img.alt = item.description; // using the description as alt text
+
+    const description = document.createElement('p');
+    description.textContent = item.description;
+
+    pictureDescription.appendChild(img);
+    pictureDescription.appendChild(description);
+    container.appendChild(pictureDescription);
+  });
 }
