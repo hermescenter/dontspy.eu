@@ -56,7 +56,7 @@ async function main() {
         debug("Analyzing photo %s (%o)", photo.Id, photo.subject);
 
         /* the URL for remote polling is */
-        const imagePath = await checkerstd.localOrRemote(photo);
+        const imagePath = await checkerstd.downloadPhoto(photo);
         /* we've to execute python and a script by passing some parameters */
 
         const rbi = await performRBI(imagePath, photo.Id);
