@@ -109,8 +109,12 @@ async function main() {
     /* now we can save the safety array to mongodb */
     const dbc = await checkerstd.connectMongoDB();
     const collection = dbc.db('dontspy').collection('safety');
-    const result = await collection.insertMany(safety);
-    debug("Inserted %d documents into the collection", result.insertedCount);
+    for(const s of safety) {
+        /* here we've to remove by 'image' and then insert one by one */
+        await collection.deleteOne({ image: s.image });
+        await collection.insertOne(s);
+    }
+    debug("Inserted %d documents into the collection", safety.length);
     await dbc.close();
 }
 
