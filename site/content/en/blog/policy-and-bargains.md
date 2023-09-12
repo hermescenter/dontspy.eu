@@ -12,7 +12,7 @@ description = "The last effort in trying to forbit RBI for good"
 banner = '/img/composed-icons.png'
 +++
 
-# This piece summarizes the difficulties in EU policy lobbying is this from Joe McNamee: [How the European Parliament will vote for and against biometric mass surveillance](https://www.linkedin.com/pulse/how-european-parliament-vote-against-biometric-mass-joe-mcnamee).
+# This piece summarizes the difficulties in EU policy lobbying is this from Joe McNamee: [How the European Parliament will vote for and against biometric mass surveillance](//www.linkedin.com/pulse/how-european-parliament-vote-against-biometric-mass-joe-mcnamee).
 
 What we know so far is that remote biometric identification is seen as a "bargaining chip" between the Parliament and the Council of Europe - with one exception, of course: If there is no strong demonstration of outrage by civil society.
 

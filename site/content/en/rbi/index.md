@@ -33,7 +33,7 @@ type = "rbi"
 
 ## Upload new Faces
 
-* Don't try to upload your "cat" picture, as we use this [open source face recognition library](https://github.com/ageitgey/face_recognition), and if the face doesn't match the expected politician, it will be automatically deleted.
+* Don't try to upload your "cat" picture, as we use this [open source face recognition library](//github.com/ageitgey/face_recognition), and if the face doesn't match the expected politician, it will be automatically deleted.
 * **Pictures with more than one face** will also be automatically deleted.
 * If you want to upload a politician's face that is not available in our index, check what our criteria are to [pick the five most meaningful](/blog/five-meaningful-figures/) ones.
 
