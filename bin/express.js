@@ -6,12 +6,10 @@
 const express = require('express');
 const cors = require('cors');
 const _ = require('lodash');
-const moment = require('moment');
 const debug = require('debug')('bin:express');
-const mongodb = require('mongodb');
 
 const checkerstd = require('../lib/checkerstd');
-const settings = require('../config/express.json');
+// const settings = require('../config/express.json');
 
 const app = express();
 
@@ -54,7 +52,7 @@ app.get('/api/individuals/:filter?', cors(), async function (req, res) {
         /* individual return all the data */
         res.json(data);
     } catch (error) {
-        debug("Errot in `individuals` API: %s", error.message);
+        debug("Error in `individuals` API: %s", error.message);
         res.status(500).send(error.message);
     }
 });
@@ -70,7 +68,7 @@ app.get('/api/available/:filter?', cors(), async function (req, res) {
         const retval = _.countBy(data, 'Country')
         res.json(retval);
     } catch (error) {
-        debug("Errot in `available` API: %s", error.message);
+        debug("Error in `available` API: %s", error.message);
         res.status(500).send(error.message);
     }
 });
