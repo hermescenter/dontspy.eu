@@ -9,43 +9,13 @@
 const fs = require('fs');
 const process = require('process');
 const path = require('path');
-const log = require('@vladmandic/pilogger');
 const _ = require('lodash');
+const debug = require('debug')('special:duckface-analyzer');
+const yargs = require('yargs');
 
 const tf = require('@tensorflow/tfjs-node'); // in nodejs environments tfjs-node is required to be loaded before face-api
 const faceapi = require('../dist/face-api.node.js'); // use this when using face-api in dev mode
 // const faceapi = require('@vladmandic/face-api'); // use this when face-api is installed as module (majority of use cases)
-
-// mongodb related functions
-const MongoClient = require('mongodb').MongoClient;
-
-async function MongoSave(object) {
-  const client = new MongoClient(`mongodb://127.0.0.1:27017/faces`);
-  await client.connect();
-  try {
-    await client.db()
-      .collection('analysis')
-      .insertOne(object);
-    await client.close();
-    log.info(`inserted object ${object.id}`);
-    return true;
-  } catch(error) {
-    await client.close();
-    log.error(`inserting object in 'analysis' collection: ${error.message}`);
-    return false; 
-  }
-}
-
-async function MongoRead(filter) {
-  const client = new MongoClient(`mongodb://127.0.0.1:27017/faces`);
-  await client.connect();
-  const retv = await client.db()
-    .collection('analysis')
-    .find(filter)
-    .toArray();
-  await client.close();
-  return retv;
-}
 
 const modelPathRoot = '../model';
 const minConfidence = 0.15;
@@ -53,39 +23,38 @@ const maxResults = 5;
 let optionsSSDMobileNet;
 let fetch; // dynamically imported later
 
-console.log("\n");
-const options = _.reduce(process.argv, function(memo, arg) {
-  if(arg.match(/=/)) {
-    const chunks = arg.split('=');
-    if(_.endsWith(chunks[0], '-image'))
-      memo.source_image = chunks[1];
-    else if(_.endsWith(chunks[0], '-source'))
-      memo.source_dir = chunks[1];
-    else {
-      console.log(`Invalid option ${chunks[0]}`);
-      console.log(`necessary -image=file or -source=directory as parameters`);
-      process.exit(1);
-    }
-  }
-  return memo;
-}, {
-  source_dir: null,
-  source_image: null,
-});
+const argv = yargs
+  .option('source', {
+    alias: 's',
+    description: 'Source image ',
+    type: 'string',
+    demandOption: true
+  })
+  .option('output', {
+    alias: 'o',
+    description: 'Output JSON',
+    type: 'string',
+    demandOption: true
+  })
+  .showHelpOnFail(true)
+  .argv;
 
-if(!options || (!options.source_dir && !options.source_image)) {
-  console.log(`necessary -image=file or -source=directory as parameters`);
-  process.exit(1);
+if(!fs.existsSync(argv.source)) {
+  throw new Error(`File ${argv.source} does not exist`);
 }
+
+const options = {
+  source_image: argv.source,
+};
 
 async function image(input) {
   // read input image file and create tensor to be used for processing
   let buffer;
-  log.info('Loading image:', input);
+  debug('Loading image:', input);
   if (input.startsWith('http:') || input.startsWith('https:')) {
     const res = await fetch(input);
     if (res && res.ok) buffer = await res.buffer();
-    else log.error('Invalid image URL:', input, res.status, res.statusText, res.headers.get('content-type'));
+    else debug('Invalid image URL:', input, res.status, res.statusText, res.headers.get('content-type'));
   } else {
     buffer = fs.readFileSync(input);
   }
@@ -119,7 +88,7 @@ async function detect(tensor) {
       .withAgeAndGender();
     return result;
   } catch (err) {
-    log.error('Caught error', err.message);
+    debug('Caught error', err.message);
     return [];
   }
 }
@@ -155,14 +124,14 @@ async function saveinfo(summary, img, shape) {
     imageShape: shape,
     when: new Date(),
   };
-  return await MongoSave(o);
+  return await JSONSave(o, argv.output);
 }
 
 function print(face) {
   const expression = Object.entries(face.expressions).reduce((acc, val) => ((val[1] > acc[1]) ? val : acc), ['', 0]);
   const box = [face.alignedRect._box._x, face.alignedRect._box._y, face.alignedRect._box._width, face.alignedRect._box._height];
   const gender = `Gender: ${Math.round(100 * face.genderProbability)}% ${face.gender}`;
-  log.data(`Detection confidence: ${Math.round(100 * face.detection._score)}% ${gender} Age: ${Math.round(10 * face.age) / 10} Expression: ${Math.round(100 * expression[1])}% ${expression[0]} Box: ${box.map((a) => Math.round(a))}`);
+  debug(`Detection confidence: ${Math.round(100 * face.detection._score)}% ${gender} Age: ${Math.round(10 * face.age) / 10} Expression: ${Math.round(100 * expression[1])}% ${expression[0]} Box: ${box.map((a) => Math.round(a))}`);
   return {
     gender: face.gender,
     genderProbability: face.genderProbability,
@@ -174,17 +143,16 @@ function print(face) {
 }
 
 async function main() {
-  log.header();
-  log.info('FaceAPI single-process test');
+  debug('FaceAPI single-process test');
 
   fetch = (await import('node-fetch')).default; // eslint-disable-line node/no-missing-import
 
   await faceapi.tf.setBackend('tensorflow');
   await faceapi.tf.ready();
 
-  log.state(`Version: TensorFlow/JS ${faceapi.tf?.version_core} FaceAPI ${faceapi.version} Backend: ${faceapi.tf?.getBackend()}`);
+  debug(`Version: TensorFlow/JS ${faceapi.tf?.version_core} FaceAPI ${faceapi.version} Backend: ${faceapi.tf?.getBackend()}`);
 
-  log.info('Loading FaceAPI models');
+  debug('Loading FaceAPI models');
   const modelPath = path.join(__dirname, modelPathRoot);
   await faceapi.nets.ssdMobilenetv1.loadFromDisk(modelPath);
   await faceapi.nets.ageGenderNet.loadFromDisk(modelPath);
@@ -194,15 +162,16 @@ async function main() {
   optionsSSDMobileNet = new faceapi.SsdMobilenetv1Options({ minConfidence, maxResults });
 
   const t0 = process.hrtime.bigint();
-  const dir = options.source_dir ? _.map(fs.readdirSync(options.source_dir), function(fname) {
+  const dir = 
+  /* options.source_dir ? _.map(fs.readdirSync(options.source_dir), function(fname) {
     return path.join(options.source_dir, fname);
-  }) : [ options.source_image ];
+  }) : */ [ options.source_image ];
 
   for (const img of dir) {
     if (!img.toLocaleLowerCase().endsWith('.jpg')) continue;
     const tensor = await image(img);
     const result = await detect(tensor);
-    log.data('Image:', img, 'Detected faces:', result.length);
+    debug('Image:', img, 'Detected faces:', result.length);
     for (const face of result) {
       let summary = print(face);
       await saveinfo(summary, img, tensor.shape);
@@ -210,19 +179,24 @@ async function main() {
     tensor.dispose();
   }
   const t1 = process.hrtime.bigint();
-  log.info('Processed', dir.length, 'images in', Math.trunc(Number((t1 - t0)) / 1000 / 1000), 'ms');
+  debug('Processed', dir.length, 'images in', Math.trunc(Number((t1 - t0)) / 1000 / 1000), 'ms');
 
   /*
     const param = process.argv[2];
     if (fs.existsSync(param) || param.startsWith('http:') || param.startsWith('https:')) {
       const tensor = await image(param);
       const result = await detect(tensor);
-      log.data('Image:', param, 'Detected faces:', result.length);
+      debug('Image:', param, 'Detected faces:', result.length);
       for (const face of result) print(face);
       tensor.dispose();
     }
   } */
+}
 
+async function JSONSave(o, fout) {
+  // temporary function for development
+  fs.writeFileSync(fout, JSON.stringify(o, null, 2), 'utf-8');
+  debug("Written file '%s'", fout);
 }
 
 main();

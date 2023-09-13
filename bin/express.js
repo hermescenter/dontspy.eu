@@ -6,10 +6,10 @@
 const express = require('express');
 const cors = require('cors');
 const _ = require('lodash');
-const moment = require('moment');
+const debug = require('debug')('bin:express');
 
-const NocoDBClient = require('../lib/nocoio');
-const settings = require('../config/express.json');
+const checkerstd = require('../lib/checkerstd');
+// const settings = require('../config/express.json');
 
 const app = express();
 
@@ -19,33 +19,59 @@ app.listen(PORT, () => {
     console.log(`Binded sucessfully port ${PORT}`);
 });
 
-const client = new NocoDBClient(
-    settings.nocoio.url,
-    settings.nocoio.project,
-    settings.nocoio.apiKey
-);
+async function mongoFetch(filter) {
+    const dbc = await checkerstd.connectMongoDB();
+    const collection = dbc.db('dontspy').collection('safety');
+    const result = await collection.find(filter, { CratedAt: -1 }).toArray();
+    await dbc.close();
+    debug("Fetched %d elements with %o filter", result.length, filter);
+    return result;
+}
 
-// 'http://localhost:8080/api/v1/db/data/v1', 'project_noco_a', 'MnN3ygnHGj-ajH4qzYCFkMzcUtW30bQ4y6Z5cAIj');
-
-app.get('/api/peopels/:filter?', cors(), async function (req, res) {
-    let filter = {};
+function acquireFilter(req) {
     try {
-        filter = JSON.parse(req.params.filter);
+        const filter = JSON.parse(req.params.filter);
+        return filter
     } catch (error) {
         if (req.params?.filter && req.params.filter.length > 1) {
             console.log(`Unable to extract a valid filter: ${error.message}`);
         }
     }
+}
 
-    const data = await MongoRead(filter);
-    console.log(`→ MEPs API fetched ${data.length} with filter ${JSON.stringify(filter)}, returns ${JSON.stringify(_.countBy(data, 'nation'))}`);
-    res.json(data);
+/* very simple couple of APIs:
+ - individuals would return the full picture
+ - available would return a counter per country
+ both of them take any filter as parameter.
+ both uses mongodb instead of nocodb */
+
+app.get('/api/individuals/:filter?', cors(), async function (req, res) {
+    try {
+        const filter = acquireFilter(req);
+        const data = await mongoFetch(filter);
+        /* individual return all the data */
+        res.json(data);
+    } catch (error) {
+        debug("Error in `individuals` API: %s", error.message);
+        res.status(500).send(error.message);
+    }
 });
 
-app.get('/api/euromap', cors(), async function (req, res) {
+app.get('/api/available/:filter?', cors(), async function (req, res) {
     /* this API needs to query by using nocodb, which are the
      * political figure actually configured there. We expose this
      * API to the public while the nocodb stay locked behind a token */
-    const data = await client.findMany('subjects');
-    res.json(data);
+    try {
+        const filter = acquireFilter(req.filter);
+        const data = await mongoFetch(filter);
+        /* available return a number of elements per country */
+        const retval = _.countBy(data, 'Country')
+        res.json(retval);
+    } catch (error) {
+        debug("Error in `available` API: %s", error.message);
+        res.status(500).send(error.message);
+    }
 });
+
+/* the files under folder /data need to be reachable from the web */
+app.use('/data', express.static('data'));

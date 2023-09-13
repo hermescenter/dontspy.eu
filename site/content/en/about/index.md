@@ -4,11 +4,11 @@ type = "about"
 date_format = "Jan 2006"
 
 [[period]]
-  title = "[The first campaign](https://dontspyonus.eu)"
+  title = "[The first campaign](//dontspyonus.eu)"
   subtitle = "We targeted all the European Parliament"
   date_start = "2023-04-01"
   date_end = "2023-06-14"
-  description = "[500+ faces scanned, we tested the flow](https://dontspyonus.eu/post/squared-faces/). The operation ended when EP released an AIAct that can be considered a decent achievement."
+  description = "[500+ faces scanned, we tested the flow](//dontspyonus.eu/post/squared-faces/). The operation ended when EP released an AIAct that can be considered a decent achievement."
 
 [[period]]
   title = "European Surveillane lobby push forward"
@@ -33,8 +33,30 @@ date_format = "Jan 2006"
   description = "We run a campaign to collect signature, and push the European Parliament in ban face recognition! Despite the format notice of interested raised by authorities and representative, the surveillance lobbying didn't stop."
 +++
 
+# Policy Recommendation 
 
-# Founding Organizations
+## Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
+
+Increasingly AI systems are developed and deployed for harmful and discriminatory forms of state surveillance. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, the EU AI Act must include:
+
+##
+
+* A full ban on [real-time and post remote biometric identification](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) in publicly accessible spaces, by all actors, without exception;
+* A prohibition of all forms of [predictive and profiling systems](//www.fairtrials.org/articles/news/ai-act-eu-must-ban-predictive-ai-systems-in-policing-and-criminal-justice/) in law enforcement and criminal justice (including systems which focus on and target individuals, groups and locations or areas);
+* Prohibitions on [AI in migration contexts](//edri.org/our-work/civil-society-calls-for-the-eu-ai-act-to-better-protect-people-on-the-move/) to make individual risk assessments and profiles based on personal and sensitive data, and predictive analytic systems when used to interdict, curtail and prevent migration;
+* A prohibition on [biometric categorisation systems](//www.accessnow.org/wp-content/uploads/2022/05/Amendments-to-the-AI-Acts-treatment-of-biometric-categorisation.pdf) that categorise natural persons according to sensitive or protected attributes as well as the use of any biometric categorisation and automated behavioural detection systems in publicly accessible spaces;
+* A ban on the use of emotion recognition systems to infer people’s emotions and mental states;
+* Reject the Council’s addition of a blanket exemption from the AI Act of AI systems developed or used for national security purposes;
+* Remove exceptions and loopholes for law enforcement and migration control introduced by the Council;
+* Ensuring public transparency as to what, when and how public actors deploy high-risk AI in areas of law enforcement and migration control, avoiding any exemption to the obligation to register high-risk uses into the EU AI database.
+
+_Read the [full policy recommendation](//edri.org/wp-content/uploads/2023/07/Civil-society-AI-Act-trilogues-statement.pdf)_ (EDRI'23).
+
+#
+
+---
+
+# Don't Spy EU: Founding Organizations
 
 {{<founding-organizations>}}
 
@@ -57,8 +79,13 @@ Nonostante le azioni possano essere al limite della disobbedienza civile _nota, 
 
 il riconoscimento facciale è un problema perchè ... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
 
-# Contacts
+# 
 
-mail: `press@dontspy.eu` --> Alessandra devo fare questo alias e devo iscriverti
+---
+
+# Contacts & Feedback
+
+* `team@dontspy.eu`
+* [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
 
 # What lead us here...

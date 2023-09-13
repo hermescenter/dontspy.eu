@@ -18,75 +18,134 @@
   }
 
   path {
-    fill: #ccc;
-    stroke: #fff;
+    stroke: #ec3232;
     stroke-width: 0.5;
   }
 
   path:hover {
     fill: #bada55;
   }
+
+  #tooltip {
+    position: absolute;
+    visibility: hidden;
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
 </style>
 
- 
+
 <section id="euromap" class="mx-auto flex flex-wrap items-center">
 
   <!-- this pull variables from type = 'rbi' and
     from the homepage -->
   <div class="text-center w-full">
 
-  {{ if ne .Params.show_title "false" }}
+    {{ if ne .Params.show_title "false" }}
     <h1 class="my-0 text-4xl sm:text-5xl md:text-6xl">
       {{ .Title }}
     </h1>
-  {{ end }}
-
-  {{ if ne .Params.show_subtitle "false" }}
-    {{ with .Params.subtitle}}
-      <h2 class="font-light mt-0">{{ . }}</h2>
     {{ end }}
-  {{ end }}
+
+    {{ if ne .Params.show_subtitle "false" }}
+    {{ with .Params.subtitle}}
+    <h2 class="font-light mt-0">{{ . }}</h2>
+    {{ end }}
+    {{ end }}
 
   </div>
 
-  <div class="svg-container">
-    <svg id="map" width="100%" height="600"></svg>
+  <div id="tooltip"></div>
+
+  <svg id="map" width="100%" height="600"></svg>
   </div>
-
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script>
-    const geoJson = '/json/europe.geo.json';
-    document.addEventListener('DOMContentLoaded', function () {
-      d3.json(geoJson).then(function (geojson) {
-        var svg = d3.select('#map');
-        var map = svg.append('g');
-
-        // Projection and path generator
-        var projection = d3.geoMercator().fitSize([800, 600], geojson);
-        var path = d3.geoPath().projection(projection);
-
-        // Render the map using the loaded GeoJSON data
-        map.selectAll('path')
-          .data(geojson.features)
-          .enter()
-          .append('path')
-          .attr('d', path)
-          .on('mouseover', handleMouseOver)
-          .on('click', handleClick);
-
-        function handleMouseOver(event, d) {
-          var countryName = d.properties.name;
-          console.log('Mouseover:', countryName);
-          // Additional actions for mouseover event
-        }
-
-        function handleClick(event, d) {
-          var countryName = d.properties.name;
-          console.log('Click:', countryName);
-          // Additional actions for click event
-        }
-      });
-    });
-  </script>
-
 </section>
+
+<script src="/js/d3.v7.min.js"></script>
+<script>
+
+  function serverURL(path, filter) {
+    /* if we're in production the server is at the same address as the website, otherwise
+     * the server is at localhost:2024 */
+    var server = window.location.hostname;
+    if (server === 'localhost') {
+      server = 'http://localhost:2024';
+    } else {
+      server = 'https://' + server;
+    }
+    return server + '/api/' + path + '/' + JSON.stringify(filter);
+  }
+
+  document.addEventListener('DOMContentLoaded', async function () {
+
+   
+    let picturesPerCountry = [];
+    try {
+    const response = await fetch(serverURL('available', {}));
+    picturesPerCountry = await response.json();
+    console.log(picturesPerCountry);
+    } catch(error) {
+      console.log(error);
+      d3.select('#map')
+        .append('text')
+        .attr("x", 100)
+        .attr("y", 100)
+        .text(`Error loading map: ${error}`);
+      return
+    }
+
+    const colorScale = d3.scaleSequential(d3.interpolatePlasma).domain([0, 10]);
+
+    const geoJson = '/json/europe.geo.json';
+    d3.json(geoJson).then(function (geojson) {
+
+      var svg = d3.select('#map');
+      var map = svg.append('g');
+
+      // Projection and path generator
+      var projection = d3.geoMercator().fitSize([800, 600], geojson);
+      var path = d3.geoPath().projection(projection);
+
+      // 10 is for when there are at least 5 normal + 5 deepfake pictures
+      const colorScale = d3.scaleSequential(d3.interpolateBlues).domain([0, 10]);
+
+      // Render the map using the loaded GeoJSON data
+      map.selectAll('path')
+        .data(geojson.features)
+        .enter()
+        .append('path')
+        .attr('d', path)
+        .attr('fill', function (d) {
+          const value = picturesPerCountry[d.properties.name] || 0;
+          return value > 10 ? colorScale(10) : colorScale(value);
+        })
+        .on('mouseover', handleMouseOver)
+        .on('click', handleClick);
+
+      function handleMouseOver(event, d) {
+        let countryTooltip = `${d.properties.name} (${picturesPerCountry[d.properties.name] || 0} pictures)`
+
+        // Show the tooltip div with the country name
+        d3.select("#tooltip")
+          .text(countryTooltip)
+          .style("left", (event.pageX + 10) + "px")
+          .style("top", (event.pageY - 15) + "px")
+          .style("visibility", "visible");
+
+        // Set the cursor to 'pointer' to indicate clickability
+        d3.select(event.currentTarget).style('cursor', 'pointer');
+
+        // Additional actions for mouseover event
+      }
+
+      function handleClick(event, d) {
+        var countryName = d.properties.name;
+        console.log('Click:', countryName);
+        window.location = '/country#' + countryName;
+        // Additional actions for click event
+      }
+    });
+  });
+</script>

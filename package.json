@@ -3,11 +3,14 @@
     "@tensorflow/tfjs-node": "^4.2.0",
     "@vladmandic/face-api": "^1.7.9",
     "axios": "^1.4.0",
+    "debug": "^4.3.4",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "lodash": "^4.17.21",
+    "mongodb": "^6.0.0",
     "nocodb": "^0.109.7",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "yargs": "^17.7.2"
   },
   "scripts": {
     "noco": "DEBUG=*,-follow-redirects,-nc:cache,send node bin/nocoserver.js",
@@ -15,6 +18,6 @@
     "express:dev": "DEBUG=*,-follow-redirects,send,-nodemon:* $(npm/bin)nodemon bin/express.js",
     "upgrade": "npm uninstall --save nocodb && npm install --save nocodb",
     "setup": "cd node_modules/@vladmandic/face-api; npm i --legacy-peer-deps; cd ../../../",
-    "copy": "cp weird/duckface-analyzer.js node_modules/@vladmandic/face-api/demo/"
+    "copy": "cp bin/duckface-analyzer.js node_modules/@vladmandic/face-api/demo/"
   }
 }

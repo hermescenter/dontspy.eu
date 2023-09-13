@@ -12,23 +12,35 @@ date = "2023-06-25"
 description = "The preliminary campaign we made"
 
 # Comment next line and the default banner wil be used.
-banner = 'img/thethreeEMP.png'
+banner = '/img/thethreeEMP.png'
 
 +++
 
-Storia qui, lorem ipsum lorem
+La prima campagna è stata fatta in primavera 2023
+
 
 ![](img/thethreeEMP.png)
 
 
-Storia qui, lorem ipsum etc etc
+Testo normale
 
-# Lorem
+# titolo H1
 
-## Ipsum
+## titolo H2
 
-### Etcetera
+### titolo H3
 
-#### In h4
 
-Testo normale, _italic_, **bold** 
+_italic_, **bold** 
+
+* list
+* senza
+* ordine
+
+> blockquote
+
+
+ciao ciao `codice` addio 
+
+
+
