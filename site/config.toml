@@ -10,7 +10,8 @@ paginate = 10
 theme = 'pico'
 
 # Title of the website is used for the meta tag title
-title = "Don't Spy EU"
+# title = "Don't Spy EU"
+title = "Work in Progress"
 
 [markup.goldmark.renderer]
   unsafe = true
