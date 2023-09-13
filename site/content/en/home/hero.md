@@ -20,7 +20,7 @@ hero_media = "/img/portrait.jpg"
 	primary = true
 
 [[btn]]
-  url = "/about#timeline"L
+  url = "/about"
   label = 'Know more'
 
 +++
