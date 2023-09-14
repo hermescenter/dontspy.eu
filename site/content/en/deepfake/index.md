@@ -4,6 +4,8 @@ title = "Deepfakes!? Why?"
 type = "deepfake"
 +++
 
+fochina
+
 ### This page is half english half italian, to help review.
 
 * i Deepfake sono possibili perchè prima viene estratta l'impronta biometrica facciale dalla vittima, e poi questa viene incollata in un nuovo corpo (che agisce come un contenitore). Il problema è che spesso questo non succede perchè la persona ha voluto o ha acconsentito, per questo ci riferiamo a loro come vittima.
