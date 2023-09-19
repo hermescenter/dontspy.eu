@@ -76,6 +76,9 @@ async function main() {
         }
         debug("RBI: %O", rbi);
 
+        /* then draw a square box around the face, and save the image */
+        const boxfile = await drawBox(imagePath, photo.Id);
+
         const subject = await client.findOne('subjects', _.first(photo.subject).Id);
 
         /* I'm using pick because noco add system fields to the object */
@@ -83,6 +86,7 @@ async function main() {
             ..._.pick(subject, ['Name', 'Surname', 'Country', 'OfficialRole']),
             ..._.pick(photo, ['Id', 'Description', 'priority', 'analyzed', 'isfake', 'reviewed']),
             image: imagePath,
+            boxfile,
             rbi: _.omit(rbi, ['id', 'fname'])
         };
         o.CreatedAt = new Date(photo.CreatedAt);
@@ -123,7 +127,7 @@ async function performRBI(imagePath, photoId) {
     const longExecName = `node_modules/@vladmandic/face-api/demo/duckface-analyzer.js`;
     const outfile = path.join('data', 'json', `${photoId}.json`);
     const command = `node ${longExecName} --source ${imagePath} --output ${outfile}`;
-    debug("Executing command %s", command);
+    debug("(performRBI) Executing command %s", command);
     execSync(command, (error) => {
         if (error) {
             console.log(`error: ${error.message}`);
@@ -133,6 +137,23 @@ async function performRBI(imagePath, photoId) {
     });
     /* read the json file outfile */
     return JSON.parse(fs.readFileSync(outfile, 'utf8'));
+}
+
+async function drawBox(imagePath, photoId) {
+    // this function use the command in py/tools/draw_box_and_details_on_face.py
+    const longExecName = `py/tools/draw_box_and_details_on_face.py`;
+    const outfile = path.join('data', 'photos', `${photoId}_box.jpg`);
+    const command = `python ${longExecName} --source ${imagePath} --output ${outfile}`;
+    /* the command also accept --config to change the color of the box */
+    debug("(drawBox) Executing command %s", command);
+    execSync(command, (error) => {
+        if (error) {
+            console.log(`error: ${error.message}`);
+            return null;
+        }
+        debug("drawBox script executed");
+    });
+    return outfile;
 }
 
 main();

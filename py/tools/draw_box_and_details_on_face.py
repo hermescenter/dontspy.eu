@@ -60,6 +60,7 @@ for (top, right, bottom, left), face_encoding in zip(face_location, face_encodin
     # Draw a box around the face using the Pillow module
     draw.rectangle(((left, top), (right, bottom)), outline=box_color, width=box_width)
 
+    draw.rectangle(((left -2, top +2), (right +2, bottom -2)), outline='#ffff0a', width=box_width)
     # name = "Unknown"
     # Draw a label with a name below the face
     # text_width, text_height = draw.textsize(name)

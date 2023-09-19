@@ -18,3 +18,8 @@ After, maybe, something would work also in your system: but this is not guarante
 
 Our goal is just to forbid face recognition in the wild!
 
+## How test the system locally
+
+1. `DEBUG=*,-follow* node bin/contributions-importer.js`
+2. `DEBUG=*,-follow* node bin/photos-processor.js`
+
