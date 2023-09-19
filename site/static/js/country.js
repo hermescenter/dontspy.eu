@@ -21,7 +21,13 @@ async function loadMaterial() {
   const response = await fetch(url);
   const data = await response.json();
   console.log(countryName, data);
-  /* now we can populate the table */
+  /* now we can populate the table, or the error message if is missing */
+  if (data.length === 0) {
+    const container = document.querySelector('#face-list');
+    container.innerHTML = `<div class="alert error">
+      No data for ${countryName}!`;
+    return;
+  }
 
   const grouped = _.groupBy(data, 'OfficialRole');
 
@@ -120,3 +126,4 @@ function renderRBI(rbi, isfake, description) {
 
   return retval;
 }
+

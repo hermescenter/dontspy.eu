@@ -85,7 +85,7 @@ il riconoscimento facciale è un problema perchè ... (eventualmente possiamo co
 
 # Contacts & Feedback
 
-* `team@dontspy.eu`
+* `team@dontspyonus.eu`
 * [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
 
 # What lead us here...

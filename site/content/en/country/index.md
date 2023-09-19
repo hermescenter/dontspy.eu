@@ -62,12 +62,72 @@ type = 'country'
   }
 }
 
+  .alert {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #c00;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .alert.success {
+    border-color: #28a745;
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  .alert.info {
+    border-color: #17a2b8;
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+
+  .alert.warning {
+    border-color: #ffc107;
+    background-color: #fff3cd;
+    color: #664d03;
+  }
+
+  .alert.error {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+
 </style>
 
-<div class="container" id="face-list"><div>
+<div class="container" id="face-list"></div>
+
+---
+
+<div class="mx-auto mt-8 mb-8 md:mb-0 flex justify-center">
+  <a class="px-4 py-2 mx-2 rounded-sm text-center border border-accent hover:border-accent-dark transition duration-300 ease-in-out no-underline hover:bg-accent-dark hover:text-secondary dark:hover:text-primary dark:text-primary" id="load-upload-form">
+    Upload a new picture
+  </a>
+</div>
+
+<p><br></p> <!-- some space -->
+
+<div id="upload-form-container"></div>
 
 <script src="/js/lodash.min.js"></script>
 <script src="/js/country.js"></script>
 <script>
+  document.getElementById('load-upload-form').addEventListener('click', function() {
+    const iframe = document.createElement('iframe');
+    iframe.src = "https://db.dontspy.eu/dashboard/#/nc/form/bf2949c3-56f3-4574-8d44-13b90551a995?embed";
+    iframe.width = '100%';
+    iframe.height = '1000';
+    iframe.frameborder = "0";
+    iframe.classList.add("nc-embed");
+    iframe.style.background = "transparent";
+    const destinationElement = document.getElementById('upload-form-container');
+    destinationElement.appendChild(iframe);
+    const button = document.getElementById('load-upload-form');
+    button.remove();
+  });
   document.addEventListener('DOMContentLoaded', loadMaterial);
 </script>
