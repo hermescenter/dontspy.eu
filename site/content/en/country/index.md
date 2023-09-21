@@ -62,40 +62,40 @@ type = 'country'
   }
 }
 
-  .alert {
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: 1px solid #c00;
-    background-color: #f8d7da;
-    color: #721c24;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 16px;
-  }
+.alert {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid #c00;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+}
 
-  .alert.success {
-    border-color: #28a745;
-    background-color: #d4edda;
-    color: #155724;
-  }
+.alert.success {
+  border-color: #28a745;
+  background-color: #d4edda;
+  color: #155724;
+}
 
-  .alert.info {
-    border-color: #17a2b8;
-    background-color: #d1ecf1;
-    color: #0c5460;
-  }
+.alert.info {
+  border-color: #17a2b8;
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
 
-  .alert.warning {
-    border-color: #ffc107;
-    background-color: #fff3cd;
-    color: #664d03;
-  }
+.alert.warning {
+  border-color: #ffc107;
+  background-color: #fff3cd;
+  color: #664d03;
+}
 
-  .alert.error {
-    border-color: #dc3545;
-    background-color: #f8d7da;
-    color: #721c24;
-  }
+.alert.error {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+  color: #721c24;
+}
 
 </style>
 

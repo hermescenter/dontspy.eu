@@ -60,32 +60,18 @@ _Read the [full policy recommendation](//edri.org/wp-content/uploads/2023/07/Civ
 
 {{<founding-organizations>}}
 
-# Who works on this
-
-* Alessandra Bormioli, punto di contatto per il coordinamento, comunicazione 
-* Claudio Agosti, ideatore della campagna e sviluppatore della parte tecnologica
-* Davide Del Monte, coordinamento interno, fundraising e deepfake
-* Martina Turola, policy advocacy, comunicazione e lobbying
-
 # What we do
 
-* Hermes Center è l'organizzazione italiana per i diritti umani in rete, negli anni ha abbracciato pioneristicamente diverse lotte a cavallo tra il digitiale e la politica. E' parte della rete di EDRi con la quale si è coordinata per questa azione.
-* info.nodes è un'associazione che produce marla e...
-* TheGoodLobby è un'associazione che ...
+[**Hermes Center**](https://hermescenter.org) is a nonprofit organization focused in Digital Rights. Based in Milan, the groups operate in Italy with technical advocacy apply to the political debate, in Europe in collaboration with EDRi, and in the Connected World by supporting the production of projects like GlobaLeaks, OONI, ProTecht, ReclaimYourFace, and Makhno.
 
-# Why we do it
+[**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making the society in which we live more democratic, united and equitable.
+It is a movement of people convinced that every citizen can mobilize to defend the interests of the community. TheGoodLobby wants to influence public decisions, lobby politicians, officials and anyone in positions of power to protect the common good and the rights of all, especially the weakest and most marginalized.
 
-Nonostante le azioni possano essere al limite della disobbedienza civile _nota, se lo diciamo qui dobbiamo essere consistenti con quello detto in [rbi](/rbi)_, riteniamo che i rischi del fingerprint biometrico siano fortemente sottostimati a fronte di una narrativa securitaria, ed di una percezione dell'efficenza di questi sistemi che viene da hollywood invece che da efettivi utilizzi sul pubblico.
+[**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in doing their fundamental job: expose the truth and promote effective social changes. It produces also the italian magazine Marla.
 
-il riconoscimento facciale è un problema perchè ... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
-
-# 
-
----
-
-# Contacts & Feedback
+# Contacts
 
 * `team@dontspyonus.eu`
 * [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
 
-# What lead us here...
+# Challenging RBI since 2020 — what lead us here
