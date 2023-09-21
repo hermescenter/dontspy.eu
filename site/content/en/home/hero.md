@@ -18,7 +18,7 @@ hero_media = "/img/portrait.jpg"
 #   primary = true
 
 [[btn]]
-  url = "/faces"
+  url = "/rbi"
   label = 'Try Now'
 
 +++

@@ -1,0 +1,29 @@
+.carousel-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    cursor: pointer;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: auto;
+}
+
+.description {
+    margin-left: 20px;
+    flex: 1;
+}
