@@ -25,4 +25,4 @@ hero_media = "/img/portrait.jpg"
 
 # Ever wondered what living under AI surveillance in Europe would feel like?
 
-# Don't Spy EU allows you to run a fun & realistic simulation, so that you can experience first-hand the consequences of flawed RBI (Remote Biometric Identification) systems.
+# Don't Spy EU allows you to run a fun & realistic simulation, so that you can experience first-hand the consequences of flawed RBI (Remote Biometric Identification).

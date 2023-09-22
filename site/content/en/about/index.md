@@ -33,7 +33,41 @@ date_format = "Jan 2006"
   description = "We run a campaign to collect signature, and push the European Parliament in ban face recognition! Despite the format notice of interested raised by authorities and representative, the surveillance lobbying didn't stop."
 +++
 
-# Policy Recommendation 
+# Don't Spy EU - about the campaign 
+
+Hermes Center for Transparency and Digital Human Rights, along with fellow nonprofits The Good Lobby Itay and info.nodes (“we”), first launched a campaign called Don’t Spy EU in March 2023.
+
+The campaign’s early phase was about encouraging the general public to challenge pro-biometric surveillance MEPs involved in the EU Artificial Intelligence Act negotiations.
+
+On the now-outdated version of the campaign's website, users could scan the politicians’ faces with a facial recognition algorithm, as well as generate deepfakes and participate in metadata enrichment contests.
+
+Our main goal was to show how, by using technology already available on the market, public institutions and private companies could potentially access sensitive information about citizens (age, gender, even emotional state!) and use it as they please – should RBI ever become legal in the EU.
+
+##
+
+But, wait, isn’t a ban on RBI already in place? And didn’t the AI Act’s draft include a total ban, initially? Well, the General Data Protection Regulation (GDPR) does include a ban on biometric identification.
+
+However, when the AI Act will become effective, RBI systems will be subject to that law only – given that their software employs Artificial Intelligence.
+
+We, just like many other nonprofit organizations all around the continent, are deeply concerned about the trajectory the AI Act is taking.
+
+We’re talking about a major body of legislation, a heavy bulk of norms regulating AI (or attempting to do so) that’s set to be enacted in 2025, eventually becoming the first of its kind at the global level – and, let’s not forget, an important precedent for non-EU countries.
+
+##
+
+By now (autumn 2023), dozens of fellow digital & human rights organizations have already detected one too many loopholes in said Act, beginning with the very definition of RBI technology.
+
+This meticulously-written [joint statement](https://edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by EDRi (European Digital Rights coalition) details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
+
+Because yes, RBI might be officially banned… but with some exceptions.
+Predictive policing tools and real-time remote facial recognition and biometric identification in public spaces are forbidden, as of now, and the AI Act’s current version maintains this ban as well.
+
+However, exceptions will be granted for ex-post technologies employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to recur to predictive policing algorithms utilizing personal data to identify potential future offenders.
+
+And who gets to determine who could potentially turn into an “offender”? Great question, that remains unanswered. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
+
+
+
 
 ## Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
 
@@ -61,14 +95,6 @@ _Read the [full policy recommendation](//edri.org/wp-content/uploads/2023/07/Civ
 {{<founding-organizations>}}
 
 # Who works on this
-
-* Alessandra Bormioli, punto di contatto per il coordinamento, comunicazione 
-* Claudio Agosti, ideatore della campagna e sviluppatore della parte tecnologica
-* Davide Del Monte, coordinamento interno, fundraising e deepfake
-* Martina Turola, policy advocacy, comunicazione e lobbying
-
-# What we do
-
 * Hermes Center è l'organizzazione italiana per i diritti umani in rete, negli anni ha abbracciato pioneristicamente diverse lotte a cavallo tra il digitiale e la politica. E' parte della rete di EDRi con la quale si è coordinata per questa azione.
 * info.nodes è un'associazione che produce marla e...
 * TheGoodLobby è un'associazione che ...
