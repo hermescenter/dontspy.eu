@@ -23,19 +23,18 @@ async function loadCarousel() {
   const response = await fetch(url);
   const data = await response.json();
 
-
-  const carousel = document.querySelector('.carousel');
   const carouselItem = document.querySelector('.carousel-item');
   const imgElement = carouselItem.querySelector('img');
-  const descriptionElement = carouselItem.querySelector('.description');
+  const detailsE = carouselItem.querySelector('.info');
 
   function updateCarousel() {
-    console.log('updateCarousel', currentIndex);
-    const { image, description } = data[currentIndex];
-    imgElement.src = `${baseURL()}/${image}`;
-    imgElement.alt = description;
-    descriptionElement.textContent = description;
-    // carousel.style.transform = `translateY(-${currentIndex * 100}px)`;
+    const o = data[currentIndex];
+
+    imgElement.src = `${baseURL()}/${o.image}`;
+    imgElement.alt = o.Description;
+    detailsE.querySelector('.description').textContent = o.Description;
+    detailsE.querySelector('.country').textContent = o.Country;
+    detailsE.querySelector('.official').textContent = o.OfficialRole;
   }
 
   carouselItem.addEventListener('click', (event) => {

@@ -18,14 +18,20 @@ type = "deepfake"
 
 <link rel="stylesheet" href="/css/deepfake.css">
 
-<div class="carousel-container">
-    <div class="carousel">
-        <div class="carousel-item">
-            <img src="" alt="Carosello Immagine">
+---
+
+<div class="carousel">
+    <div class="carousel-item">
+        <img class="carousel--image" src="" alt="">
+        <span class="info">
+            <span class="official">Official Role</span>
+            <span class="country">Country</span>
             <p class="description"></p>
-        </div>
+        </span>
     </div>
 </div>
+
+---
 
 # The EU can forbid the usage of Face Biometry in the AIAct. This would offer a strong _by policy_ limitation of these technologies in the European Market.
 
