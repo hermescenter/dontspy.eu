@@ -16,6 +16,15 @@ subtitle = "subtitle"
 # Specializzata. Mentre in homepage questo blocco
 # non c'è.
 before_map = """
+### ↓ [Map of European Faces](/rbi#euromap)
+### ↓ [Why simulating RBI](/rbi/#why-simulating-rbi)
+### ↓ [Upload new Faces](/rbi#nocoform)
+"""
+
+type = "rbi"
++++
+
+<section id="why-simulating-rbi">
 
 # Why simulating RBI?
  
@@ -33,25 +42,21 @@ Migrants at the EU border also run the risk of being discriminated against/wrong
 
 Let’s make the legislators change their mind on AI surveillance. Before proceeding, please make sure you read our “About” section detailing Don’t Spy EU’s main scope and motives.
 
-# Keep in mind that
+# ⚠ Keep in mind that
+
 * Biometric identification is currently banned as per the General Data Protection Regulation (GDPR);
 * Wait, so… Are we some sort of “criminals”? Well, technically speaking, ours is an act of civil disobedience. We want to make sure our voice is heard – loud and clear, as all citizens are facing an imminent threat and Europeans’ digital future looks pretty scary.
 * We do not encourage anyone to repeat this action outside of this campaign. Please keep in mind that if you decide to you submit data/images we’ll protect your anonymity. Always.
 
+## 
 
+</section>
 
-### ↓ [Map of European Faces](/rbi#euromap)
-### ↓ [Upload new Faces](/rbi#nocoform)
-### The European Council Biometric ↓[Open Data](/rbi#opendata)
-"""
-
-type = "rbi"
-+++
-
+---
 
 <section id="nocoform">
 
-## Upload new Faces
+# Upload new Faces
 
 * Don't try to upload your "cat" picture, as we use this [open source face recognition library](//github.com/ageitgey/face_recognition), and if the face doesn't match the expected politician, it will be automatically deleted.
 * **Pictures with more than one face** will also be automatically deleted.
@@ -63,11 +68,5 @@ type = "rbi"
   width="100%"
   height="1000"
   style="background: transparent"></iframe>
-
-</section>
-
-<section id="opendata">
-
-## the European Council Biometric Open Data
 
 </section>
