@@ -67,9 +67,7 @@ However, exceptions will be granted for ex-post technologies employed in the pro
 And who gets to determine who could potentially turn into an “offender”? Great question, that remains unanswered. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
 
 
-
-
-## Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
+# Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
 
 Increasingly AI systems are developed and deployed for harmful and discriminatory forms of state surveillance. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, the EU AI Act must include:
 
@@ -96,24 +94,9 @@ _Read the [full policy recommendation](//edri.org/wp-content/uploads/2023/07/Civ
 
 # Who works on this
 
-* Alessandra Bormioli, punto di contatto per il coordinamento, comunicazione 
-* Claudio Agosti, ideatore della campagna e sviluppatore della parte tecnologica
-* Davide Del Monte, coordinamento interno, fundraising e deepfake
-* Martina Turola, policy advocacy, comunicazione e lobbying
-
-# What we do
-
-* Hermes Center è l'organizzazione italiana per i diritti umani in rete, negli anni ha abbracciato pioneristicamente diverse lotte a cavallo tra il digitiale e la politica. E' parte della rete di EDRi con la quale si è coordinata per questa azione.
-* info.nodes è un'associazione che produce marla e...
-* TheGoodLobby è un'associazione che ...
-
-# Why we do it
-
-Nonostante le azioni possano essere al limite della disobbedienza civile _nota, se lo diciamo qui dobbiamo essere consistenti con quello detto in [rbi](/rbi)_, riteniamo che i rischi del fingerprint biometrico siano fortemente sottostimati a fronte di una narrativa securitaria, ed di una percezione dell'efficenza di questi sistemi che viene da hollywood invece che da efettivi utilizzi sul pubblico.
-
-il riconoscimento facciale è un problema perchè ... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
-
-# 
+* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focused in Digital Rights. Based in Milan, the groups operate in Italy with technical advocacy apply to the political debate, in Europe in collaboration with EDRi, and in the Connected World by supporting the production of projects like GlobaLeaks, OONI, ProTecht, ReclaimYourFace, and Makhno.
+* [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making the society in which we live more democratic, united and equitable. It is a movement of people convinced that every citizen can mobilize to defend the interests of the community. TheGoodLobby wants to influence public decisions, lobby politicians, officials and anyone in positions of power to protect the common good and the rights of all, especially the weakest and most marginalized.
+* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in doing their fundamental job: expose the truth and promote effective social changes. It produces also the italian magazine Marla.
 
 ---
 
