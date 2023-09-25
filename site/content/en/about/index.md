@@ -103,7 +103,7 @@ _Read the [full policy recommendation](//edri.org/wp-content/uploads/2023/07/Civ
 
 Nonostante le azioni possano essere al limite della disobbedienza civile _nota, se lo diciamo qui dobbiamo essere consistenti con quello detto in [rbi](/rbi)_, riteniamo che i rischi del fingerprint biometrico siano fortemente sottostimati a fronte di una narrativa securitaria, ed di una percezione dell'efficenza di questi sistemi che viene da hollywood invece che da efettivi utilizzi sul pubblico.
 
-il riconoscimento facciale è un problema perchè ... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
+il riconoscimento facciale è un problema perchè... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
 
 # 
 
