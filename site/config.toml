@@ -26,7 +26,7 @@ title = "Work in Progress"
   # For blog page description you can overwrite it 
   # in the front matter
   description = "We need a full ban of remote biometry identification"
-  email = "team@dontspy.eu"
+  email = "team@dontspyonus.eu"
   favicon = '/favicon.ico'
   # Dark mode support
   # Supported value are :
@@ -40,7 +40,7 @@ title = "Work in Progress"
   alt = "email icon"
   icon = "/icons/email.svg"
   name = "email"
-  url = "mailto:team@dontspy.eu"
+  url = "mailto:team@dontspyonus.eu"
 
 [[params.social]]
   alt = "github icon"

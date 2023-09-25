@@ -39,18 +39,19 @@ pil_image = Image.fromarray(image)
 draw = ImageDraw.Draw(pil_image)
 
 # Two color codes in RGB format
-box_color = (0, 74, 81)
+box_color = "#ff2020"
 landmarks_color = (163, 255, 238)
-box_width = 5
-landmarks_width = 3
+box_width = 3
+landmarks_width = 2
 
-with open(args.config) as json_file:
-    data = json.load(json_file)
-    box_color = data['box_color']
-    box_width = data['box_width']
-    landmarks_color = data['landmarks_color']
-    landmarks_width = data['landmarks_width']
-    print("Loaded colos from config file " + args.config)
+if args.config:
+    with open(args.config) as json_file:
+        data = json.load(json_file)
+        box_color = data['box_color']
+        box_width = data['box_width']
+        landmarks_color = data['landmarks_color']
+        landmarks_width = data['landmarks_width']
+        print("Loaded colos from config file " + args.config)
 
 # Loop through each face found in the unknown image
 for (top, right, bottom, left), face_encoding in zip(face_location, face_encodings):
@@ -58,6 +59,10 @@ for (top, right, bottom, left), face_encoding in zip(face_location, face_encodin
 
     # Draw a box around the face using the Pillow module
     draw.rectangle(((left, top), (right, bottom)), outline=box_color, width=box_width)
+
+    # This second rectangle is meant because sometime the first one can have overlapping
+    # colors, and this is hardcoded to be a yellow that contrasts with the default red.
+    draw.rectangle(((left -2, top +2), (right +2, bottom -2)), outline='#ffff0a', width=box_width)
 
     # name = "Unknown"
     # Draw a label with a name below the face

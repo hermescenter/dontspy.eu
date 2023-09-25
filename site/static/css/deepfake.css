@@ -1,0 +1,56 @@
+.carousel {
+    width: 50%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.carousel--image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.info {
+    /*flex-grow: 1; */
+}
+
+.description {
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.country {
+    background-color: antiquewhite;
+    border-radius: 4px;
+    font-size: 0.8em;
+    padding: 0.4em;
+}
+
+.official {
+    background-color: lightcyan;
+    border-radius: 4px;
+    font-size: 0.8em;
+    padding: 0.4em;
+}
+
+@media (max-width: 767px) {
+    .carousel-item {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel--image {
+        margin-right: 0;
+    }
+}

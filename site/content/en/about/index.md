@@ -95,6 +95,14 @@ _Read the [full policy recommendation](//edri.org/wp-content/uploads/2023/07/Civ
 {{<founding-organizations>}}
 
 # Who works on this
+
+* Alessandra Bormioli, punto di contatto per il coordinamento, comunicazione 
+* Claudio Agosti, ideatore della campagna e sviluppatore della parte tecnologica
+* Davide Del Monte, coordinamento interno, fundraising e deepfake
+* Martina Turola, policy advocacy, comunicazione e lobbying
+
+# What we do
+
 * Hermes Center è l'organizzazione italiana per i diritti umani in rete, negli anni ha abbracciato pioneristicamente diverse lotte a cavallo tra il digitiale e la politica. E' parte della rete di EDRi con la quale si è coordinata per questa azione.
 * info.nodes è un'associazione che produce marla e...
 * TheGoodLobby è un'associazione che ...
@@ -103,7 +111,7 @@ _Read the [full policy recommendation](//edri.org/wp-content/uploads/2023/07/Civ
 
 Nonostante le azioni possano essere al limite della disobbedienza civile _nota, se lo diciamo qui dobbiamo essere consistenti con quello detto in [rbi](/rbi)_, riteniamo che i rischi del fingerprint biometrico siano fortemente sottostimati a fronte di una narrativa securitaria, ed di una percezione dell'efficenza di questi sistemi che viene da hollywood invece che da efettivi utilizzi sul pubblico.
 
-il riconoscimento facciale è un problema perchè... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
+il riconoscimento facciale è un problema perchè ... (eventualmente possiamo collezionare le ragioni principali e farci un post ?)
 
 # 
 
@@ -114,4 +122,4 @@ il riconoscimento facciale è un problema perchè... (eventualmente possiamo col
 * `team@dontspy.eu`
 * [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
 
-# What lead us here...
+# Challenging RBI since 2020 — what lead us here

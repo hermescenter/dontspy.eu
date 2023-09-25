@@ -21,7 +21,13 @@ async function loadMaterial() {
   const response = await fetch(url);
   const data = await response.json();
   console.log(countryName, data);
-  /* now we can populate the table */
+  /* now we can populate the table, or the error message if is missing */
+  if (data.length === 0) {
+    const container = document.querySelector('#face-list');
+    container.innerHTML = `<div class="alert error">
+      No data for ${countryName}!`;
+    return;
+  }
 
   const grouped = _.groupBy(data, 'OfficialRole');
 
@@ -40,6 +46,7 @@ async function loadMaterial() {
       items: _.map(pictures, (photo) => {
         return {
           src: `${baseURL()}/${photo.image}`,
+          boxpic: `${baseURL()}/${photo.boxfile}`,
           rbi: photo.rbi,
           isfake: photo.isfake,
           description: photo.Description ?? `Official potrait of ${fullname}`,
@@ -69,13 +76,31 @@ function populateData(data) {
     const pictureDescription = document.createElement('div');
     pictureDescription.classList.add('picture-description');
 
+    const img1Normal = new Image();
+    img1Normal.src = item.src;
+    const img2Box = new Image();
+    img2Box.src = item.boxpic;
+
     const img = document.createElement('img');
     img.src = item.src;
     img.alt = item.description; // using the description as alt text
 
+    img.addEventListener('mouseenter', (event) => {
+      console.log("enter");
+      /* when the mouse is over the image, we need to show the boxpic */
+      img.src = img2Box.src;
+    });
+    img.addEventListener('mouseout', (event) => {
+      console.log("out");
+      /* when the mouse is over the image, we need to show the boxpic */
+      img.src = img1Normal.src;
+    });
+
+    /* render RBI produces the text on the right of the picture */
     const details = document.createElement('p');
     details.innerHTML = renderRBI(item.rbi, item.isfake, item.description);
 
+    /* append to the container */
     pictureDescription.appendChild(img);
     pictureDescription.appendChild(details);
     container.appendChild(pictureDescription);
@@ -111,12 +136,38 @@ function renderRBI(rbi, isfake, description) {
     "when": "2023-09-12T11:47:41.390Z"
  */
   let retval = "";
-  if(isfake)
-    retval += `<div class="deepfake-label">Deepfake: ${description}</div>`;
+  if(isfake) {
+    retval += `<div class="deepfake-label">
+      Deepfake: ${description}
+    </div>`;
+  }
 
-  retval += `<div><b>${_.upperFirst(rbi.gender)}</b> ${_.round(rbi.genderProbability * 100, 1)}%`;
-  retval += `<div><b>Estimated</b> ${_.round(rbi.age, 1)} years`;
-  retval += `<div><b>Expression</b> ${rbi.expression[0]} (${_.round(rbi.expression[1] * 100, 1)}%)`;
+  retval += `<div><b>Estimated Gender:</b><br>
+    <code>${_.upperFirst(rbi.gender)}</b> ${_.round(rbi.genderProbability * 100, 1)}%</code>
+  </div>`;
+  retval += `<div><b>Estimated Age:</b><br>
+    <code>${_.round(rbi.age, 1)} years</code>
+  </div>`;
+  /* expressions contains a dictionary of probabilities, we want to show the top 2 */
+  /* sort the estimated expressions first */
+  const sortedExpressions = _.sortBy(_.toPairs(rbi.expressions), (pair) => pair[1]).reverse();
+  /* multiply to get percentages */
+  const formatted = _.reduce(sortedExpressions, (memo, pair) => {
+    if(memo.length === 2)
+      return memo;
+    memo.push({exprname: pair[0], amount: _.round(pair[1] * 100, 2)});
+    return memo;
+  }, []);
+
+  retval += `
+    <div><b>Expressions:</b>
+    <br>
+    <code>${formatted[0].exprname} ${formatted[0].amount}%</code>
+    <br>
+    <code>${formatted[1].exprname} ${formatted[1].amount}%</code>
+    </div>
+  `;
 
   return retval;
 }
+
