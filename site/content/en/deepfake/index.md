@@ -63,8 +63,6 @@ Know more with the infographic below, or read [How Deepfake works and how bad is
 <div id="upload-form-container"></div>
 
 
-
-
 <!-- page dependent scripts -->
 
 <script src="/js/lodash.min.js"></script>
