@@ -12,7 +12,7 @@ banner = '/img/PutinPinkHorse.jpeg'
 
 At this stage of the trilogue, **not all political figures are equal**.
 
-![a Barbie-inspired Putin, naked on a pink horse ‒ the fakes we like ‒ but not the Politician we need.](/img/PutinPinkHorse.jpeg)
+![A Barbie-inspired Putin, naked on a pink horse ‒ the fakes we like ‒ but not the politician we need.](/img/PutinPinkHorse.jpeg)
 
 # In the DONTSPY.EU campaign, we have chosen to look for these five figures in each member state:
 

@@ -51,7 +51,7 @@ Know more with the infographic below, or read [How Deepfake works and how bad is
 
 ---
 
-## Uplod new Deepfakes
+## Upload new Deepfakes
 
 * Don't try to upload your "cat" picture, as we use this [open source face recognition library](//github.com/ageitgey/face_recognition), and if the face doesn't match the expected politician, it will be automatically deleted.
 * **Pictures with more than one face** will also be automatically deleted.

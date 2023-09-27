@@ -96,7 +96,8 @@ _Read the [full policy recommendation document](//edri.org/wp-content/uploads/20
 
 * [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focused on defending digital rights. Based in Milan, the group works in Italy using technical expertise and advocacy  to influence the political debate. In Europe we work in collaboration with EDRi, and in the Connected World we support the production of projects like GlobaLeaks, OONI, ProTecht, ReclaimYourFace, and Makhno.
 * [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making the society in which we live more democratic, united and equitable. It is a movement of people convinced that every citizen can mobilize to defend the interests of the community. TheGoodLobby wants to influence public decisions, lobby politicians, officials and anyone in positions of power to protect the common good and the rights of all, especially the weakest and most marginalized.
-* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in doing their fundamental job: expose the truth and promote effective social changes. It produces also the italian magazine Marla.
+* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in doing their fundamental job: expose the truth and promote effective social changes. It also produces the italian magazine Marla.
+
 
 ---
 
