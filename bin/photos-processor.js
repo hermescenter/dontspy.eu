@@ -89,12 +89,12 @@ async function main() {
             /* here there is a problem, because if I send it locally I can't delete the file */
             debug("Deleted photo %s %s", photo.Id, imagePath);
 
-	    const dbc = await checkerstd.connectMongoDB();
-	    const collection = dbc.db('dontspy').collection('safety');
-	/* here we've to remove by 'image' and then insert one by one */
-	await collection.deleteOne({ image: imagePath });
-	    await dbc.close();
-		debug("Deleted mongodb entry %O", photo);
+            const dbc = await checkerstd.connectMongoDB();
+            const collection = dbc.db('dontspy').collection('safety');
+            /* here we've to remove by 'image' and then insert one by one */
+            await collection.deleteOne({ image: imagePath });
+            await dbc.close();
+            debug("Deleted mongodb entry %O", photo);
         }
 
         const subject = await client.findOne('subjects', _.first(photo.subject).Id);
