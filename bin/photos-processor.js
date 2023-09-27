@@ -175,6 +175,7 @@ async function drawBox(imagePath, photoId) {
         });
     } catch (e) {
         debug("Error while executing drawBox script: %s", e.message);
+	return null;
     }
 
     /* verify if outfile exists */
