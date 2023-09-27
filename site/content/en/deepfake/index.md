@@ -12,7 +12,7 @@ type = "deepfake"
 }
 </style>
 
-# Deepfakes works because Face Biometry derive the unique face fingerprint. **The same datapoints can be abused** to produce false image matching with an non consenting subject.
+# Deepfakes work because Face Biometry derives unique facial features. The same data points can be abused to produce false image matching that of a non consenting subject.
 
 <div id="carousel-1" class="deep-fake-carousel"></div>
 
@@ -33,17 +33,17 @@ type = "deepfake"
 
 ---
 
-# The EU can forbid the usage of Face Biometry in the AIAct. This would offer a strong _by policy_ limitation of these technologies in the European Market.
+# The EU can forbid the use of Face Biometry in the AI Act. This would limit the use of these technologies in the EU market by policy.
 
 <button>
-    <a id="clickable" onclick="renderNocodb()" >Upload deepfakes of your Ministry today!</a>
+    <a id="clickable" onclick="renderNocodb()" >Upload a deepfake of your Minister today!</a>
 </button>
 
-# It is the way to attract their attention to this problem!
+# It is the way to get their attention!
 
 ---
 
-# And **If RBI is allowed in the AIAct?** Deepfakes would help us, as, the last defense against massive internat surveillance, would be pollute our profiles with false images!
+# And what if RBI is allowed in the AIAct? Deepfakes would help us as the last defense against massive internet surveillance … by “polluting” our profiles with false images!
 
 Know more with the infographic below, or read [How Deepfake works and how bad is the problem](/todo1), and [How the European Union can influence the world of surveillance](/todo2).
 
