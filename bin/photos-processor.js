@@ -84,7 +84,7 @@ async function main() {
             const dbc = await checkerstd.connectMongoDB();
             const collection = dbc.db('dontspy').collection('safety');
             /* here we've to remove by 'image' and then insert one by one */
-            await collection.deleteOne({ image: imagePath });
+            await collection.deleteOne({ image: photo.image[0].path });
             await dbc.close();
 
             /* delete the file */
