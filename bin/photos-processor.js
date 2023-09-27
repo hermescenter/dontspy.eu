@@ -78,7 +78,7 @@ async function main() {
 
         /* then draw a square box around the face, and save the image */
         const boxfile = await drawBox(imagePath, photo.Id);
-        if (!boxfile) {
+        if (_.isNull(boxfile)) {
             /* in this condition we delete the entry, in the DB and in the filesystem */
             debug("Unable to find boxfile for photo %s", photo.Id);
             /* delete the ID from the DB */
@@ -88,6 +88,13 @@ async function main() {
             fs.unlinkSync(imagePath);
             /* here there is a problem, because if I send it locally I can't delete the file */
             debug("Deleted photo %s %s", photo.Id, imagePath);
+
+	    const dbc = await checkerstd.connectMongoDB();
+	    const collection = dbc.db('dontspy').collection('safety');
+	/* here we've to remove by 'image' and then insert one by one */
+	await collection.deleteOne({ image: imagePath });
+	    await dbc.close();
+		debug("Deleted mongodb entry %O", photo);
         }
 
         const subject = await client.findOne('subjects', _.first(photo.subject).Id);
