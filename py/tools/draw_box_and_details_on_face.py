@@ -23,6 +23,18 @@ print("Processing image " + args.source)
 
 # Load the picture and find a face.
 image = face_recognition.load_image_file(args.source)
+
+if not face_recognition and not face_recognition.face_locations(image):
+    print("No faces found in the image, file rejected")
+    exit(1)
+
+if len(face_recognition.face_encodings(image)) == 0:
+    print("No faces found in the image, file rejected")
+    exit(1)
+
+# print the JSON representation of the face encodings
+print (json.dumps(face_recognition.face_encodings(image)[0].tolist()))
+
 face_encoding = face_recognition.face_encodings(image)[0]
 
 face_landmarks_list = face_recognition.face_landmarks(image)
@@ -71,6 +83,11 @@ for (top, right, bottom, left), face_encoding in zip(face_location, face_encodin
     # draw.text((left + 6, bottom - text_height - 5), name, fill=(255, 255, 255, 255))
 
 for face_landmark_name in face_landmarks_list[0]:
+
+    if not face_landmarks_list[0] or (face_landmarks_list[0] and face_landmarks_list[0][face_landmark_name] is None):
+        print("No landmarks found for " + face_landmark_name)
+        exit(1)
+    
     # Draw lines between consequential points
     points = face_landmarks_list[0][face_landmark_name]
     for i in range(len(points) - 1):

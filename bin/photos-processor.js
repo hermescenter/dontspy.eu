@@ -14,13 +14,13 @@ const debug = require('debug')('bin:photos-processor');
 const config = require('../config/express.json');
 
 const argv = yargs
-  .option('update', {
-    alias: 'u',
-    description: 'mark the photo as analyzed',
-    type: 'boolean',
-  })
-  .showHelpOnFail(true)
-  .argv;
+    .option('update', {
+        alias: 'u',
+        description: 'mark the photo as analyzed',
+        type: 'boolean',
+    })
+    .showHelpOnFail(true)
+    .argv;
 
 /* As explained in README, the goal of this file is to check 
  * new photos and analyze them via python scripts. they 
@@ -78,6 +78,24 @@ async function main() {
 
         /* then draw a square box around the face, and save the image */
         const boxfile = await drawBox(imagePath, photo.Id);
+        if (_.isNull(boxfile)) {
+
+            debug("Ensuring mongodb entry %O DO NOT EXIST", photo);
+            const dbc = await checkerstd.connectMongoDB();
+            const collection = dbc.db('dontspy').collection('safety');
+            /* here we've to remove by 'image' and then insert one by one */
+            await collection.deleteOne({ image: photo.image[0].path });
+            await dbc.close();
+
+            /* delete the file */
+            fs.unlinkSync(imagePath);
+            /* here there is a problem, because if I send it locally I can't delete the file */
+            debug("Deleted photo %s %s", photo.Id, imagePath);
+
+            /* delete the ID from the DB */
+            const result = await client.deleteOne('photos', photo.Id);
+            debug("deleted nocodb entry %O", result);
+        }
 
         const subject = await client.findOne('subjects', _.first(photo.subject).Id);
 
@@ -93,7 +111,7 @@ async function main() {
 
         const countryDetails = _.find(countries, { name: o.Country });
         /* we pick Two letter and Three ltter country code */
-        if(!countryDetails) {
+        if (!countryDetails) {
             debug("Unable to find country details for %s", o.Country);
             process.exit(1);
         }
@@ -102,7 +120,7 @@ async function main() {
 
         safety.push(o);
 
-        if(argv.update) {
+        if (argv.update) {
             const result = await client.updateOne('photos', photo.Id, { analyzed: true });
             debug("Photo %d updated", result.Id);
         } else {
@@ -110,10 +128,12 @@ async function main() {
         }
     }
 
-    /* now we can save the safety array to mongodb */
+    /* because the express server uses mongodb, after having updated nocodb
+     * (used by people that reviews the photos), we need to update mongodb
+     * in a waythat allows updates. in this case there is delete/insert pattern */
     const dbc = await checkerstd.connectMongoDB();
     const collection = dbc.db('dontspy').collection('safety');
-    for(const s of safety) {
+    for (const s of safety) {
         /* here we've to remove by 'image' and then insert one by one */
         await collection.deleteOne({ image: s.image });
         await collection.insertOne(s);
@@ -146,13 +166,23 @@ async function drawBox(imagePath, photoId) {
     const command = `python ${longExecName} --source ${imagePath} --output ${outfile}`;
     /* the command also accept --config to change the color of the box */
     debug("(drawBox) Executing command %s", command);
-    execSync(command, (error) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return null;
-        }
-        debug("drawBox script executed");
-    });
+    try {
+        execSync(command, (error) => {
+            if (error) {
+                console.log(`error: ${error.message}`);
+            }
+            debug("drawBox script executed");
+        });
+    } catch (e) {
+        debug("Error while executing drawBox script: %s", e.message);
+	return null;
+    }
+
+    /* verify if outfile exists */
+    if (!fs.existsSync(outfile)) {
+        debug("Unable to find %s", outfile);
+        return null;
+    }
     return outfile;
 }
 

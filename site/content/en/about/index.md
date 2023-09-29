@@ -43,7 +43,7 @@ On the previous [version](//dontspyonus.eu/) of the campaign’s website, users 
 
 Our main goal was to show how, by using technology already available on the market, public institutions and private companies could potentially access **sensitive information** about citizens (age, gender, even emotional state!) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
 
-## But, wait, isn’t a ban on RBI already in place?
+### But, wait, isn’t a ban on RBI already in place?
 
 And didn’t the AI Act’s draft include a **total ban**, initially?  Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification.
 
@@ -57,13 +57,13 @@ As we write (Autumn 2023), dozens of fellow digital & human rights organizations
 
 This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by **EDRi (European Digital Rights coalition)** details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
 
-## Yes, RBI might be officially banned… but with some exceptions.
+### Yes, RBI might be officially banned… but with some exceptions.
 
 **Predictive policing** tools and **real-time** remote facial recognition & biometric identification in public spaces are forbidden, as of now, and the AI Act’s current version maintains this ban as well.
 
 However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**.
 
-## And who gets to determine who could potentially turn into an “offender”?
+### And who gets to determine who could potentially turn into an “offender”?
 
 Great question, that remains **unanswered**. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](//www.itflows.eu/eumigratool/)).
 
@@ -73,18 +73,8 @@ Great question that currently remains unanswered. Just like all the questions/do
 
 Increasingly AI systems are developed and deployed for harmful and discriminatory forms of state surveillance. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, the EU AI Act must include:
 
-##
 
-* A full ban on [real-time and post remote biometric identification](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) in publicly accessible spaces, by all actors, without exception;
-* A prohibition of all forms of [predictive and profiling systems](//www.fairtrials.org/articles/news/ai-act-eu-must-ban-predictive-ai-systems-in-policing-and-criminal-justice/) in law enforcement and criminal justice (including systems which focus on and target individuals, groups and locations or areas);
-* Prohibitions on [AI in migration contexts](//edri.org/our-work/civil-society-calls-for-the-eu-ai-act-to-better-protect-people-on-the-move/) to make individual risk assessments and profiles based on personal and sensitive data, and predictive analytics systems when used to interdict, curtail and prevent migration;
-* A prohibition on [biometric categorisation systems](//www.accessnow.org/wp-content/uploads/2022/05/Amendments-to-the-AI-Acts-treatment-of-biometric-categorisation.pdf) that categorise natural persons according to sensitive or protected attributes as well as the use of any biometric categorisation and automated behavioural detection systems in publicly accessible spaces;
-* A ban on the use of emotion recognition systems to infer people’s emotions and mental states;
-* Reject the Council’s addition of a blanket exemption from the AI Act of AI systems developed or used for national security purposes;
-* Remove exceptions and loopholes for law enforcement and migration control introduced by the Council;
-* Ensuring public transparency as to what, when and how public actors deploy high-risk AI in areas of law enforcement and migration control, avoiding any exemption to the obligation to register high-risk uses into the EU AI database.
-
-_Read the [full policy recommendation document](//edri.org/wp-content/uploads/2023/07/Civil-society-AI-Act-trilogues-statement.pdf)_ (EDRI'23).
+# read our [full requests](/blog/requests)
 
 #
 
