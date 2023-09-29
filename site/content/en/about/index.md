@@ -65,16 +65,15 @@ However, exceptions will be granted for **ex-post technologies** employed in the
 
 ### And who gets to determine who could potentially turn into an “offender”?
 
-Great question, that remains **unanswered**. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](//www.itflows.eu/eumigratool/)).
-
 Great question that currently remains unanswered. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
 
 # Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
 
 Increasingly AI systems are developed and deployed for harmful and discriminatory forms of state surveillance. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, the EU AI Act must include:
 
+---
 
-# read our [full requests](/blog/requests)
+# Read our [full requests](/blog/requests)
 
 #
 
