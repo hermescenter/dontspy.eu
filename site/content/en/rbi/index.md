@@ -53,59 +53,7 @@ Let’s make legislators change their mind on AI surveillance. Before proceeding
 
 We can only accept pictures with faces that belong to the political figure. There is a process of "initial setup" where trusted individual with a non public link can register a political person. **🙏 [Reach out to us](/about#contacts) 🙏 if you think you can be that person**. Currently we have available these politician registered:
 
-<style>
-  .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem; /* spazio tra gli elementi */
-  }
-
-  .grid-item {
-    flex: 1 1 calc(33.333% - 1rem); /* larghezza di base per 3 elementi per riga */
-    box-sizing: border-box;
-    padding: 0.5rem;
-
-    transition: transform 400ms, box-shadow 400ms; /* transizione di 400 ms */
-    cursor: pointer; /* cursore a mano per indicare la cliccabilità */
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* ombra iniziale */
-  }
-
-  .grid-item:active {
-    transform: scale(0.95); /* riduci leggermente la dimensione dell'elemento quando premuto */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* ombra più profonda quando premuto */
-  }
-
-  .country-name {
-    padding-left: 1em;
-  }
-
-  .missing {
-    font-size: 0.8em;
-    color: darkgrey;
-  }
-
-  .highlight {
-    font-weight: bolder;
-    background-color: lightpink;
-    padding: 3px;
-    border-radius: 3px;
-  }
-
-  /* Responsive: su schermi più piccoli, mostra 2 elementi per riga */
-  @media (max-width: 768px) {
-    .grid-item {
-        flex: 1 1 calc(50% - 1rem);
-    }
-  }
-
-/* Responsive: su dispositivi mobili, mostra 1 elemento per riga */
-  @media (max-width: 480px) {
-    .grid-item {
-        flex: 1 1 100%;
-    }
-  }
-</style>
-
+<link rel="stylesheet" href="/css/figures.css">
 <div class="grid-container" id="figures--list"></div>
 
 </section>

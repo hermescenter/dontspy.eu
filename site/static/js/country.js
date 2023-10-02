@@ -39,8 +39,26 @@ async function loadMaterial() {
     };
   }));
 
-  console.log(formatted);
+  const deepfakes = _.filter(data, {isfake: true }).length;
+
+  console.log(formatted, deepfakes);
   _.each(formatted, populateData);
+
+  /* we need to put the flag and the country name into #country-title */
+  const countryTitle = document.querySelector('#country-title');
+  /* now compose the innerText */
+  let headText = "";
+  const politicalFigures = _.keys(grouped).length;
+  if(politicalFigures < 5 ) { 
+    headText = `${EUMS[countryName]} ${countryName} — ${politicalFigures} Political figures <a href="/blog/five-meaningful-figures/">out of 5</a>.`;
+  }
+  if(deepfakes)
+    headText += ` — No deepfakes! <a href="/deepfake">add some</a>`;
+  else
+    headText += ` — ${deepfakes} <a href="/deepfake">deepfakes!</a>`;
+
+  /* add this composed text as title */
+  countryTitle.innerHTML = headText;
 }
 
 function populateData(data) {
@@ -70,12 +88,12 @@ function populateData(data) {
     img.alt = item.description; // using the description as alt text
 
     img.addEventListener('mouseenter', (event) => {
-      console.log("enter");
+      // console.log("enter");
       /* when the mouse is over the image, we need to show the boxpic */
       img.src = img2Box.src;
     });
     img.addEventListener('mouseout', (event) => {
-      console.log("out");
+      // console.log("out");
       /* when the mouse is over the image, we need to show the boxpic */
       img.src = img1Normal.src;
     });
