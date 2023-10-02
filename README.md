@@ -13,7 +13,7 @@ A website, a campaign, and a mixture of different technologies. Know about us [H
 3. Read and follow `config/README.md` to setup PostgreSQL local connection
 4. `cd py` and read `REMIND.sh` because it contans a few notes on requirement packages
 5. `sudo apt install inotify-tools` _# not currently used_
-6. `git submodule update --init`
+6. `git submodule update --init` pulls from [this repository](https://github.com/negrel/hugo-theme-pico.git) which got discontinued during the development of this website. Thanks anyway to [@negrel](//github.com/negrel) for the great job! 🙏
 
 After, maybe, something would work also in your system: but this is not guarantee, and it is not our goal.
 
