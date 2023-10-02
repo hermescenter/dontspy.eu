@@ -45,23 +45,23 @@ Our main goal was to show how, by using technology already available on the mark
 
 ### But, wait, isn’t a ban on RBI already in place? And didn’t the AI Act’s draft include a total ban, initially? 
 
-Well, the General Data Protection Regulation (GDPR) does include a ban on biometric identification.
+Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification.
 
 However, when the AI Act will become effective, RBI systems will be subject to that law only – given that their software employs Artificial Intelligence.
 
-Like many other nonprofit organizations all around the continent, we are deeply concerned about the trajectory the AI Act is taking.
+Like many other nonprofit organizations all around the continent, we are **deeply concerned** about the trajectory the AI Act is taking.
 
-We’re talking about a major body of legislation, a heavy bulk of norms regulating AI (or attempting to do so) that’s set to be enacted in 2025, eventually becoming the first of its kind at the global level – and, let’s not forget, an important precedent for non-EU countries.
+We’re talking about a major body of legislation, a heavy bulk of norms regulating AI (or attempting to do so) that’s set to be enacted in 2025, eventually becoming the first of its kind at the global level – and, let’s not forget, an **important precedent** for non-EU countries.
 
-As we write (Autumn 2023), dozens of fellow digital & human rights organizations have already flagged one too many loopholes in the Act, beginning with the very definition of RBI technology.
-This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by EDRi (European Digital Rights coalition) details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
+As we write (Autumn 2023), dozens of fellow digital & human rights organizations have already flagged one too many loopholes in the Act, beginning with the very **definition** of RBI technology.
+This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by EDRi (**European Digital Rights initiative**) details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
 
 
 ### Yes, RBI might be officially banned… but with some exceptions.
 
-Predictive policing tools and real-time remote facial recognition and biometric identification in public spaces are forbidden, as of now, and the AI Act’s current version maintains this ban as well.
+**Predictive policing** tools and **real-time remote** facial recognition and biometric identification in public spaces are forbidden, as of now, and the AI Act’s current version maintains this ban as well.
 
-However, exceptions will be granted for ex-post technologies employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential future offenders.
+However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**.
 
 ### And who gets to determine who could potentially turn into an “offender”?
 
@@ -69,9 +69,7 @@ Great question that currently remains unanswered. Just like all the questions/do
 
 # Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
 
-Increasingly AI systems are developed and deployed for harmful and discriminatory forms of state surveillance. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, the EU AI Act must include:
-
----
+Increasingly **AI systems are developed and deployed for harmful and discriminatory forms of state surveillance**. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, follow the link below to:
 
 # Read our [full requests](/blog/requests)
 
