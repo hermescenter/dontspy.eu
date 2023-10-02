@@ -114,6 +114,7 @@ type = 'country'
 <div id="upload-form-container"></div>
 
 <script src="/js/lodash.min.js"></script>
+<script src="/js/shared.js"></script>
 <script src="/js/country.js"></script>
 <script>
   document.getElementById('load-upload-form').addEventListener('click', function() {

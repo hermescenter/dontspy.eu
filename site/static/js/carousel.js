@@ -1,20 +1,4 @@
 
-function baseURL() {
-  let server = window.location.hostname;
-  if (server === 'localhost') {
-    server = 'http://localhost:2024';
-  } else {
-    server = 'https://' + server;
-  }
-  return server;
-}
-
-function serverURL(path, filter) {
-  /* if we're in production the server is at the same address as the website, otherwise
-   * the server is at localhost:2024 */
-  return baseURL() + '/api/' + path + '/' + JSON.stringify(filter);
-}
-
 /* a kind of global variable to keep track the images index */
 let currentIndex = 0;
 async function loadCarousel() {

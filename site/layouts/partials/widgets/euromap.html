@@ -38,19 +38,27 @@
   }
 
   #blah {
-    font-size:4em;
+    font-size: 4em;
     text-align: center;
+  }
+
+  #blah span {
+    background-color: var(--color-accent);
   }
 </style>
 
+{{ if ne .Params.type "rbi" }}
 <a href="/blog/requests">
-
-<div id="blah">
-  Read <br>
-  our requests
-  <br> in full <br><br>
-</div>
+  <div id="blah">
+    <span>
+      Read <br>
+      our requests
+      <br> in full <br>
+    </span>
+    <br>
+  </div>
 </a>
+{{ end }}
 
 <hr>
 
@@ -58,63 +66,52 @@
 
   <!-- this pull variables from type = 'rbi' and from the homepage -->
 
-  {{ if eq .Params.type "rbi" }} 
+  {{ if eq .Params.type "rbi" }}
   <div class="text-center w-full">
-  {{ else }}
-  <div class="mx-auto p-2 sm:p-8 md:pl-0 md:w-1/2">
-  {{ end }}
+    {{ else }}
+    <div class="mx-auto p-2 sm:p-8 md:pl-0 md:w-1/2">
+      {{ end }}
 
-    {{ if ne .Params.show_title "false" }}
-    <h1 class="my-0 text-4xl sm:text-5xl md:text-6xl">
-      {{ .Title }}
-    </h1>
+      {{ if ne .Params.show_title "false" }}
+      <h1 class="my-0 text-4xl sm:text-5xl md:text-6xl">
+        {{ .Title }}
+      </h1>
+      {{ end }}
+
+      {{ if ne .Params.show_subtitle "false" }}
+      {{ with .Params.subtitle }}
+      <h2 class="font-light mt-0">{{ . }}</h2>
+      {{ end }}
+      {{ end }}
+
+      <svg id="map" width="100%" height="600"></svg>
+
+    </div>
+
+    {{ if ne .Params.type "rbi" }}
+    <div
+      class="my-6 text-center p-4 mx-auto max-w-3/4 sm:max-w-2/3 lg:max-w-1/2 lg:relative xl:-right-10 xl:-right-16 relative bg-secondary-light">
+      {{ .Params.side_text | markdownify }}
+    </div>
     {{ end }}
 
-    {{ if ne .Params.show_subtitle "false" }}
-    {{ with .Params.subtitle }}
-    <h2 class="font-light mt-0">{{ . }}</h2>
-    {{ end }}
-    {{ end }}
 
-    <svg id="map" width="100%" height="600"></svg>
-
-  </div>
-
-  {{ if ne .Params.type "rbi" }} 
-  <div
-		class="my-6 text-center p-4 mx-auto max-w-3/4 sm:max-w-2/3 lg:max-w-1/2 lg:relative xl:-right-10 xl:-right-16 relative bg-secondary-light">
-    {{ .Params.side_text | markdownify }} 
-  </div>
-  {{ end }}
-		
-
-  <div id="tooltip"></div>
+    <div id="tooltip"></div>
 
 </section>
 
 <script src="/js/d3.v7.min.js"></script>
+<script src="/js/shared.js"></script>
 <script>
 
-  function serverURL(path, filter) {
-    /* if we're in production the server is at the same address as the website, otherwise
-     * the server is at localhost:2024 */
-    var server = window.location.hostname;
-    if (server === 'localhost') {
-      server = 'http://localhost:2024';
-    } else {
-      server = 'https://' + server;
-    }
-    return server + '/api/' + path + '/' + JSON.stringify(filter);
-  }
-
   document.addEventListener('DOMContentLoaded', async function () {
-   
+
     let picturesPerCountry = [];
     try {
-    const response = await fetch(serverURL('available', {}));
-    picturesPerCountry = await response.json();
-    console.log(picturesPerCountry);
-    } catch(error) {
+      const response = await fetch(serverURL('available', {}));
+      picturesPerCountry = await response.json();
+      console.log(picturesPerCountry);
+    } catch (error) {
       console.log(error);
       d3.select('#map')
         .append('text')

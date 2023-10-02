@@ -66,6 +66,7 @@ Know more with the infographic below, or read [How Deepfake works and how bad is
 <!-- page dependent scripts -->
 
 <script src="/js/lodash.min.js"></script>
+<script src="/js/shared.js"></script>
 <script src="/js/carousel.js"></script>
 
 <script>

@@ -1,18 +1,3 @@
-function baseURL() {
-  let server = window.location.hostname;
-  if (server === 'localhost') {
-    server = 'http://localhost:2024';
-  } else {
-    server = 'https://' + server;
-  }
-  return server;
-}
-
-function serverURL(path, filter) {
-  /* if we're in production the server is at the same address as the website, otherwise
-   * the server is at localhost:2024 */
-  return baseURL() + '/api/' + path + '/' + JSON.stringify(filter);
-}
 
 async function loadMaterial() {
   /* pick from the URL, after the #, the country name */
@@ -31,8 +16,7 @@ async function loadMaterial() {
 
   const grouped = _.groupBy(data, 'OfficialRole');
 
-  const displayOrder = ['Prime Minister', 'AIAct Gov Representative', 'Interior Minister', 'Justice Minister', 'Defense Minister'];
-
+  /* displayOrder contains the political roles and it is in shared.js */
   const formatted = _.compact(_.map(displayOrder, (role) => {
     const pictures = grouped[role];
     if (!pictures) {
@@ -170,4 +154,3 @@ function renderRBI(rbi, isfake, description) {
 
   return retval;
 }
-

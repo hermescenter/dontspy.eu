@@ -92,9 +92,9 @@ Increasingly AI systems are developed and deployed for harmful and discriminator
 
 ---
 
-# Contacts & Feedback
+# Contacts
 
-* `team@dontspy.eu`
-* [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
+* `team@dontspyonus.eu`
+* _github_ [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
 
 # Challenging RBI since 2020 — what lead us here
