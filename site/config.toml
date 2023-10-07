@@ -80,9 +80,9 @@ title = "Don't Spy EU"
 # Navigation bar
 [menu]
   [[menu.main]]
-    identifier = "rbi" # identifier is use for translations
-    pre = ""           # pre is inserted before the translation (icons, image, etc)
-    url = "/rbi/"
+    identifier = "faces" # identifier is use for translations
+    pre = ""             # pre is inserted before the translation (icons, image, etc)
+    url = "/faces/"
     weight = 20
   [[menu.main]]
     identifier = "deepfake" # identifier is use for translations

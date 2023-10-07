@@ -37,19 +37,39 @@
     border-radius: 3px;
   }
 
-  #blah {
-    font-size: 4em;
+  /* below is the CTA */
+
+  #demand {
+    font-size: 3em;
     text-align: center;
   }
 
-  #blah span {
+  #demand span {
     background-color: var(--color-accent);
+    font-family: Spectral, Georgia, Cambria, Times New Roman, Times, serif; 
   }
+
+  #link-sophisticated {
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #link-sophisticated:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-secondary)
+  }
+
 </style>
 
 {{ if ne .Params.type "rbi" }}
-<a href="/blog/requests">
-  <div id="blah">
+<a href="/blog/requests" id="link-sophisticated">
+  <div id="demand">
     <span>
       Read <br>
       our requests
