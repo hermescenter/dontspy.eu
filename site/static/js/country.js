@@ -46,19 +46,21 @@ async function loadMaterial() {
 
   /* we need to put the flag and the country name into #country-title */
   const countryTitle = document.querySelector('#country-title');
-  /* now compose the innerText */
-  let headText = "";
+
+  /* now compose the innerHTML for the header title */
+  let titleHTML = `${EUMS[countryName]} ${countryName}`;
+
   const politicalFigures = _.keys(grouped).length;
-  if(politicalFigures < 5 ) { 
-    headText = `${EUMS[countryName]} ${countryName} — ${politicalFigures} Political figures <a href="/blog/five-meaningful-figures/">out of 5</a>.`;
-  }
+  if(politicalFigures < 5 )
+    titleHTML += ` — ${politicalFigures} Political figures <a href="/blog/five-meaningful-figures/">out of 5</a>.`;
+
   if(!deepfakes)
-    headText += ` No deepfake! <a href="/deepfake">add some</a>`;
+    titleHTML += ` No deepfake! <a href="/deepfake">add some</a>`;
   else
-    headText += ` — ${deepfakes} <a href="/deepfake">deepfake!</a>`;
+    titleHTML += ` — ${deepfakes} <a href="/deepfake">deepfake!</a>`;
 
   /* add this composed text as title */
-  countryTitle.innerHTML = headText;
+  countryTitle.innerHTML = titleHTML;
 }
 
 function populateData(data) {
