@@ -41,7 +41,7 @@ async function loadMaterial() {
 
   const deepfakes = _.filter(data, {isfake: true }).length;
 
-  console.log(formatted, deepfakes);
+  console.log("formatted", formatted, "deepfakes", deepfakes);
   _.each(formatted, populateData);
 
   /* we need to put the flag and the country name into #country-title */
@@ -52,10 +52,10 @@ async function loadMaterial() {
   if(politicalFigures < 5 ) { 
     headText = `${EUMS[countryName]} ${countryName} — ${politicalFigures} Political figures <a href="/blog/five-meaningful-figures/">out of 5</a>.`;
   }
-  if(deepfakes)
-    headText += ` — No deepfakes! <a href="/deepfake">add some</a>`;
+  if(!deepfakes)
+    headText += ` No deepfake! <a href="/deepfake">add some</a>`;
   else
-    headText += ` — ${deepfakes} <a href="/deepfake">deepfakes!</a>`;
+    headText += ` — ${deepfakes} <a href="/deepfake">deepfake!</a>`;
 
   /* add this composed text as title */
   countryTitle.innerHTML = headText;
@@ -65,13 +65,14 @@ function populateData(data) {
   const container = document.querySelector('.container');
 
   // data.role and data.name shape this element
-  const headerFullTitle = document.createElement('h1');
+  const headerFullTitle = document.createElement('p');
   headerFullTitle.textContent = data.fullname;
+  headerFullTitle.classList = ['politician-name'];
   const officialTitle = document.createElement('span');
   officialTitle.classList = ['official-role'];
   officialTitle.textContent = data.role;
+  container.appendChild(officialTitle);
   container.appendChild(headerFullTitle);
-  headerFullTitle.appendChild(officialTitle);
 
   // data.items is an array of objects with img src and all the RBI metas
   data.items.forEach(item => {
@@ -139,8 +140,10 @@ function renderRBI(rbi, isfake, description) {
  */
   let retval = "";
   if(isfake) {
-    retval += `<div class="deepfake-label">
-      Deepfake: ${description}
+    retval += `<div>
+      <span class="deepfake-label">deepfake</span>
+      <br>
+      <code>${description}</code>
     </div>`;
   }
 

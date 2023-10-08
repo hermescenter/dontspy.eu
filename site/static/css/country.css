@@ -1,0 +1,89 @@
+.container {
+  max-width: 100%; /* Updated from 800px to allow the container to expand to full width */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* This ensures padding doesn't add extra width */
+}
+
+.official-role {
+  background-color: var(--color-accent-light);
+  font-size: 0.7em;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.politician-name {
+  margin-top: 0 !important;
+  font-family: Spectral, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 1.5em;
+}
+
+.deepfake-label {
+  color: var(--color-accent-dark);
+}
+
+.picture-description {
+  display: flex;
+  flex-wrap: wrap; /* This will allow wrapping in case of small devices */
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.picture-description img {
+  /* max-width: 150px; */
+  width: 50%; /* Taking up 30% of container width, adjust if needed */
+  margin-right: 10px;
+  box-sizing: border-box; /* This ensures margins don't add extra width */
+}
+
+.picture-description p {
+  width: 40%; /* Taking up the remaining 70% of the container width */
+  box-sizing: border-box; /* This ensures padding doesn't add extra width */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .picture-description img {
+    width: 40%; /* Adjust image width for smaller devices */
+  }
+  .picture-description p {
+    width: 60%; /* Adjust description width for smaller devices */
+  }
+}
+
+.alert {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid #c00;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.alert.success {
+  border-color: #28a745;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert.info {
+  border-color: #17a2b8;
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.alert.warning {
+  border-color: #ffc107;
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.alert.error {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
