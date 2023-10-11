@@ -37,17 +37,17 @@ date_format = "Jan 2006"
 
 **Hermes Center for Transparency and Digital Human Rights**, along with fellow nonprofits **The Good Lobby Italy** and info.nodes (_we_), first launched a campaign called _Don’t Spy On Us EU_ in March 2023.
 
-The campaign’s early phase was about encouraging the general public to challenge MEPs involved in the EU **Artificial Intelligence Act** negotiations who supported biometric surveillance.
+The campaign’s early phase was about encouraging the general public to challenge those MEPs involved in the EU **Artificial Intelligence Act** negotiations who supported biometric surveillance.
 
 On the previous [version](//dontspyonus.eu/) of the campaign’s website, users could scan politicians’ faces with a **facial recognition algorithm**.
 
 Our main goal was to show how, by using technology already available on the market, public institutions and private companies could potentially access **sensitive information** about citizens (age, gender, even emotional state!) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
 
-## But, wait, isn’t a ban on RBI already in place?
+## But wait, isn’t a ban on RBI already in place? And didn't the AI Act's draft include a total ban, initially?
 
-And didn’t the AI Act’s draft include a **total ban**, initially?  Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification.
+Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification.
 
-However, when the AI Act will become effective, RBI systems will be subject to that law only – given that their software employs Artificial Intelligence.
+However, when the AI Act becomes effective, RBI systems will be subject specifically to that law – since their software employs Artificial Intelligence.
 
 Like many other nonprofit organizations all around the continent, we are **deeply concerned** about the trajectory the AI Act is taking.
 
@@ -59,7 +59,7 @@ This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/0
 
 ## Yes, RBI might be officially banned… but with some exceptions.
 
-**Predictive policing** tools and **real-time** remote facial recognition & biometric identification in public spaces are forbidden, as of now, and the AI Act’s current version maintains this ban as well.
+As of now, **predictive policing** tools, **real-time** remote facial recognition and biometric identification in public spaces are forbidden, and the AI Act’s current version maintains this ban as well.
 
 However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**.
 
@@ -67,9 +67,8 @@ However, exceptions will be granted for **ex-post technologies** employed in the
 
 Great question, that remains **unanswered**. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](//www.itflows.eu/eumigratool/)).
 
-Great question that currently remains unanswered. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
 
-# Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
+# Let's draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
 
 Increasingly AI systems are developed and deployed for harmful and discriminatory forms of state surveillance. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, the EU AI Act must include:
 
