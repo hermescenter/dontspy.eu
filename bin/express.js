@@ -72,8 +72,14 @@ app.get('/api/available/:filter?', cors(), async function (req, res) {
         const filter = acquireFilter(req.filter);
         const data = await mongoFetch(filter);
         /* available return a number of elements per country */
-        const retval = _.countBy(data, 'Country')
-        res.json(retval);
+        const picturesPerCountry = _.countBy(data, 'Country')
+        const facesTotal = _.countBy(data, {isfake: false }).true;
+        const fakesTotal = _.countBy(data, {isfake: true }).true;
+        res.json({
+            facesTotal,
+            fakesTotal,
+            picturesPerCountry
+        });
     } catch (error) {
         debug("Error in `available` API: %s", error.message);
         res.status(500).send(error.message);
