@@ -40,24 +40,33 @@
   /* below is the CTA */
 
   #demand {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
   }
 
   #demand span {
     background-color: var(--color-accent);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 5px;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji !important;
     font-family: Spectral, Georgia, Cambria, Times New Roman, Times, serif; 
   }
 
   #link-sophisticated {
     text-decoration: none;
-    padding: 1em;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  hr {
+    display: none !important;
   }
 
   #link-sophisticated:hover {
@@ -68,29 +77,35 @@
 </style>
 
 {{ if ne .Params.type "rbi" }}
+<br>
+<br>
+<br>
 <a href="/blog/requests" id="link-sophisticated">
   <div id="demand">
     <span>
-      Read <br>
-      our requests
-      <br> in full <br>
+      READ OUR REQUESTS IN FULL
     </span>
-    <br>
   </div>
 </a>
+<br>
+<br>
 {{ end }}
 
-<hr>
 
 <section id="euromap" class="mx-auto mt-8 flex flex-wrap items-center">
 
   <!-- this pull variables from type = 'rbi' and from the homepage -->
 
-  {{ if eq .Params.type "rbi" }}
   <div class="text-center w-full">
-    {{ else }}
-    <div class="mx-auto p-2 sm:p-8 md:pl-0 md:w-1/2">
-      {{ end }}
+
+    {{ if ne .Params.type "rbi" }}
+    <hr style="display: block !important;color:var(--color-primary)">
+    <br>
+    <h1>Surveil your minister and <i>SHOCK THEM</i> before is too late!</h1>
+    <h1>Received Faces [20] Deepfake [10]</h1>
+    <br>
+    <br>
+    {{ end }}
 
       {{ if ne .Params.show_title "false" }}
       <h1 class="my-0 text-4xl sm:text-5xl md:text-6xl">
@@ -108,12 +123,6 @@
 
     </div>
 
-    {{ if ne .Params.type "rbi" }}
-    <div
-      class="my-6 text-center p-4 mx-auto max-w-3/4 sm:max-w-2/3 lg:max-w-1/2 lg:relative xl:-right-10 xl:-right-16 relative bg-secondary-light">
-      {{ .Params.side_text | markdownify }}
-    </div>
-    {{ end }}
 
 
     <div id="tooltip"></div>

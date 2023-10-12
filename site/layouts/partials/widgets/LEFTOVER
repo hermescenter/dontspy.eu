@@ -1,0 +1,6 @@
+    {{ if ne .Params.type "rbi" }}
+    <div
+      class="my-6 text-center p-4 mx-auto max-w-3/4 sm:max-w-2/3 lg:max-w-1/2 lg:relative xl:-right-10 xl:-right-16 relative bg-secondary-light">
+      {{ .Params.side_text | markdownify }}
+    </div>
+    {{ end }}

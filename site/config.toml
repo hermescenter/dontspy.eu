@@ -98,7 +98,7 @@ title = "Don't Spy EU"
     identifier = "about"
     pre = ""
     url = "/about/"
-    weight = 50
+    weight = 10
 
 
 # Syntax highlighting
