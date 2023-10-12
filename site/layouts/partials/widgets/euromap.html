@@ -37,44 +37,13 @@
     border-radius: 3px;
   }
 
-  /* below is the CTA */
-
-  #demand {
-    font-size: 2em;
-    text-align: center;
-  }
-
-  #demand span {
-    background-color: var(--color-accent);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-radius: 5px;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji !important;
-    font-family: Spectral, Georgia, Cambria, Times New Roman, Times, serif; 
-  }
-
-  #link-sophisticated {
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   hr {
     display: none !important;
   }
 
-  #link-sophisticated:hover {
-    background-color: var(--color-accent-light);
-    color: var(--color-secondary)
-  }
-
 </style>
+
+<link rel="stylesheet" href="/css/cta.css">
 
 {{ if ne .Params.type "rbi" }}
 <br>

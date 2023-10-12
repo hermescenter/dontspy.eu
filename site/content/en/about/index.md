@@ -43,7 +43,9 @@ On the previous [version](//dontspyonus.eu/) of the campaign’s website, users 
 
 Our main goal was to show how, by using technology already available on the market, public institutions and private companies could potentially access **sensitive information** about citizens (age, gender, even emotional state!) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
 
-##### But, wait, isn’t a ban on RBI already in place? And didn’t the AI Act’s draft include a total ban, initially? 
+<br>
+
+# But, wait, isn’t a ban on RBI already in place? And didn’t the AI Act’s draft include a total ban, initially? 
 
 Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification.
 
@@ -56,35 +58,46 @@ We’re talking about a major body of legislation, a heavy bulk of norms regulat
 As we write (Autumn 2023), dozens of fellow digital & human rights organizations have already flagged one too many loopholes in the Act, beginning with the very **definition** of RBI technology.
 This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by EDRi (**European Digital Rights initiative**) details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
 
+<br>
 
-##### Yes, RBI might be officially banned… but with some exceptions.
+# Yes, RBI might be officially banned… but with some exceptions.
 
 **Predictive policing** tools and **real-time remote** facial recognition and biometric identification in public spaces are forbidden, as of now, and the AI Act’s current version maintains this ban as well.
 
 However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**.
 
-##### And who gets to determine who could potentially turn into an “offender”?
+<br>
+
+# And who gets to determine who could potentially turn into an “offender”?
 
 Great question that currently remains unanswered. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
 
-# Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities
+<link rel="stylesheet" href="/css/cta.css">
 
-Increasingly **AI systems are developed and deployed for harmful and discriminatory forms of state surveillance**. Such systems disproportionately target already marginalised communities, undermine legal and procedural rights, as well as contributing to mass surveillance. When AI systems are deployed in the context of law enforcement, security and migration control, there is an even greater risk of harm, and violations of fundamental rights and the rule of law. To maintain public oversight and prevent harm, follow the link below to:
+<br>
+<br>
 
-# Read our [full requests](/blog/requests)
+<a href="/blog/requests" id="link-sophisticated">
+  <div id="demand">
+    <span>
+      READ OUR REQUESTS IN FULL
+    </span>
+  </div>
+</a>
 
-#
+<br>
+<br>
 
 ---
 
 # Don't Spy EU: Founding Organizations
 
-{{<founding-organizations>}}
-
 * [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focused on defending digital rights. Based in Milan, the group works in Italy using technical expertise and advocacy  to influence the political debate. In Europe we work in collaboration with EDRi, and in the Connected World we support the production of projects like GlobaLeaks, OONI, ProTecht, ReclaimYourFace, and Makhno.
 * [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making the society in which we live more democratic, united and equitable. It is a movement of people convinced that every citizen can mobilize to defend the interests of the community. TheGoodLobby wants to influence public decisions, lobby politicians, officials and anyone in positions of power to protect the common good and the rights of all, especially the weakest and most marginalized.
 * [**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in doing their fundamental job: expose the truth and promote effective social changes. It also produces the italian magazine Marla.
 
+<br>
+<br>
 
 ---
 
@@ -92,5 +105,10 @@ Increasingly **AI systems are developed and deployed for harmful and discriminat
 
 * `team@dontspyonus.eu`
 * _github_ [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
+
+{{<founding-organizations>}}
+
+<br>
+<br>
 
 # Challenging RBI since 2020 — what lead us here
