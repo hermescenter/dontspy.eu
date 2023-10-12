@@ -53,6 +53,9 @@ Let’s make legislators change their mind on AI surveillance. Before proceeding
 
 We can only accept pictures with faces that belong to the political figure. There is a process of "initial setup" where trusted individual with a non public link can register a political person. **🙏 [Reach out to us](/about#contacts) 🙏 if you think you can be that person**. Currently we have available these politician registered:
 
+<br>
+<br>
+
 <link rel="stylesheet" href="/css/figures.css">
 <div class="grid-container" id="figures--list"></div>
 

@@ -38,7 +38,7 @@ async function loadPoliticalFigures() {
             div.innerHTML = `
                 <span>${item.flag}</span>
                 <span class="country-name">${item.country}</span>
-                <span>${item.registered} of 5.</span> <b>Is missing:</b>
+                <span>${item.registered} of 5.</span> <b>Missing:</b>
                 <br>
                 <span class="missing">${item.missing.join(', ')}</span>
             `;

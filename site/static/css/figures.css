@@ -30,7 +30,8 @@
 
   .highlight {
     font-weight: bolder;
-    background-color: lightpink;
+    background-color: var(--color-accent-dark);
+    color: var(--color-secondary);
     padding: 3px;
     border-radius: 3px;
   }
