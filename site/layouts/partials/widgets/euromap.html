@@ -8,34 +8,6 @@
 -->
 
 <style>
-  svg {
-    /* background-color: #f1f1f1; */
-    display: block;
-    width: 100%;
-  }
-
-  .svg-container {
-    /* width: 800px; */
-    margin: 0 auto;
-  }
-
-  path {
-    stroke: #ec3232;
-    stroke-width: 0.5;
-  }
-
-  path:hover {
-    fill: #bada55;
-  }
-
-  #tooltip {
-    position: absolute;
-    visibility: hidden;
-    background: white;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
-  }
 
   hr {
     display: none !important;
@@ -43,6 +15,7 @@
 
 </style>
 
+<link rel="stylesheet" href="/css/map.css">
 <link rel="stylesheet" href="/css/cta.css">
 
 {{ if ne .Params.type "rbi" }}
@@ -71,7 +44,7 @@
     <hr style="display: block !important;color:var(--color-primary)">
     <br>
     <h1>Surveil your minister and <i>SHOCK THEM</i> before is too late!</h1>
-    <h1>Received Faces [20] Deepfake [10]</h1>
+    <h1>Received Faces <span id="faces--number">(æ)</span> Deepfake <span id="fakes--number">(æ)</span></h1>
     <br>
     <br>
     {{ end }}
@@ -98,17 +71,33 @@
 
 </section>
 
+{{ if ne .Params.type "rbi" }}
+<br>
+<br>
+<br>
+{{ end }}
+
 <script src="/js/d3.v7.min.js"></script>
 <script src="/js/shared.js"></script>
 <script>
 
   document.addEventListener('DOMContentLoaded', async function () {
 
-    let picturesPerCountry = [];
+    let facesTotal, fakesTotal, picturesPerCountry = null;
     try {
       const response = await fetch(serverURL('available', {}));
-      picturesPerCountry = await response.json();
-      console.log(picturesPerCountry);
+      const ret = await response.json();
+
+      facesTotal = ret.facesTotal;
+      fakesTotal = ret.fakesTotal;
+      picturesPerCountry = ret.picturesPerCountry;
+
+      console.log({fakesTotal, facesTotal, picturesPerCountry});
+      /* if there is this element, we're in the homepage */
+      if(document.getElementById('faces--number')) {
+        document.getElementById('faces--number').textContent = facesTotal;
+        document.getElementById('fakes--number').textContent = fakesTotal;
+      }
     } catch (error) {
       console.log(error);
       d3.select('#map')

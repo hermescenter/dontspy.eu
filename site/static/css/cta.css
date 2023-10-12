@@ -26,7 +26,6 @@
   align-items: center;
 }
 
-
 #link-sophisticated:hover {
   background-color: var(--color-accent-light);
   color: var(--color-secondary)

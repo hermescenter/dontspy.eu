@@ -1,0 +1,44 @@
+svg {
+  /* background-color: #f1f1f1; */
+  display: block;
+  width: 100%;
+}
+
+.svg-container {
+  /* width: 800px; */
+  margin: 0 auto;
+}
+
+path {
+  stroke: #ec3232;
+  stroke-width: 0.5;
+}
+
+path:hover {
+  fill: #bada55;
+}
+
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+  background: white;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#fakes--number {
+  background-color: var(--color-accent-light);
+  color: var(--color-primary);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+}
+
+#faces--number {
+  background-color: var(--color-accent-light);
+  color: var(--color-primary);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+}
