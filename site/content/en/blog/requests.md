@@ -2,6 +2,8 @@
 title="Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities"
 date = "2023-09-27"
 description="Draw limits on harmful and discriminatory surveillance by national security, law enforcement and migration authorities"
+
+banner = '/img/image-placeholder-500-500.jpg'
 +++
 
 

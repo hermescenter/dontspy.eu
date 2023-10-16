@@ -3,6 +3,8 @@
 date = "2022-01-01"
 draft = true
 title = "Typography experiments"
+
+banner = '/img/image-placeholder-500-500.jpg'
 +++
 
 

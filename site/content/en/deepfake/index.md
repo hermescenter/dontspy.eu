@@ -45,9 +45,10 @@ type = "deepfake"
 
 # And what if RBI is allowed in the AIAct? Deepfakes would help us as the last defense against massive internet surveillance … by “polluting” our profiles with false images!
 
-Know more with the infographic below, or read [How Deepfake works and how bad is the problem](/todo1), and [How the European Union can influence the world of surveillance](/todo2).
+##### Still doubtful? Know more on [How AIAct can prevent the spread of deepfakes](/blog/why-deepfake).
 
-![](/img/deepfake_infographic.jpeg)
+
+<div id="upload-rules-description" style="display:none">
 
 ---
 
@@ -58,7 +59,11 @@ Know more with the infographic below, or read [How Deepfake works and how bad is
 * If you want to upload a politician's face that is not available in our index, check what our criteria are to [pick the five most meaningful](/blog/five-meaningful-figures/) ones.
 
 
-<p><br></p> <!-- some space -->
+</div>
+
+<br>
+<br>
+<br>
 
 <div id="upload-form-container"></div>
 
@@ -89,6 +94,8 @@ function renderNocodb() {
 
   const button = document.getElementById('clickable');
   button.remove();
+
+  document.getElementById('upload-form-container').style.display = 'block';
 }
 
 document.addEventListener('DOMContentLoaded', loadCarousel);
