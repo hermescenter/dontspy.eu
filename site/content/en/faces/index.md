@@ -22,17 +22,16 @@ before_map = """
 ### ↓ [Upload new Faces](/rbi#nocoform)
 """
 
+type = "rbi"
++++
+
+<br>
 <br>
 
 # Scanning politicians' faces – EU interactive map
 
 European politicians' faces, along with their personal information and **_AI-determined_ age/gender/emotional state**, will be displayed after you **browse** our interactive map, **select** a country and **click** on it. To upload new faces, follow the **instructions [at the bottom of this page](/faces#upload-new-faces)**.
 
-<br>
-
-
-type = "rbi"
-+++
 
 <section id="why-simulating-rbi">
 

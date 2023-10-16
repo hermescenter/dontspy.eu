@@ -18,7 +18,7 @@ banner = '/img/thethreeEMP.png'
 # The first campaign was completed in June '23!
 
 
-With our **past campaign,** called [DontSPYonusEU](https://dontspyonus.eu), we created a website meant to target the Members of the EU Parliament involved in the very ***first phase of the 2023 negotiations** around the AI Act. That first phase is now closed and the webiste sits in the archives. We are happy with the result we were able to achieve (we collected info and scanned the faces of 500+ politicians!), but...
+With our **past campaign,** called [DontSPYonusEU](https://dontspyonus.eu), we created a website meant to target the Members of the EU Parliament involved in the very **first phase of the 2023 negotiations** around the AI Act. That first phase is now closed and the webiste sits in the archives. We are happy with the result we were able to achieve (we collected info and scanned the faces of 500+ politicians!), but...
 
 ![](img/thethreeEMP.png)
 
