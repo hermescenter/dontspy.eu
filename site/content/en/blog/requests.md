@@ -2,6 +2,7 @@
 title="Draw limits on harmful and discriminatory surveillance"
 date = "2023-09-27"
 description="Draw limits on harmful and discriminatory surveillance"
+banner = '/img/image-placeholder-500-500.jpg'
 +++
 
 

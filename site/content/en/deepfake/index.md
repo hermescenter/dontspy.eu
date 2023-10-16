@@ -2,52 +2,29 @@
 type = "deepfake"
 +++
 
-<style>
-#clickable {
-    color: black;
-    background-color: #ffff01;
-    padding: 1em;
-    border-radius: 20px;
-    border: 1px solid red;
-}
-</style>
-
-# Deepfakes work because Face Biometry derives unique facial features. The same data points can be abused to produce false image matching that of a non consenting subject.
-
-<div id="carousel-1" class="deep-fake-carousel"></div>
-
 <link rel="stylesheet" href="/css/deepfake.css">
 
----
+<p id="description-container"></p>
+<img
+    id="img-container"
+    src="/img/image-placeholder-500-500.jpg"
+    alt="Deepfakes of Politicians" />
 
-<div class="carousel">
-    <div class="carousel-item">
-        <img class="carousel--image" src="" alt="">
-        <span class="info">
-            <span class="official">Official Role</span>
-            <span class="country">Country</span>
-            <p class="description"></p>
-        </span>
-    </div>
+
+#### Deepfakes work because Face Biometry derives unique facial features. The same data points can be abused to produce false image matching that of a non consenting subject.
+
+#### The EU can forbid the use of Face Biometry in the AI Act. This would limit the use of these technologies in the EU market by policy.
+
+#### Know more on [How AIAct can prevent the spread of deepfakes](/blog/why-deepfake), or:
+
+<div style="text-align:center">
+  <button>
+    <a id="clickable" onclick="renderNocodb()" >Upload a deepfake of your Minister today!</a>
+  </button>
 </div>
 
----
 
-# The EU can forbid the use of Face Biometry in the AI Act. This would limit the use of these technologies in the EU market by policy.
-
-<button>
-    <a id="clickable" onclick="renderNocodb()" >Upload a deepfake of your Minister today!</a>
-</button>
-
-# It is the way to get their attention!
-
----
-
-# And what if RBI is allowed in the AIAct? Deepfakes would help us as the last defense against massive internet surveillance … by “polluting” our profiles with false images!
-
-Know more with the infographic below, or read [How Deepfake works and how bad is the problem](/todo1), and [How the European Union can influence the world of surveillance](/todo2).
-
-![](/img/deepfake_infographic.jpeg)
+<div id="upload-rules-description" style="display:none">
 
 ---
 
@@ -58,7 +35,11 @@ Know more with the infographic below, or read [How Deepfake works and how bad is
 * If you want to upload a politician's face that is not available in our index, check what our criteria are to [pick the five most meaningful](/blog/five-meaningful-figures/) ones.
 
 
-<p><br></p> <!-- some space -->
+</div>
+
+<br>
+<br>
+<br>
 
 <div id="upload-form-container"></div>
 
@@ -89,6 +70,8 @@ function renderNocodb() {
 
   const button = document.getElementById('clickable');
   button.remove();
+
+  document.getElementById('upload-form-container').style.display = 'block';
 }
 
 document.addEventListener('DOMContentLoaded', loadCarousel);
