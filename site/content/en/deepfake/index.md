@@ -2,50 +2,26 @@
 type = "deepfake"
 +++
 
-<style>
-#clickable {
-    color: black;
-    background-color: #ffff01;
-    padding: 1em;
-    border-radius: 20px;
-    border: 1px solid red;
-}
-</style>
-
-# Deepfakes work because Face Biometry derives unique facial features. The same data points can be abused to produce false image matching that of a non consenting subject.
-
-<div id="carousel-1" class="deep-fake-carousel"></div>
-
 <link rel="stylesheet" href="/css/deepfake.css">
 
----
+<p id="description-container"></p>
+<img
+    id="img-container"
+    src="/img/image-placeholder-500-500.jpg"
+    alt="Deepfakes of Politicians" />
 
-<div class="carousel">
-    <div class="carousel-item">
-        <img class="carousel--image" src="" alt="">
-        <span class="info">
-            <span class="official">Official Role</span>
-            <span class="country">Country</span>
-            <p class="description"></p>
-        </span>
-    </div>
-</div>
 
----
+#### Deepfakes work because Face Biometry derives unique facial features. The same data points can be abused to produce false image matching that of a non consenting subject.
 
-# The EU can forbid the use of Face Biometry in the AI Act. This would limit the use of these technologies in the EU market by policy.
+#### The EU can forbid the use of Face Biometry in the AI Act. This would limit the use of these technologies in the EU market by policy.
 
-<button>
+#### Know more on [How AIAct can prevent the spread of deepfakes](/blog/why-deepfake), or:
+
+<div style="text-align:center">
+  <button>
     <a id="clickable" onclick="renderNocodb()" >Upload a deepfake of your Minister today!</a>
-</button>
-
-# It is the way to get their attention!
-
----
-
-# And what if RBI is allowed in the AIAct? Deepfakes would help us as the last defense against massive internet surveillance … by “polluting” our profiles with false images!
-
-##### Still doubtful? Know more on [How AIAct can prevent the spread of deepfakes](/blog/why-deepfake).
+  </button>
+</div>
 
 
 <div id="upload-rules-description" style="display:none">
