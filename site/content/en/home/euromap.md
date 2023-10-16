@@ -1,5 +1,5 @@
 +++
-# title = "28 Member States ⨯ 5 Ministries"
+# title = "28 Member States ⨯ 5 Ministers"
 
 side_text = """
 """

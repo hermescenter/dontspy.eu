@@ -6,7 +6,7 @@ type = 'country'
 
 ---
 
-### Below is a list of the images that have been collected, analysed and made freely available for our simulation of the biometrics market. It's something none of you should have to experience. That's why we're testing this distopian world on the politicians who can [finally ban it within the AIAct](//www.politico.eu/article/activists-urge-eu-to-ban-live-facial-recognition-in-public-spaces/).
+### Below is a list of the images that have been collected, analysed and made freely available for our simulation of the biometrics market. It's something none of you should have to experience. That's why we're testing this dystopian world on the politicians who have the power to [finally ban this technology in the AI Act](//www.politico.eu/article/activists-urge-eu-to-ban-live-facial-recognition-in-public-spaces/).
 
 <link rel="stylesheet" href="/css/country.css">
 <div class="container" id="face-list"></div>

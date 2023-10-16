@@ -35,42 +35,35 @@ date_format = "Jan 2006"
 
 # Don't Spy EU - About the campaign 
 
-**Hermes Center for Transparency and Digital Human Rights**, along with fellow nonprofits **The Good Lobby Italy** and info.nodes (“we”), first launched a campaign called _Don’t Spy On Us EU_ in March 2023.
+**Hermes Center for Transparency and Digital Human Rights**, along with fellow nonprofits **The Good Lobby Italy** and info.nodes (_we_), first launched a campaign called _Don’t Spy On Us EU_ in March 2023.
 
-The campaign’s early phase was about encouraging the general public to challenge MEPs involved in the EU **Artificial Intelligence Act** negotiations who supported biometric surveillance.
+The campaign’s early phase was about encouraging the general public to challenge MEPs who were involved in the EU **Artificial Intelligence Act** negotiations and supported biometric surveillance. On the old [version](//dontspyonus.eu/) of our website, users could scan politicians’ faces with a **facial recognition algorithm**.
 
-On the previous [version](//dontspyonus.eu/) of the campaign’s website, users could scan politicians’ faces with a **facial recognition algorithm**.
-
-Our main goal was to show how, by using technology already available on the market, public institutions and private companies could potentially access **sensitive information** about citizens (age, gender, even emotional state!) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
+Our main goal was to show how, by using publicly-available technology, governments and private companies could potentially access **sensitive information** about citizens (age, gender, even emotional state) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
 
 <br>
 
-# But, wait, isn’t a ban on RBI already in place? And didn’t the AI Act’s draft include a total ban, initially? 
+# But wait, isn’t a ban on RBI already in place? 
 
-Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification.
+And didn’t the AI Act’s draft include a **total ban**, initially?  Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification. However, when the AI Act becomes effective, RBI systems will be subject to that law only since their software employs Artificial Intelligence.
 
-However, when the AI Act will become effective, RBI systems will be subject to that law only – given that their software employs Artificial Intelligence.
+Like many other nonprofit organizations all over the continent, we are **deeply concerned** about the trajectory the AI Act is taking.
 
-Like many other nonprofit organizations all around the continent, we are **deeply concerned** about the trajectory the AI Act is taking.
+> We’re talking about a major body of legislation, a heavy bulk of norms regulating AI (or attempting to do so) that’s set to be enacted in 2025, eventually becoming the first of its kind at the global level – and, let’s not forget, an **important precedent** for non-EU countries.
 
-We’re talking about a major body of legislation, a heavy bulk of norms regulating AI (or attempting to do so) that’s set to be enacted in 2025, eventually becoming the first of its kind at the global level – and, let’s not forget, an **important precedent** for non-EU countries.
-
-As we write (Autumn 2023), dozens of fellow digital & human rights organizations have already flagged one too many loopholes in the Act, beginning with the very **definition** of RBI technology.
-This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by EDRi (**European Digital Rights initiative**) details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
+As we write (October 2023), dozens of fellow digital rights organizations have already flagged several loopholes in the AI Act, beginning with the very **definition** of RBI technology. This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by EDRi (**European Digital Rights initiative**) details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
 
 <br>
 
-# Yes, RBI might be officially banned… but with some exceptions.
+# Yes, RBI might be banned… but with some exceptions
 
-**Predictive policing** tools and **real-time remote** facial recognition and biometric identification in public spaces are forbidden, as of now, and the AI Act’s current version maintains this ban as well.
+As of now, **predictive policing** tools, **real-time remote** facial recognition and biometric identification in public spaces are forbidden, and the AI Act’s current version maintains this ban as well.
 
-However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**.
+However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**. And who gets to determine who could turn into an “offender”?
+
+Great question that remains unanswered, just like questions/doubts regarding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
 
 <br>
-
-# And who gets to determine who could potentially turn into an “offender”?
-
-Great question that currently remains unanswered. Just like all the questions/doubts surrounding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
 
 <link rel="stylesheet" href="/css/cta.css">
 
@@ -92,9 +85,11 @@ Great question that currently remains unanswered. Just like all the questions/do
 
 # Don't Spy EU: Founding Organizations
 
-* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focused on defending digital rights. Based in Milan, the group works in Italy using technical expertise and advocacy  to influence the political debate. In Europe we work in collaboration with EDRi, and in the Connected World we support the production of projects like GlobaLeaks, OONI, ProTecht, ReclaimYourFace, and Makhno.
-* [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making the society in which we live more democratic, united and equitable. It is a movement of people convinced that every citizen can mobilize to defend the interests of the community. TheGoodLobby wants to influence public decisions, lobby politicians, officials and anyone in positions of power to protect the common good and the rights of all, especially the weakest and most marginalized.
-* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in doing their fundamental job: expose the truth and promote effective social changes. It also produces the italian magazine Marla.
+* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focusing on the protection of digital rights. HC team is based in Milan, Italy and combines technical expertise and advocacy skills to influence the political debate. In Europe, HC works in collaboration with EDRi, and in the rest of the "Connected World" they've co-produced the following projects: GlobaLeaks, OONI, ProTecht, ReclaimYourFace, and Makhno.
+
+* [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making our society more democratic, united and equitable. TGL is a people's movement that believes that every citizen can mobilize to defend the interests of their community. TGL intends to positively influence decision-making processes by lobbying politicians, public officials and anyone in positions of power to protect all citizens' rights, especially of the weakest and most marginalized.
+
+* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in carrying out their important job, which is, to expose the truth and promote effective social change. Info.nodes also publishes italian magazine Marla.
 
 <br>
 <br>
@@ -111,4 +106,4 @@ Great question that currently remains unanswered. Just like all the questions/do
 <br>
 <br>
 
-# Challenging RBI since 2020 — what lead us here
+# Challenging RBI since 2020 — what led us here
