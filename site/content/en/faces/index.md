@@ -22,6 +22,15 @@ before_map = """
 ### ↓ [Upload new Faces](/rbi#nocoform)
 """
 
+<br>
+
+# Scanning politicians' faces – EU interactive map
+
+European politicians' faces, along with their personal information and **_AI-determined_ age/gender/emotional state**, will be displayed after you **browse** our interactive map, **select** a country and **click** on it. To upload new faces, follow the **instructions [at the bottom of this page](/faces#upload-new-faces)**.
+
+<br>
+
+
 type = "rbi"
 +++
 
@@ -29,29 +38,39 @@ type = "rbi"
 
 # Why simulating RBI?
 
-Ready to see what RBI (Remote Biometric Identification) would do, if ever applied to your country’s politicians’ faces?
+Ready to see what **RBI (Remote Biometric Identification)** would do, if ever applied to your country’s politicians’ faces?
 
-Yes, we picked some of the most prominent political figures in all EU Member States (up to 5 ministers/national representatives), and ran an open-source RBI face recognition algorithm on them.
+Yes, we picked some of the **most prominent political figures** in all EU Member States (up to 5 ministers/national representatives), and ran an open-source **RBI face recognition algorithm** on them.
 
-Why? Because many of them are currently involved in the EU Artificial Intelligence Act’s negotiations (“trialogues”) and their vote could drastically alter the course of how AI is regulated and used.
+Why? Because many of them are currently involved in the EU **Artificial Intelligence Act’s** negotiations (_trialogues_) and their vote could drastically alter the course of how AI is regulated and used.
+
+<br>
 
 # How so?
 
-A RBI-free Europe is still a mirage, since the proposed version of the AI Act fails to call for a comprehensive ban on biometrics. In fact, invasive AI policing is admitted, which undermines the citizens’ right to privacy and could lead to discrimination and abuse of power.
+A RBI-free Europe is still a mirage, since the proposed version of the AI Act fails to call for a **comprehensive ban** on biometrics. In fact, invasive **AI policing** is admitted, which undermines the citizens’ right to **privacy** and could lead to **discrimination** and abuse of power.
 
-Migrants at the EU border also run the risk of being discriminated against/wrongfully detained by border agencies and authorities, because the Act does not explicitly prohibit biometric surveillance in those instances.
+**Migrants** at the EU border also run the risk of being discriminated against/wrongfully detained by **border agencies** and authorities, because the Act does not explicitly prohibit biometric surveillance in those instances.
 
-Let’s make legislators change their mind on AI surveillance. Before proceeding, please make sure you read our “[About](/about)” section detailing Don’t Spy EU’s main scope and motives.
+Let’s make legislators change their mind on AI surveillance. Before proceeding, please **make sure you read our “[About](/about)” section** detailing Don’t Spy EU’s main scope and motives.
 
-# ⚠ Keep in mind that
+<br>
 
-* Biometric identification is currently banned as per the General Data Protection Regulation (GDPR);
-* Wait, so… Are we some sort of “criminals”? Well, technically speaking, ours is an act of civil disobedience. We want to make sure our voice is heard – loud and clear, as all citizens are facing an imminent threat and Europeans’ digital future looks pretty scary.
-* We do not encourage anyone to repeat this action outside of this campaign. Please keep in mind that if you decide to submit any data or image we’ll protect your anonymity. Always.
+# ⚠ Keep in mind that...
 
-# Who do we have so far?
+* Biometric identification is currently banned as per the **General Data Protection Regulation (GDPR)**;
 
-We can only accept pictures with faces that belong to the political figure. There is a process of "initial setup" where trusted individual with a non public link can register a political person. **🙏 [Reach out to us](/about#contacts) 🙏 if you think you can be that person**. Currently we have available these politician registered:
+* Wait, so… Are we some sort of _criminals_? Well, technically speaking, ours is an act of **civil disobedience**. We want to make sure our voice is heard – loud and clear, as all citizens are facing an imminent threat and Europeans’ **digital future** looks pretty scary.
+
+* **We do not encourage anyone** to repeat this action outside of this campaign. Please keep in mind that if you decide to submit any data or image **we’ll protect your anonymity**. Always.
+
+<br>
+
+# _Don't Spy EU_ – Database
+
+Below are all the European politicians' faces & info we've managed to collect and insert in our database. Each country can feature a maximum of **five politicians**, but you'll notice some countries only have 1 or 2 politicians.
+
+You can help us build a more complete database, if you want. We are looking for the following **roles: Prime Minister, AI Act Gov. Representative, Justice Minister, Interior Minister and Defense Minister**. To add new politicians, keep scrolling.
 
 <br>
 <br>
@@ -67,9 +86,15 @@ We can only accept pictures with faces that belong to the political figure. Ther
 
 # Upload new Faces
 
-* Don't try to upload your "cat" picture, as we use this [open source face recognition library](//github.com/ageitgey/face_recognition), and if the face doesn't match the expected politician, it will be automatically deleted.
+We can only accept pictures with faces that belong to politicians already registered in our database.
+
+* This is the [open source face recognition library](//github.com/ageitgey/face_recognition) that we use. If the face in the picture you upload doesn't match the expected politician, it will be automatically deleted.
+
 * **Pictures with more than one face** will also be automatically deleted.
-* If you want to upload a politician's face that is not available in our index, check what our criteria are to [pick the five most meaningful](/blog/five-meaningful-figures/) ones.
+
+* If you want to upload the face of a politician who happens to be **missing** from our index, check out our [criteria](/blog/five-meaningful-figures/).
+
+* Only trusted individuals with a private link can register a political person in our index. **🙏 [Reach out to us](/about#contacts) 🙏 if you think you can be that person**.
 
 <iframe class="nc-embed"
   src="https://db.dontspy.eu/dashboard/#/nc/form/bf2949c3-56f3-4574-8d44-13b90551a995?embed"
