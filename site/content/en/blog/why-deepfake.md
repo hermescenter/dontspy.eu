@@ -6,7 +6,7 @@ tags = ['campaign']
 date = "2023-10-15"
 
 # For description meta tag
-description = "The preliminary campaign we made"
+description = "Deepfake are both a direct consequence of unregulated RBI. Or a technique to pollute our personal profile against those who rely on it for surveillance."
 
 # Comment next line and the default banner wil be used.
 banner = '/img/image-placeholder-500-500.jpg'
