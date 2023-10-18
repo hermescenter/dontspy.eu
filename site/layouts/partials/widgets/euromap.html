@@ -8,11 +8,26 @@
 -->
 
 <style>
-
   hr {
     display: none !important;
   }
 
+  #temporary {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  #temporary a {
+    text-decoration-style: dotted;
+  }
+
+  #temporary a:hover {
+    font-weight: 800;
+  }
+
+  .flag {
+    font-size: 1.6em;
+  }
 </style>
 
 <link rel="stylesheet" href="/css/map.css">
@@ -49,25 +64,32 @@
     <br>
     {{ end }}
 
-      {{ if ne .Params.show_title "false" }}
-      <h1 class="my-0 text-4xl sm:text-5xl md:text-6xl">
-        {{ .Title }}
-      </h1>
-      {{ end }}
+    {{ if ne .Params.show_title "false" }}
+    <h1 class="my-0 text-4xl sm:text-5xl md:text-6xl">
+      {{ .Title }}
+    </h1>
+    {{ end }}
 
-      {{ if ne .Params.show_subtitle "false" }}
-      {{ with .Params.subtitle }}
-      <h2 class="font-light mt-0">{{ . }}</h2>
-      {{ end }}
-      {{ end }}
+    {{ if ne .Params.show_subtitle "false" }}
+    {{ with .Params.subtitle }}
+    <h2 class="font-light mt-0">{{ . }}</h2>
+    {{ end }}
+    {{ end }}
 
-      <svg id="map" width="100%" height="600"></svg>
+    <svg id="map" width="100%" height="600"></svg>
 
+    <div id="temporary">
+      Due to technical issues, <a href="/country/#Cyprus">
+        Cyprus <b class="flag">🇨🇾</b>
+      </a>
+      and <a href="/country/#Malta">
+        Malta <b class="flag">🇲🇹</b>
+      </a>
+      are not shown in the map, but they're still featured in our RBI simulation
     </div>
+  </div>
 
-
-
-    <div id="tooltip"></div>
+  <div id="tooltip"></div>
 
 </section>
 
@@ -92,9 +114,9 @@
       fakesTotal = ret.fakesTotal;
       picturesPerCountry = ret.picturesPerCountry;
 
-      console.log({fakesTotal, facesTotal, picturesPerCountry});
+      console.log({ fakesTotal, facesTotal, picturesPerCountry });
       /* if there is this element, we're in the homepage */
-      if(document.getElementById('faces--number')) {
+      if (document.getElementById('faces--number')) {
         document.getElementById('faces--number').textContent = facesTotal;
         document.getElementById('fakes--number').textContent = fakesTotal;
       }

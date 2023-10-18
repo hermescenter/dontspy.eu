@@ -66,7 +66,6 @@ async function loadCarousel() {
 
 }
 
-
 function displayImage(data, direction) {
   const imgContainer = document.getElementById('img-container');
   const descriptionContainer = document.getElementById('description-container');
@@ -87,7 +86,6 @@ function displayImage(data, direction) {
 
   }, 200); 
 }
-
 
 function handleSwipe(start, end) {
   /* this map if the swipe is left or right, so if the end is > start */
