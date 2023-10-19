@@ -32,6 +32,7 @@ type = "rbi"
 
 European politicians' faces, along with their personal information and **_AI-determined_ age/gender/emotional state**, will be displayed after you **browse** our interactive map, **select** a country and **click** on it. To upload new faces, follow the **instructions [at the bottom of this page](/faces#upload-new-faces)**.
 
+<br>
 
 <section id="why-simulating-rbi">
 
@@ -59,7 +60,7 @@ Let’s make legislators change their mind on AI surveillance. Before proceeding
 
 * Biometric identification is currently banned as per the **General Data Protection Regulation (GDPR)**;
 
-* Wait, so… Are we some sort of _criminals_? Well, technically speaking, ours is an act of **civil disobedience**. We want to make sure our voice is heard – loud and clear, as all citizens are facing an imminent threat and Europeans’ **digital future** looks pretty scary.
+* Wait, so… Are we some sort of _criminals_? Well, technically speaking, ours is an act of **civil disobedience**. We want to make sure our voice is heard – loud and clear, as all citizens are facing an imminent threat and Europeans’ **digital future** looks scary.
 
 * **We do not encourage anyone** to repeat this action outside of this campaign. Please keep in mind that if you decide to submit any data or image **we’ll protect your anonymity**. Always.
 
@@ -83,6 +84,8 @@ You can help us build a more complete database, if you want. We are looking for 
 
 <section id="nocoform">
 
+<br>
+
 # Upload new Faces
 
 We can only accept pictures with faces that belong to politicians already registered in our database.
@@ -93,7 +96,7 @@ We can only accept pictures with faces that belong to politicians already regist
 
 * If you want to upload the face of a politician who happens to be **missing** from our index, check out our [criteria](/blog/five-meaningful-figures/).
 
-* Only trusted individuals with a private link can register a political person in our index. **🙏 [Reach out to us](/about#contacts) 🙏 if you think you can be that person**.
+* Only trusted individuals with a private link can insert a political person in our index. **🙏 [Reach out to us](/about#contacts) 🙏 if you think you can be that person**.
 
 <iframe class="nc-embed"
   src="https://db.dontspy.eu/dashboard/#/nc/form/bf2949c3-56f3-4574-8d44-13b90551a995?embed"
