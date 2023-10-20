@@ -79,7 +79,7 @@ A sad but necessary solution would be to **"pollute"** the Internet with deepfak
 
 #### Credits
 
-The cover picture via [Nicolas Livanis](https://twitter.com/n_livanis/status/1640230557257809920) on X.
+The cover picture via [Nicolas Livanis](//twitter.com/n_livanis/status/1640230557257809920) on X.
 
 <!-- commented below -->
 <!--

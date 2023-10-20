@@ -32,7 +32,7 @@ At this stage of the trilogue, **not all political figures are equal**.
 
 Below are all the European politicians' faces & info we've managed to collect and insert in our database so far. Each country can feature a maximum of **five politicians**, but you'll notice some countries only have 1 or 2 politicians.
 
-You can **help us build a more complete database**, if you want. To add new politicians, make sure you check out our website's [dedicated section](https://dontspy.eu/rbi/#nocoform).
+You can **help us build a more complete database**, if you want. To add new politicians, make sure you check out our website's [dedicated section](//dontspy.eu/rbi/#nocoform).
 
 
 <link rel="stylesheet" href="/css/figures.css">

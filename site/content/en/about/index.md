@@ -30,7 +30,7 @@ date_format = "Jan 2006"
   location = "Europe"
   date_start = "2020-01-01"
   date_end = "2022-12-31"
-  description = "Together with other nonprofits, we ran a campaign called _Reclaim Your Face- and collected signatures to push the European Parliament to ban face recognition! [Despite collecting 250.000+ signatures](https://twitter.com/edri/status/1706565300844368239), our efforts didn't stop there."
+  description = "Together with other nonprofits, we ran a campaign called _Reclaim Your Face- and collected signatures to push the European Parliament to ban face recognition! [Despite collecting 250.000+ signatures](//twitter.com/edri/status/1706565300844368239), our efforts didn't stop there."
 +++
 
 # Don't Spy EU - About the campaign 
@@ -61,7 +61,7 @@ As of now, **predictive policing** tools, **real-time remote** facial recognitio
 
 However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**. And who gets to determine who could turn into an “offender”?
 
-Great question that remains unanswered, just like questions/doubts regarding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](https://www.itflows.eu/eumigratool/)).
+Great question that remains unanswered, just like questions/doubts regarding predictive AI tools employed at the EU border – tools whose rollout phase is currently underway in some cases (see [EU MigraTool](//www.itflows.eu/eumigratool/)).
 
 <br>
 
@@ -86,11 +86,11 @@ Great question that remains unanswered, just like questions/doubts regarding pre
 # _Don't Spy EU_ – Founding organizations
 
 
-* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focusing on the protection of **digital rights**. HC team is based in Milan, Italy and combines technical expertise and advocacy skills to influence the **political debate**. In Europe, HC works in collaboration with [EDRi](https://edri.org), and in the rest of the "Connected World" they've co-produced the following projects: [GlobaLeaks](https://www.globaleaks.org), [OONI](https://ooni.org), [ProTecht](https://protecht.hermescenter.org/), [ReclaimYourFace](https://reclaimyourface.eu), and [Makhno](https://foundation.mozilla.org/en/blog/new-tool-makhno-will-expose-geographic-social-media-censorship/).
+* [**Hermes Center**](//hermescenter.org) is a nonprofit organization focusing on the protection of **digital rights**. HC team is based in Milan, Italy and combines technical expertise and advocacy skills to influence the **political debate**. In Europe, HC works in collaboration with [EDRi](//edri.org), and in the rest of the "Connected World" they've co-produced the following projects: [GlobaLeaks](//www.globaleaks.org), [OONI](//ooni.org), [ProTecht](//protecht.hermescenter.org/), [ReclaimYourFace](//reclaimyourface.eu), and [Makhno](//foundation.mozilla.org/en/blog/new-tool-makhno-will-expose-geographic-social-media-censorship/).
 
-* [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making our society more **democratic, united and equitable.** TGL is a people's movement that believes that every citizen can mobilize to defend the interests of their community. TGL intends to positively influence **decision-making processes** by lobbying politicians, public officials and anyone in positions of power to protect all citizens' rights, especially of the weakest and most marginalized.
+* [**The Good Lobby**](//thegoodlobby.it) is a nonprofit organization committed to making our society more **democratic, united and equitable.** TGL is a people's movement that believes that every citizen can mobilize to defend the interests of their community. TGL intends to positively influence **decision-making processes** by lobbying politicians, public officials and anyone in positions of power to protect all citizens' rights, especially of the weakest and most marginalized.
 
-* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports **journalists and activists** in carrying out their important job, which is, to expose the truth and promote effective **social change**. Info.nodes also publishes italian magazine [Marla](https://infonodes.org/marla).
+* [**info.nodes**](//info.nodes) is a nonprofit organization that supports **journalists and activists** in carrying out their important job, which is, to expose the truth and promote effective **social change**. Info.nodes also publishes italian magazine [Marla](//infonodes.org/marla).
 
 <br>
 <br>
