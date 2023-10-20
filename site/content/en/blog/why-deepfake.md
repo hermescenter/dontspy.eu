@@ -1,12 +1,12 @@
 +++
 title = "How the AI Act can prevent the spread of deepfakes"
-subtitle = "We asked ChatGPT to imagine two opposite AI Act scenarios. Here's what it said."
+subtitle = "Two scenarios in which deepfake play role"
 
 tags = ['campaign']
 date = "2023-10-15"
 
 # For description meta tag
-description = "Our preliminary campaign"
+description = "Deepfake are both a direct consequence of unregulated RBI. Or a technique to pollute our personal profile against those who rely on it for surveillance."
 
 # Comment next line and the default banner wil be used.
 banner = '/img/image-placeholder-500-500.jpg'
@@ -20,7 +20,6 @@ banner = '/img/image-placeholder-500-500.jpg'
 #### `Scenario #2` – If the AI Act does allow facial biometric recognition, not only will deepfakes remain untouched by this law, but in certain cases their creation would also become a necessary act of defense of our digital profile.
 
 * [What the surveillance lobbying isn't considering](/blog/why-deepfake#what-the-surveillance-lobbying-isnt-considering)
-* [The mess this would cause](/blog/why-deepfake/#the-mess-this-will-cause)
 * [Infographic](/blog/why-deepfake#infographic)
 
 <br>
@@ -76,7 +75,6 @@ The **scheme below** explains that if biometric identification gets legitimized 
 A sad but necessary solution would be to **"pollute"** the Internet with deepfakes of ourselves, so that our profile would be associated with behaviors that are typically not ours, thus reducing **the credibility** of these services and anonymize our actual interests and identities.
 
 ![](/img/deepfake_infographic.jpeg)
-
 
 
 

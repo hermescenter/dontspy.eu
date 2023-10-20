@@ -37,9 +37,9 @@ date_format = "Jan 2006"
 
 **Hermes Center for Transparency and Digital Human Rights**, along with fellow nonprofits **The Good Lobby Italy** and info.nodes (_we_), first launched a campaign called _Don’t Spy On Us EU_ in March 2023.
 
-The campaign’s early phase was about encouraging the general public to challenge MEPs who were involved in the EU **Artificial Intelligence Act** negotiations and supported biometric surveillance. On the old [version](//dontspyonus.eu/) of our website, users could scan politicians’ faces with a **facial recognition algorithm**.
+The campaign’s early phase was about encouraging the general public to challenge European Parliamentarians who were involved in the EU **Artificial Intelligence Act** negotiations and supported biometric surveillance. On the [old version](//dontspyonus.eu/) of our website, users could scan politicians’ faces with a **facial recognition algorithm**.
 
-Our main goal was to show how, by using publicly-available technology, governments and private companies could potentially access **sensitive information** about citizens (age, gender, even emotional state) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
+Now we are proud to announce the launch of **Don't Spy EU**, our new campaign, on a brand new website. The goal remains the same, that is, to show how, by using publicly-available technology, governments and private companies could potentially access sensitive information about citizens (age, gender, even emotional state) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
 
 <br>
 
@@ -85,11 +85,12 @@ Great question that remains unanswered, just like questions/doubts regarding pre
 
 # _Don't Spy EU_ – Founding organizations
 
-* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focusing on the protection of **digital rights.** HC team is based in Milan, Italy and combines technical expertise and advocacy skills to influence the **political debate.** In Europe, HC works in collaboration with EDRi, and in the rest of the "Connected World" they've co-produced the following projects: GlobaLeaks, OONI, ProTecht, ReclaimYourFace, and Makhno.
+
+* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focusing on the protection of **digital rights**. HC team is based in Milan, Italy and combines technical expertise and advocacy skills to influence the **political debate**. In Europe, HC works in collaboration with [EDRi](https://edri.org), and in the rest of the "Connected World" they've co-produced the following projects: [GlobaLeaks](https://www.globaleaks.org), [OONI](https://ooni.org), [ProTecht](https://protecht.hermescenter.org/), [ReclaimYourFace](https://reclaimyourface.eu), and [Makhno](https://foundation.mozilla.org/en/blog/new-tool-makhno-will-expose-geographic-social-media-censorship/).
 
 * [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making our society more **democratic, united and equitable.** TGL is a people's movement that believes that every citizen can mobilize to defend the interests of their community. TGL intends to positively influence **decision-making processes** by lobbying politicians, public officials and anyone in positions of power to protect all citizens' rights, especially of the weakest and most marginalized.
 
-* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports **journalists and activists** in carrying out their important job, which is, to expose the truth and promote effective **social change.** Info.nodes also publishes italian magazine Marla.
+* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports **journalists and activists** in carrying out their important job, which is, to expose the truth and promote effective **social change**. Info.nodes also publishes italian magazine [Marla](https://infonodes.org/marla).
 
 <br>
 <br>
