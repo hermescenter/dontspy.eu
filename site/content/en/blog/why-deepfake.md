@@ -9,7 +9,7 @@ date = "2023-10-15"
 description = "Deepfake are both a direct consequence of unregulated RBI. Or a technique to pollute our personal profile against those who rely on it for surveillance."
 
 # Comment next line and the default banner wil be used.
-banner = '/img/image-placeholder-500-500.jpg'
+banner = '/img/macron-homeless-deepfake.jpg'
 +++
 
 #### `Scenario #1` – The AI Act, as the first European body of legislation of its kind, will regulate, among other AI technologies, remote biometric identification (RBI), including facial biometric recognition. By imposing maximum restrictions on RBI, the law will consequently affect deepfakes production, as the latter functions thanks to RBI software.
@@ -77,6 +77,9 @@ A sad but necessary solution would be to **"pollute"** the Internet with deepfak
 ![](/img/deepfake_infographic.jpeg)
 
 
+#### Credits
+
+The cover picture via [Nicolas Livanis](https://twitter.com/n_livanis/status/1640230557257809920) on X.
 
 <!-- commented below -->
 <!--
