@@ -12,6 +12,13 @@ description = "Deepfake are both a direct consequence of unregulated RBI. Or a t
 banner = '/img/macron-homeless-deepfake.jpg'
 +++
 
+![](/img/macron-homeless-deepfake.jpg)
+<div style="text-align:center">
+  <small> Credits: The cover picture via <a href="//twitter.com/n_livanis/status/1640230557257809920" class="underline ">Nicolas Livanis</a> on X.
+  </small>
+</div>
+
+
 #### `Scenario #1` – The AI Act, as the first European body of legislation of its kind, will regulate, among other AI technologies, remote biometric identification (RBI), including facial biometric recognition. By imposing maximum restrictions on RBI, the law will consequently affect deepfakes production, as the latter functions thanks to RBI software.
 
 * [What should be protected and why](/blog/why-deepfake#what-should-be-protected-and-why)
@@ -77,9 +84,6 @@ A sad but necessary solution would be to **"pollute"** the Internet with deepfak
 ![](/img/deepfake_infographic.jpeg)
 
 
-#### Credits
-
-The cover picture via [Nicolas Livanis](//twitter.com/n_livanis/status/1640230557257809920) on X.
 
 <!-- commented below -->
 <!--
