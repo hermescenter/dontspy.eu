@@ -1,6 +1,6 @@
 +++
 title = "How the AI Act can prevent the spread of deepfakes"
-subtitle = "Two scenarios in which deepfake play role"
+subtitle = "Two scenarios in which deepfake play a pivotal role"
 
 tags = ['campaign']
 date = "2023-10-15"
