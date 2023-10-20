@@ -11,20 +11,56 @@ type = "deepfake"
     alt="Deepfakes of Politicians" />
 
 
-#### Deepfakes work because Face Biometry derives unique facial features. The same data points can be abused to produce false image matching that of a non consenting subject.
+#### Deepfakes work thanks to face biometry authentication – a type of AI software «that uses the face/head of an individual via their facial  biometric pattern to verify their identity by collecting the unique biometric data associated with their face and expression» (definition by Innovatrics).
 
-#### The EU can forbid the use of Face Biometry in the AI Act. This would limit the use of these technologies in the EU market by policy.
+#### The data obtained by the same type of software can be distorted to produce false images/videos matching those of a non-consenting individual, potentially resulting in harmful real-life consequences for that person.
 
-#### Know more on [How AIAct can prevent the spread of deepfakes](/blog/why-deepfake), or:
+#### The EU currently has the power to forbid the use of face biometry in the AI Act. To know more on how the AI Act can prevent the spread of deepfakes, you can read [this informative piece](/blog/why-deepfake) we’ve prepared – with some input from ChatGPT. Or, you can also
 
 <div style="text-align:center">
   <button>
-    <a id="clickable" onclick="renderNocodb()" >Upload a deepfake of your Minister today!</a>
+    <a id="clickable" onclick="renderNocodb()" >Upload a deepfake of your fave Minister!</a>
   </button>
 </div>
 
 
 <div id="upload-rules-description" style="display:none">
+
+<br>
+
+# What is a deepfake?
+
+Deepfake is a term – a _blend word_, to be specific – that identifies **digitally altered content** (images, videos, audio recordings).
+
+“Deep” stands for **deep (machine) learning** and “fake”… well, we all know what that means.
+
+Deepfakes usually consist of **hyper-realistic representations** of people we’ll never get to meet in our everyday life, as they are the result of AI attaching, “gluing” together somebody’s face to somebody else’s body.
+
+<br>
+
+# A viral trend
+
+Faces are often chosen among **politicians or celebrities,** so that it’s easier for their deepfakes to get recognized online and eventually become viral.
+
+Remember **Keanu Reeves** dancing in the total comfort of his home? Well, that wasn’t the Matrix’s star, but his deepfake alias, uploaded on Tik Tok by **Metaphysic.ai** co-founder Miles Fischer.
+
+The “fun” part is when Internet users realize that they’ve been looking all the time at a fake version of their favorite movie star doing things he/she may have **no intention to do** in real life. 
+
+<br>
+
+# What’s wrong with deepfakes?
+
+So yeah, deepfakes can be pretty cool. But it’s not all sunshine and rainbows when we look at the **privacy aspect.** Let’s see how.
+
+Deepfakes-generating software is the same software used to carry out **surveillance** activity.
+
+That’s because the **source code** that extracts and processes biometric data can be used in multiple ways – including for surveillance purpose.
+
+Its unrestrained diffusion, with no regulation in place, can create a bunch of problems, among which massive **disinformation** and **personal damage.**
+
+Imagine if the company that just hired you came across a deepfake of yourself shaking hands or hanging out with the CEO of their **major competitor.** How could they react? Your **career** would be at stake, event though every piece of context in the picture was fake (except for your face).
+
+<br>
 
 ---
 

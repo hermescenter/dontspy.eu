@@ -4,33 +4,33 @@ type = "about"
 date_format = "Jan 2006"
 
 [[period]]
-  title = "[The first campaign](//dontspyonus.eu)"
-  subtitle = "We targeted all the European Parliament"
+  title = "[ _Don't Spy On Us EU_ – our first campaign](//dontspyonus.eu)"
+  subtitle = "We targeted all MEPs"
   date_start = "2023-04-01"
   date_end = "2023-06-14"
-  description = "[500+ faces scanned, we tested the flow](//dontspyonus.eu/post/squared-faces/). The operation ended when EP released an AIAct that can be considered a decent achievement."
+  description = "[We face-scanned 500+ politicians' faces](//dontspyonus.eu/post/squared-faces/). This first phase came to an end when the European Parliament released a draft of the AI Act that we partially approved of. Goal achieved? Not yet."
 
 [[period]]
-  title = "European Surveillance lobby push forward"
-  subtitle = "Whether on the 2024 Olympics in France or  for unclear security reasons in Italy, the forces pushing for face recognition technologies flex their muscles"
+  title = "European surveillance lobbies pushing forward"
+  subtitle = "The forces pushing for face recognition technologies in Italy flexed their muscles"
   date_start = "2023-05-01"
   date_end = ""
-  description = "After the privacy authorities prevented the usage of scraped pictures, now there is a push for deploying smart surveillance cameras in public spaces."
+  description = "Whether it was because of the 2024 Olympics in France or for other unclear security reasons, we saw a push from the Italian government to deploy smart surveillance cameras in public spaces. This, after the privacy authorities prevented the usage of scraped pictures."
 
 [[period]]
   title = "Clearview AI fined for GDPR violations"
-  subtitle = "A well known abuser of Face recognition technologies was fined because violating GDPR"
+  subtitle = "A well-known abuser of face recognition technologies was fined because of GDPR violations"
   date_start = "2023-03-01"
   date_end = ""
-  description = "Regulatory authorities in Italy, France, UK, Greece fined Clearview.AI, a tool that scrapes online pictures to store individual profiles, for millions of euros. The Data Protection Authorities decided that this violated GDPR rules and produced a personal fingerprint."
+  description = "Regulatory authorities in Italy, France, UK and Greece fined for millions of euros Clearview.AI, a tool that scrapes online pictures to store individual profiles. The Data Protection Authority decided that this violated GDPR rules."
 
 [[period]]
-  title = "ReclaimYourFace"
-  subtitle = "A Europe-wide signature collection to ban Face Recognition (or Remote Biometric Identification, RBI)"
+  title = "_Reclaim Your Face_ campaign"
+  subtitle = "A signature collection to ban Face Recognition (Remote Biometric Identification, RBI) in the EU"
   location = "Europe"
   date_start = "2020-01-01"
   date_end = "2022-12-31"
-  description = "We run a campaign to collect signatures, and push the European Parliament to ban face recognition! [Despite collecting 250.000+ signatures](https://twitter.com/edri/status/1706565300844368239) and raising the interest of authorities and MEPs, the surveillance lobbying didn’t stop."
+  description = "Together with other nonprofits, we ran a campaign called _Reclaim Your Face- and collected signatures to push the European Parliament to ban face recognition! [Despite collecting 250.000+ signatures](https://twitter.com/edri/status/1706565300844368239), our efforts didn't stop there."
 +++
 
 # Don't Spy EU - About the campaign 
@@ -51,7 +51,7 @@ Like many other nonprofit organizations all over the continent, we are **deeply 
 
 > We’re talking about a major body of legislation, a heavy bulk of norms regulating AI (or attempting to do so) that’s set to be enacted in 2025, eventually becoming the first of its kind at the global level – and, let’s not forget, an **important precedent** for non-EU countries.
 
-As we write (October 2023), dozens of fellow digital rights organizations have already flagged several loopholes in the AI Act, beginning with the very **definition** of RBI technology. This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by EDRi (**European Digital Rights initiative**) details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
+As we write (October 2023), dozens of fellow digital rights organizations have already flagged several loopholes in the AI Act, beginning with the very **definition** of RBI technology. This meticulously-written [joint statement](//edri.org/wp-content/uploads/2022/05/Prohibit-RBI-in-publicly-accessible-spaces-Civil-Society-Amendments-AI-Act-FINAL.pdf) by **EDRi (European Digital Rights initiative)** details the threats posed by the current versions of Article 3(36) and Article 5(1)(d), along with recommendations by civil society on how to make sure people’s fundamental rights are protected.
 
 <br>
 
@@ -83,13 +83,14 @@ Great question that remains unanswered, just like questions/doubts regarding pre
 
 ---
 
-# Don't Spy EU: Founding Organizations
+# _Don't Spy EU_ – Founding organizations
 
-* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focusing on the protection of digital rights. HC team is based in Milan, Italy and combines technical expertise and advocacy skills to influence the political debate. In Europe, HC works in collaboration with [EDRi](https://edri.org), and in the rest of the "Connected World" they've co-produced the following projects: [GlobaLeaks](https://www.globaleaks.org), [OONI](https://ooni.org), [ProTecht](https://protecht.hermescenter.org/), [ReclaimYourFace](https://reclaimyourface.eu), and [Makhno](https://foundation.mozilla.org/en/blog/new-tool-makhno-will-expose-geographic-social-media-censorship/).
 
-* [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making our society more democratic, united and equitable. TGL is a people's movement that believes that every citizen can mobilize to defend the interests of their community. TGL intends to positively influence decision-making processes by lobbying politicians, public officials and anyone in positions of power to protect all citizens' rights, especially of the weakest and most marginalized.
+* [**Hermes Center**](https://hermescenter.org) is a nonprofit organization focusing on the protection of **digital rights**. HC team is based in Milan, Italy and combines technical expertise and advocacy skills to influence the **political debate**. In Europe, HC works in collaboration with [EDRi](https://edri.org), and in the rest of the "Connected World" they've co-produced the following projects: [GlobaLeaks](https://www.globaleaks.org), [OONI](https://ooni.org), [ProTecht](https://protecht.hermescenter.org/), [ReclaimYourFace](https://reclaimyourface.eu), and [Makhno](https://foundation.mozilla.org/en/blog/new-tool-makhno-will-expose-geographic-social-media-censorship/).
 
-* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports journalists and activists in carrying out their important job, which is, to expose the truth and promote effective social change. Info.nodes also publishes italian magazine [Marla](https://infonodes.org/marla).
+* [**The Good Lobby**](https://thegoodlobby.it) is a nonprofit organization committed to making our society more **democratic, united and equitable.** TGL is a people's movement that believes that every citizen can mobilize to defend the interests of their community. TGL intends to positively influence **decision-making processes** by lobbying politicians, public officials and anyone in positions of power to protect all citizens' rights, especially of the weakest and most marginalized.
+
+* [**info.nodes**](https://info.nodes) is a nonprofit organization that supports **journalists and activists** in carrying out their important job, which is, to expose the truth and promote effective **social change**. Info.nodes also publishes italian magazine [Marla](https://infonodes.org/marla).
 
 <br>
 <br>
@@ -100,6 +101,7 @@ Great question that remains unanswered, just like questions/doubts regarding pre
 
 * `team@dontspyonus.eu`
 * _github_ [`https://github.com/hermescenter/dontspy.eu`](//github.com/hermescenter/dontspy.eu)
+
 
 {{<founding-organizations>}}
 
