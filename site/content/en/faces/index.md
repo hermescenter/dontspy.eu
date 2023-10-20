@@ -16,7 +16,7 @@ subtitle = "subtitle"
 # Specializzata. Mentre in homepage questo blocco
 # non c'è.
 before_map = """
-### ↓ [Map of European Faces](/rbi#euromap)
+### ↓ [Map of European Politicians' Faces](/rbi#euromap)
 ### ↓ [Why simulating RBI](/rbi/#why-simulating-rbi)
 ### ↓ [Who do we have so far?](/rbi/#who-do-we-have-so-far)
 ### ↓ [Upload new Faces](/rbi#nocoform)
@@ -54,7 +54,7 @@ An RBI-free Europe is still a mirage, since the proposed version of the AI Act *
 
 **Migrants** at the EU border also run the risk of being discriminated against/wrongfully detained by **border agencies** and authorities, since the AI Act does not explicitly prohibit biometric surveillance in those instances.
 
-Let’s make legislators **change their mind** on AI surveillance.
+Let’s make pro-RBI legislators **change their mind** on AI surveillance.
 
 Before proceeding, please **make sure you read our “[About](/about)” section** detailing Don’t Spy EU’s main scope and motives.
 
