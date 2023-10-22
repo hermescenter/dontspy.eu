@@ -65,7 +65,7 @@
       <!-- Browse the interactive map and run an RBI-scan on your country’s politicians’ faces. Help us convince them of how dangerous biometric identification can get, before it’s too late! -->
       Browse the interactive map and upload photos of your fave Ministry!
     </h1>
-<!-- <h1>Surveil your minister and <i>SHOCK THEM</i> before is too late!</h1> -->
+    <!-- <h1>Surveil your minister and <i>SHOCK THEM</i> before is too late!</h1> -->
     <h4>
       Registered Politicians <span class="variable" id="politician--number">
         (æ)</span> Uploaded photos <span class="variable" id="faces--number">
@@ -97,7 +97,7 @@
       and <a href="/country/#Malta">
         Malta <b class="flag">🇲🇹</b>
       </a>
-      are not shown in the map, but they're still featured in our face database. 
+      are not shown in the map, but they're still featured in our face database.
     </div>
   </div>
 
@@ -131,28 +131,28 @@
 
       /* if there is this element, we're in the homepage */
       if (document.getElementById('faces--number')) {
+
         document.getElementById('politician--number').textContent = registered;
+        document
+          .getElementById("politician--number")
+          .addEventListener("click", (e) => {
+            window.location = '/blog/five-meaningful-figures/';
+          });
+
         document.getElementById('faces--number').textContent = facesTotal;
+        document
+          .getElementById("faces--number")
+          .addEventListener("click", (e) => {
+            window.location = '/faces/';
+          });
+
         document.getElementById('fakes--number').textContent = fakesTotal;
+        document
+          .getElementById("fakes--number")
+          .addEventListener("click", (e) => {
+            window.location = '/deepfake';
+          });
       }
-
-      document
-        .getElementById("politician--number")
-        .addEventListener("click", (e) => {
-          window.location = '/blog/five-meaningful-figures/';
-        });
-
-      document
-        .getElementById("faces--number")
-        .addEventListener("click", (e) => {
-          window.location = '/faces/';
-        });
-
-      document
-        .getElementById("fakes--number")
-        .addEventListener("click", (e) => {
-          window.location = '/deepfake';
-        });
 
     } catch (error) {
       console.log(error);
