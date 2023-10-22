@@ -16,10 +16,10 @@ subtitle = "subtitle"
 # Specializzata. Mentre in homepage questo blocco
 # non c'è.
 before_map = """
-### ↓ [Map of European Politicians' Faces](/rbi#euromap)
-### ↓ [Why simulating RBI](/rbi/#why-simulating-rbi)
-### ↓ [Who do we have so far?](/rbi/#who-do-we-have-so-far)
-### ↓ [Upload new Faces](/rbi#nocoform)
+### ↓ [Map of European Politicians' Faces](/faces#euromap)
+### ↓ [Why simulating RBI](/faces#why-simulating-rbi)
+### ↓ [Upload new Faces](/faces#nocoform)
+### ↓ [The Registered Politicians](/faces#database)
 """
 
 type = "rbi"
@@ -68,21 +68,9 @@ Before proceeding, please **make sure you read our “[About](/about)” section
 
 * **We do not encourage anyone** to repeat this action outside of this campaign. Please keep in mind that if you decide to submit any data or images **we’ll protect your anonymity**. Always.
 
-<br>
-
-# _Don't Spy EU_ – Database
-
-Below are all the European politicians' faces & info we've managed to collect and insert in our database. Each country can feature a maximum of **five politicians**, but you'll notice some countries only have 1 or 2 politicians.
-
-You can help us build a more complete database, if you want. We are looking for the following roles: **Prime Minister, AI Act Gov. Representative, Justice Minister, Interior Minister and Defense Minister**. To add new politicians, keep scrolling.
-
-<br>
-<br>
-
-<link rel="stylesheet" href="/css/figures.css">
-<div class="grid-container" id="figures--list"></div>
-
 </section>
+
+
 
 ---
 
@@ -102,18 +90,54 @@ We can only accept pictures with faces that belong to politicians already regist
 
 * Only trusted individuals with a private link can insert a politician in our index. **🙏 [Reach out to us](/about#contacts) 🙏 if you think you can be that person**.
 
-<iframe class="nc-embed"
-  src="https://db.dontspy.eu/dashboard/#/nc/form/bf2949c3-56f3-4574-8d44-13b90551a995?embed"
-  frameborder="0"
-  width="100%"
-  height="1000"
-  style="background: transparent"></iframe>
+</section>
+<br>
+
+<!-- this block is a button that is replaced with NocoDB -->
+<style>
+  #clickable {
+    color: black;
+    background-color: #ffff01;
+    padding: 1em;
+    border-radius: 20px;
+    border: 1px solid red;
+    text-decoration-line: none;
+  }
+  #clickable:hover {
+    cursor: pointer;
+    border: 3px solid red;
+  }
+</style>
+<div style="text-align:center">
+  <button>
+    <a id="clickable" onclick="renderNocodb()" >Open the upload form</a>
+  </button>
+</div>
+<div id="upload-form-container"></div>
+
+
+<br>
+<section id="database">
+
+# _Don't Spy EU_ – Database
+
+Below are all the European politicians' faces & info we've managed to collect and insert in our database. Each country can feature a maximum of **five politicians**, but you'll notice some countries only have 1 or 2 politicians.
+
+You can help us build a more complete database, if you want. We are looking for the following roles: **Prime Minister, AI Act Gov. Representative, Justice Minister, Interior Minister and Defense Minister**. To add new politicians, keep scrolling.
 
 </section>
 
+<br>
+<br>
+
+<link rel="stylesheet" href="/css/figures.css">
+<div class="grid-container" id="figures--list"></div>
 <script src="/js/lodash.min.js"></script>
-<script src="/js/shared.js"></script>
 <script src="/js/figures.js"></script>
+
 <script>
   document.addEventListener('DOMContentLoaded', loadPoliticalFigures);
+
+  const starting = _.sample(['Sadness', 'Digusted', 'Angry', 'Fearful'])
+  selectButtonByText(starting);
 </script>

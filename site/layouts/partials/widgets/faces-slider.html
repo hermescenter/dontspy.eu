@@ -1,0 +1,38 @@
+<!--
+  this widget is pull from:
+  site/layouts/rbi/single.html,
+-->
+
+<div class="button-container">
+  <button class="emotion-button" data-emotion="happy">😊 Happyness</button>
+  <button class="emotion-button" data-emotion="sad">😢 Sadness</button>
+  <button class="emotion-button" data-emotion="fearful">😨 Fearful</button>
+  <button class="emotion-button" data-emotion="surprised">😲 Surprised</button>
+  <button class="emotion-button" data-emotion="angry">😠 Angry</button>
+  <button class="emotion-button" data-emotion="disgusted">🤢 Disgusted</button>
+</div>
+
+<div class="slider-container">
+
+  <div class="image-slider">
+    <!-- this is the structure appended by faces-slider.js
+    <div class="slide">
+      <div class="slide-caption">Testo sotto l'immagine</div>
+      <img src="https://dontspy.eu/data/photos/35-resized.jpg" alt="Descrizione dell'immagine">
+    </div>
+    -->
+  </div>
+</div>
+
+<link rel="stylesheet" href="/css/faces-slider.css">
+<script src="/js/faces-slider.js"></script>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    const e = _.sample(['Sadness', 'Angry', 'Disgusted', 'Fearful']);
+    await fetchByEmotion(e);
+    selectButtonByText(e);
+  })
+
+</script>

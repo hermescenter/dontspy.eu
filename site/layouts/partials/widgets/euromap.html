@@ -2,9 +2,12 @@
   remind: before_map, and Content 
   are handled in site/layouts/rbi/single.html,
 
-  title and sub_title and side_text is handled HERE
+  title and sub_title handled HERE
 
-  this piece is used only in two places: homepage and rbi.
+  this piece is used in two places: homepage and rbi.
+  therefore there are some conditionals, and in 
+  retrospective, of course I could have design this
+  differently.
 -->
 
 <style>
@@ -59,10 +62,16 @@
     <hr style="display: block !important;color:var(--color-primary)">
     <br>
     <h1>
-      Browse the interactive map and run an RBI-scan on your country’s politicians’ faces. Help us convince them of how dangerous biometric identification can get, before it’s too late!
+      <!-- Browse the interactive map and run an RBI-scan on your country’s politicians’ faces. Help us convince them of how dangerous biometric identification can get, before it’s too late! -->
+      Browse the interactive map and upload photos of your fave Ministry!
     </h1>
 <!-- <h1>Surveil your minister and <i>SHOCK THEM</i> before is too late!</h1> -->
-    <h1>Registered Faces <span id="faces--number">(æ)</span> Deepfakes <span id="fakes--number">(æ)</span></h1>
+    <h4>
+      Registered Politicians <span id="politician--number">
+        (æ)</span> Photos <span id="faces--number">
+        (æ)</span> Deepfakes <span id="fakes--number">
+        (æ)</span>
+    </h4>
     <br>
     <br>
     {{ end }}
@@ -118,11 +127,13 @@
       picturesPerCountry = ret.picturesPerCountry;
 
       console.log({ fakesTotal, facesTotal, picturesPerCountry });
+
       /* if there is this element, we're in the homepage */
       if (document.getElementById('faces--number')) {
         document.getElementById('faces--number').textContent = facesTotal;
         document.getElementById('fakes--number').textContent = fakesTotal;
       }
+
     } catch (error) {
       console.log(error);
       d3.select('#map')

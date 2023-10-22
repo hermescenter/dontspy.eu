@@ -107,11 +107,15 @@
   padding: 5px;
   border-radius: 5px;
   background-color: var(--color-secondary);
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 @media only screen and (max-width: 800px) {
   .slide {
     min-width: 100%;
   }
+}
+
+.percent {
+  color: var(--color-accent-dark);
 }

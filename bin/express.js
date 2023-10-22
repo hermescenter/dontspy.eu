@@ -73,8 +73,8 @@ app.get('/api/available/:filter?', cors(), async function (req, res) {
         const data = await mongoFetch(filter);
         /* available return a number of elements per country */
         const picturesPerCountry = _.countBy(data, 'Country')
-        const facesTotal = _.countBy(data, {isfake: false }).true;
-        const fakesTotal = _.countBy(data, {isfake: true }).true;
+        const facesTotal = _.countBy(data, { isfake: false }).true;
+        const fakesTotal = _.countBy(data, { isfake: true }).true;
         res.json({
             facesTotal,
             fakesTotal,
@@ -101,6 +101,33 @@ app.get('/api/figures', cors(), async function (req, res) {
         res.json(shrunk);
     } catch (error) {
         debug("Error in querying NocoDB: %s", error.message);
+        res.status(500).send(error.message);
+    }
+});
+
+app.get('/api/emotion/:emotionName', cors(), async function (req, res) {
+    try {
+        debug("emotion requested %s", req.params.emotionName);
+        const c = _.toLower(JSON.parse(req.params.emotionName));
+        const data = await mongoFetch({
+            "rbi.expression.0": c,
+            isfake: false,
+        });
+        const ready = _.map(_.sampleSize(data, 14), (d) => {
+            const fullName = `${d.Name} ${d.Surname}`;
+            const percent = `${_.round(d.rbi.expression[1] * 100, 0)}%`;
+            return {
+                fullName,
+                percent,
+                url: `https://dontspy.eu/${d.image}`,
+                description: `${fullName} from ${d.Nation} was ${c} ${percent}`,
+                nation: d.Country,
+                role: d.OfficialRole,
+            }
+        })
+        res.json(ready);
+    } catch (error) {
+        debug("Error in querying MongoDB: %s", error.message);
         res.status(500).send(error.message);
     }
 });
