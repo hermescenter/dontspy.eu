@@ -67,9 +67,9 @@
     </h1>
 <!-- <h1>Surveil your minister and <i>SHOCK THEM</i> before is too late!</h1> -->
     <h4>
-      Registered Politicians <span id="politician--number">
-        (æ)</span> Photos <span id="faces--number">
-        (æ)</span> Deepfakes <span id="fakes--number">
+      Registered Politicians <span class="variable" id="politician--number">
+        (æ)</span> Uploaded photos <span class="variable" id="faces--number">
+        (æ)</span> Deepfakes <span class="variable" id="fakes--number">
         (æ)</span>
     </h4>
     <br>
@@ -117,7 +117,7 @@
 
   document.addEventListener('DOMContentLoaded', async function () {
 
-    let facesTotal, fakesTotal, picturesPerCountry = null;
+    let registered, facesTotal, fakesTotal, picturesPerCountry = null;
     try {
       const response = await fetch(serverURL('available', {}));
       const ret = await response.json();
@@ -125,14 +125,34 @@
       facesTotal = ret.facesTotal;
       fakesTotal = ret.fakesTotal;
       picturesPerCountry = ret.picturesPerCountry;
+      registered = ret.registered;
 
-      console.log({ fakesTotal, facesTotal, picturesPerCountry });
+      console.log({ fakesTotal, facesTotal, registered, picturesPerCountry });
 
       /* if there is this element, we're in the homepage */
       if (document.getElementById('faces--number')) {
+        document.getElementById('politician--number').textContent = registered;
         document.getElementById('faces--number').textContent = facesTotal;
         document.getElementById('fakes--number').textContent = fakesTotal;
       }
+
+      document
+        .getElementById("politician--number")
+        .addEventListener("click", (e) => {
+          window.location = '/blog/five-meaningful-figures/';
+        });
+
+      document
+        .getElementById("faces--number")
+        .addEventListener("click", (e) => {
+          window.location = '/faces/';
+        });
+
+      document
+        .getElementById("fakes--number")
+        .addEventListener("click", (e) => {
+          window.location = '/deepfake';
+        });
 
     } catch (error) {
       console.log(error);

@@ -75,9 +75,13 @@ app.get('/api/available/:filter?', cors(), async function (req, res) {
         const picturesPerCountry = _.countBy(data, 'Country')
         const facesTotal = _.countBy(data, { isfake: false }).true;
         const fakesTotal = _.countBy(data, { isfake: true }).true;
+        const registered = _.keys(_.countBy(data, (d) => {
+            return `${d.OfficialRole}-${d.Country}`;
+        })).length;
         res.json({
             facesTotal,
             fakesTotal,
+            registered,
             picturesPerCountry
         });
     } catch (error) {

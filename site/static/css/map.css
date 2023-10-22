@@ -27,16 +27,9 @@ path:hover {
   border-radius: 3px;
 }
 
-#fakes--number {
+.variable {
   background-color: var(--color-accent-light);
-  color: var(--color-primary);
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 3px;
-}
-
-#faces--number {
-  background-color: var(--color-accent-light);
+  cursor: pointer;
   color: var(--color-primary);
   padding-left: 15px;
   padding-right: 15px;
