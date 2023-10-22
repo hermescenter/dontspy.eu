@@ -10,7 +10,11 @@ async function loadMaterial() {
   if (data.length === 0) {
     const container = document.querySelector('#face-list');
     container.innerHTML = `<div class="alert error">
-      No data for ${countryName}!`;
+      No data for ${decodeURIComponent(countryName)}!
+    </div>
+    <div class="alert info">
+      Solve by ensuring this country politicians are registered, and then "Upload a new picture"
+    </div>`;
     return;
   }
 
