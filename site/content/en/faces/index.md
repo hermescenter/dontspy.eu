@@ -17,15 +17,14 @@ subtitle = "subtitle"
 # non c'è.
 before_map = """
 ### ↓ [Why simulating RBI](/faces#why-simulating-rbi)
+### ↓ [What’s wrong with RBI?](/faces#whats-wrong-with-rbi)
+### ↓ [⚠ Keep in mind that…](/faces#-keep-in-mind-that)
 ### ↓ [Upload new Faces](/faces#nocoform)
 ### ↓ [Registered Politicians](/faces#database)
 """
 
 type = "rbi"
 +++
-
-<br>
-<br>
 
 # Scanning politicians' faces – EU interactive map
 
