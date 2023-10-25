@@ -109,23 +109,14 @@ app.get('/api/figures', cors(), async function (req, res) {
     }
 });
 
-/* picker picks from the exact emotion/expression, because sometime we 
- * match the first and other times the second */
-function picker(index, item) {
-    return {
-        Name: item.Name,
-        Surname: item.Surname,
-        Country: item.Country,
-        OfficialRole: item.OfficialRole,
-        image: item.image,
-        percent,
-    }
-}
-
 app.get('/api/emotion/:emotionName', cors(), async function (req, res) {
+    const E = [ "neutral", "happy", "sad", "angry", "fearful", "disgusted", "surprised" ]
     try {
-        debug("emotion requested %s", req.params.emotionName);
+        debug("Emotion requested %s", req.params.emotionName);
         const c = _.toLower(JSON.parse(req.params.emotionName));
+        if(!_.includes(E, c))
+            throw new Error(`Invalid Emotion requested. Valid: ${JSON.stringify(E)}`)
+
         const k = `rbi.expressions.${c}`;
         const v = {$gt: 0.01};
         const query = {}
@@ -138,11 +129,12 @@ app.get('/api/emotion/:emotionName', cors(), async function (req, res) {
                 fullName,
                 percent,
                 url: `https://dontspy.eu/${d.image}`,
-                description: `${fullName} from ${d.Country} was ${c} ${percent}`,
+                description: `${fullName} from ${d.Country} expressed ${c} emotion at ${percent}`,
                 nation: d.Country,
                 role: d.OfficialRole,
             }
         })
+        debug("Politicians returned %d", ready.length);
         res.json(ready);
     } catch (error) {
         debug("Error in querying MongoDB: %s", error.message);
