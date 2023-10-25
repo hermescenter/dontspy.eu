@@ -62,9 +62,9 @@ Before proceeding, please **make sure you read our “[About](/about)” section
 
 # ⚠ Keep in mind that...
 
-* Biometric identification is currently banned as per the **General Data Protection Regulation (GDPR)**;
+* Although biometric recognition is currently banned in **some EU Member States** (Italy being one of them), a total ban at the European level has not been considered yet. The **General Data Protection Regulation (GDPR)** does exist, but can only regulate isolated cases, resulting in limited range of action (see the [Clearview case](https://edpb.europa.eu/news/national-news/2022/facial-recognition-italian-sa-fines-clearview-ai-eur-20-million_en));
 
-* Wait, so… Are we some sort of _criminals_? Well, technically speaking, ours is an act of **civil disobedience**. We want to make sure our voice is heard – loud and clear, as all citizens are facing an imminent threat and Europeans’ **digital future** looks scary.
+* Wait, so… If RBI IS to be banned, are we some sort of _criminals_? Well, technically speaking, ours is an act of **civil disobedience**. Through this simulation, we want to make sure our voice is heard – loud and clear, as all citizens are facing an imminent threat and Europeans’ **digital future** looks scary.
 
 * **We do not encourage anyone** to repeat this action outside of this campaign. Please keep in mind that if you decide to submit any data or images **we’ll protect your anonymity**. Always.
 
