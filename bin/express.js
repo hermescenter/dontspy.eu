@@ -109,22 +109,36 @@ app.get('/api/figures', cors(), async function (req, res) {
     }
 });
 
+/* picker picks from the exact emotion/expression, because sometime we 
+ * match the first and other times the second */
+function picker(index, item) {
+    return {
+        Name: item.Name,
+        Surname: item.Surname,
+        Country: item.Country,
+        OfficialRole: item.OfficialRole,
+        image: item.image,
+        percent,
+    }
+}
+
 app.get('/api/emotion/:emotionName', cors(), async function (req, res) {
     try {
         debug("emotion requested %s", req.params.emotionName);
         const c = _.toLower(JSON.parse(req.params.emotionName));
-        const data = await mongoFetch({
-            "rbi.expression.0": c,
-            isfake: false,
-        });
-        const ready = _.map(_.sampleSize(data, 14), (d) => {
+        const k = `rbi.expressions.${c}`;
+        const v = {$gt: 0.01};
+        const query = {}
+        query[k] = v;
+        const data = await mongoFetch(query);
+        const ready = _.map(_.reverse(_.orderBy(_.sampleSize(data, 14), k)), (d) => {
             const fullName = `${d.Name} ${d.Surname}`;
-            const percent = `${_.round(d.rbi.expression[1] * 100, 0)}%`;
+            const percent = `${_.round(d.rbi.expressions[c] * 100, 0)}%`;
             return {
                 fullName,
                 percent,
                 url: `https://dontspy.eu/${d.image}`,
-                description: `${fullName} from ${d.Nation} was ${c} ${percent}`,
+                description: `${fullName} from ${d.Country} was ${c} ${percent}`,
                 nation: d.Country,
                 role: d.OfficialRole,
             }
