@@ -109,14 +109,24 @@ app.get('/api/figures', cors(), async function (req, res) {
     }
 });
 
+function pickEmotion(str) {
+  /* this function test if the 'str' is one of the string in 'E' or try 
+   * to parse JSON and then check if one of the string in 'E' is found.
+   * it returns the exact string in 'E' or an error */
+    const E = [ "neutral", "happy", "sad", "angry", "fearful", "disgusted", "surprised" ];
+    const lostr = _.toLower(str);
+    if(_.includes(E, lostr))
+        return lostr;
+    const p = JSON.parse(lostr);
+    if(_.includes(E, p))
+        return p;
+    throw new Error(`Invalid Emotion requested. Valid: ${JSON.stringify(E)}`)
+}
+
 app.get('/api/emotion/:emotionName', cors(), async function (req, res) {
-    const E = [ "neutral", "happy", "sad", "angry", "fearful", "disgusted", "surprised" ]
     try {
         debug("Emotion requested %s", req.params.emotionName);
-        const c = _.toLower(JSON.parse(req.params.emotionName));
-        if(!_.includes(E, c))
-            throw new Error(`Invalid Emotion requested. Valid: ${JSON.stringify(E)}`)
-
+        const c = pickEmotion(req.params.emotionName);
         const k = `rbi.expressions.${c}`;
         const v = {$gt: 0.01};
         const query = {}

@@ -1,0 +1,115 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Individuals Analysis API",
+    "version": "1.0.0",
+    "description": "API for retrieving information about individuals, emotions in images, and availability statistics"
+  },
+  "servers": [
+    {
+      "url": "https://dontspy.eu/api"
+    }
+  ],
+  "paths": {
+    "/individuals": {
+      "get": {
+        "summary": "Retrieve all individuals",
+        "responses": {
+          "200": {
+            "description": "List of individuals",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Individual"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/emotion/{emotion}": {
+      "get": {
+        "summary": "Retrieve emotion data",
+        "parameters": [
+          {
+            "name": "emotion",
+            "in": "path",
+            "required": true,
+            "description": "Emotion type",
+            "schema": {
+              "type": "string",
+              "enum": ["neutral", "happy", "sad", "angry", "fearful", "disgusted", "surprised"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of individuals with a specific emotion",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmotionData"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/available": {
+      "get": {
+        "summary": "Retrieve availability statistics",
+        "responses": {
+          "200": {
+            "description": "Availability data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AvailabilityData"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Individual": {
+        // ... (Schema for the Individual as previously provided)
+      },
+      "EmotionData": {
+        "type": "object",
+        "properties": {
+          "fullName": { "type": "string" },
+          "percent": { "type": "string" },
+          "url": { "type": "string" },
+          "description": { "type": "string" },
+          "nation": { "type": "string" },
+          "role": { "type": "string" }
+        }
+      },
+      "AvailabilityData": {
+        "type": "object",
+        "properties": {
+          "facesTotal": { "type": "integer" },
+          "fakesTotal": { "type": "integer" },
+          "registered": { "type": "integer" },
+          "picturesPerCountry": {
+            "type": "object",
+            "additionalProperties": { "type": "integer" }
+          }
+        }
+      }
+    }
+  }
+}
+
