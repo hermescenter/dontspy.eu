@@ -34,4 +34,11 @@ path:hover {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 3px;
+  text-decoration: underline;
+  border: var(--color-secondary) 1px solid;
+}
+
+.variable:hover {
+  background-color: var(--color-accent);
+  border: var(--color-primary) 1px solid;
 }
