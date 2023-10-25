@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ .Params.before_map | markdownify }}
-
 <!-- type = 'rbi' is used by /faces at the moment,
   and here is handled before_map and Content. Not
   title and sub_title, as they are in the widget 
@@ -11,6 +9,8 @@
 {{ partial "widgets/faces-slider.html" . }}
 
 {{ partial "widgets/euromap.html" . }}
+
+{{ .Params.before_map | markdownify }}
 
 {{ .Content }}
 

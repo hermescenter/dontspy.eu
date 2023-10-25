@@ -16,10 +16,9 @@ subtitle = "subtitle"
 # Specializzata. Mentre in homepage questo blocco
 # non c'è.
 before_map = """
-### ↓ [Map of European Politicians' Faces](/faces#euromap)
 ### ↓ [Why simulating RBI](/faces#why-simulating-rbi)
 ### ↓ [Upload new Faces](/faces#nocoform)
-### ↓ [The Registered Politicians](/faces#database)
+### ↓ [Registered Politicians](/faces#database)
 """
 
 type = "rbi"
