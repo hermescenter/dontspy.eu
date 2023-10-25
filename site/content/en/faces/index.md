@@ -136,6 +136,6 @@ You can help us build a more complete database, if you want. We are looking for 
 <script>
   document.addEventListener('DOMContentLoaded', loadPoliticalFigures);
 
-  const starting = _.sample(['Sadness', 'Digusted', 'Angry', 'Fearful'])
+  const starting = _.sample(['Sad', 'Surprised', 'Digusted', 'Angry', 'Fearful'])
   selectButtonByText(starting);
 </script>
