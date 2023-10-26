@@ -27,6 +27,6 @@ hero_media = "/img/portrait.jpg"
 
 #### Don't Spy EU allows you to run a fun and realistic simulation on European lawmakers, whose faces you can "scan" using a face recognition algorithm.
 
-#### These politicians are the ones in charge of completing the AI Act, so let's make sure they fully understand the risks of biometric surveillance.
+#### These politicians are the ones in charge of finalizing the AI Act, so let's make sure they fully understand the risks of biometric surveillance.
 
 

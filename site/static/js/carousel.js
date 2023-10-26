@@ -74,8 +74,10 @@ function displayImage(data, direction) {
   if (currentIndex >= data.length) currentIndex = 0;
   if (currentIndex < 0) currentIndex = data.length - 1;
 
+  const nation = data[currentIndex].Country;
   imgContainer.src = data[currentIndex].srcurl;
-  descriptionContainer.textContent = data[currentIndex].Description;
+  descriptionContainer.textContent = 
+    `${EUMS[nation]} ${data[currentIndex].Description}`
 
   window.setTimeout(() => {
     imgContainer.src = data[currentIndex].box.src;
