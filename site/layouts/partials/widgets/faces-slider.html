@@ -4,8 +4,8 @@
 -->
 
 <div class="button-container">
-  <button class="emotion-button" data-emotion="happy">😊 Happiness</button>
-  <button class="emotion-button" data-emotion="sad">😢 Sadness</button>
+  <button class="emotion-button" data-emotion="happy">😊 Happy</button>
+  <button class="emotion-button" data-emotion="sad">😢 Sad</button>
   <button class="emotion-button" data-emotion="fearful">😨 Fearful</button>
   <button class="emotion-button" data-emotion="surprised">😲 Surprised</button>
   <button class="emotion-button" data-emotion="angry">😠 Angry</button>
@@ -30,7 +30,7 @@
 <script>
 
   document.addEventListener('DOMContentLoaded', async () => {
-    const e = _.sample(['Sadness', 'Angry', 'Disgusted', 'Fearful']);
+    const e = _.sample(['Sad', 'Angry', 'Surprised', 'Disgusted', 'Fearful']);
     await fetchByEmotion(e);
     selectButtonByText(e);
   })

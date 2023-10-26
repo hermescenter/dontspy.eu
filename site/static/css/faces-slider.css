@@ -117,5 +117,7 @@
 }
 
 .percent {
-  color: var(--color-accent-dark);
+  color: var(--color-accent);
+  font-weight: bolder;
+  font-size: 1.2em;
 }
