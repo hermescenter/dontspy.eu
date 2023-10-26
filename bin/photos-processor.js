@@ -34,10 +34,10 @@ try {
     process.exit(1);
 }
 
-debug('Python virtual environment is active');
+// debug('Python virtual environment is active');
 
 async function main() {
-    debug('Starting the contributions checker');
+    // debug('Starting the contributions checker');
 
     const client = new NocoDBClient(
         config.nocoio.url,
@@ -49,7 +49,8 @@ async function main() {
     const received = await client.findMany('photos', {}, 1000, 0);
     /* well, the bad news is thay I've to do the filtering here */
     const filtered = _.filter(received.list, filter);
-    debug("Received %d photos, filtered %d photos to analyze", received.list.length, filtered.length);
+    if(filtered.length)
+        debug("Received %d photos, filtered %d photos to analyze", received.list.length, filtered.length);
 
     /* there are two kind of photos here, the one that have been validated (boolean 'reviewed' is true)
      * and the one that have not been validated (boolean 'reviewed' is false). If is 'false' we need to validate
@@ -138,7 +139,8 @@ async function main() {
         await collection.deleteOne({ image: s.image });
         await collection.insertOne(s);
     }
-    debug("Inserted %d documents into the collection", safety.length);
+    if(safety.length)
+        debug("Inserted %d documents into the collection", safety.length);
     await dbc.close();
 }
 
