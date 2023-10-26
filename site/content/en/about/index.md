@@ -4,11 +4,11 @@ type = "about"
 date_format = "Jan 2006"
 
 [[period]]
-  title = "[ _Don't Spy On Us EU_ – our first campaign](//dontspyonus.eu)"
+  title = "[ _Don't Spy On Us EU_ – our first campaign](/blog/european-parliament-campaign/)"
   subtitle = "We targeted all MEPs"
   date_start = "2023-04-01"
   date_end = "2023-06-14"
-  description = "[We face-scanned 500+ politicians' faces](//dontspyonus.eu/post/squared-faces/). This first phase came to an end when the European Parliament released a draft of the AI Act that we partially approved of. Goal achieved? Not yet."
+  description = "[We face-scanned 500+ politicians' faces](/blog/european-parliament-campaign/). This first phase came to an end when the European Parliament released a draft of the AI Act that we partially approved of. Goal achieved? Not yet."
 
 [[period]]
   title = "European surveillance lobbies pushing forward"
