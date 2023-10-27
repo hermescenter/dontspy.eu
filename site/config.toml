@@ -26,6 +26,7 @@ title = "Don't Spy EU"
   # For blog page description you can overwrite it 
   # in the front matter
   description = "We need a full ban of remote biometry identification"
+  image = "https://dontspy.eu/img/preview-dontspy.jpg"
   email = "team@dontspyonus.eu"
   favicon = '/favicon.ico'
   # Dark mode support
