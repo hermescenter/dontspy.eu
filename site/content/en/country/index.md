@@ -2,13 +2,46 @@
 type = 'country'
 +++
 
-<h1 id="country-title"></h1>
-
----
-
-### Below is a list of the images that have been collected, analysed and made freely available for our simulation of the biometrics market. It's something none of you should have to experience. That's why we're testing this dystopian world on the politicians who have the power to [finally ban this technology in the AI Act](//www.politico.eu/article/activists-urge-eu-to-ban-live-facial-recognition-in-public-spaces/).
-
 <link rel="stylesheet" href="/css/country.css">
+
+# Since we're targeting the European Council, we'll use these 5 prominent political roles from <span class="country-name"></span> <span class="country-flag"></span> as an example
+
+<div class="row">
+  <div class="item role-name-0">Prime Minister</div>
+  <div class="item role-name-1">AIAct Gov Representative</div>
+  <div class="item role-name-2">Interior Minister</div>
+  <div class="item role-name-3">Justice Minister</div>
+  <div class="item role-name-4">Defense Minister</div>
+</div>
+
+<div class="row" id="registered-names">
+  <div class="item" id="name-0"></div>
+  <div class="item" id="name-1"></div>
+  <div class="item" id="name-2"></div>
+  <div class="item" id="name-3"></div>
+  <div class="item" id="name-4"></div>
+</div>
+
+<div class="row" id="registered-faces">
+  <div class="item" id="role-0"></div>
+  <div class="item" id="role-1"></div>
+  <div class="item" id="role-2"></div>
+  <div class="item" id="role-3"></div>
+  <div class="item" id="role-4"></div>
+</div>
+
+
+<span id="service">
+
+_You can also **query biometric data of <span class="country-name"></span> politicians via [API](/swagger)**._
+
+</span>
+
+<div class="hidden" id="help-us-form">
+  <button class="send-deny" id="send-help-button">Send!</button>
+  <input id="input-form" type="text" placeholder="xxx" />
+</div>
+
 <div class="container" id="face-list"></div>
 
 ---
@@ -20,7 +53,7 @@ type = 'country'
   </a>
 
   <a class="px-4 py-2 mx-2 rounded-sm text-center border border-accent hover:border-accent-dark transition duration-300 ease-in-out no-underline hover:bg-accent-dark hover:text-secondary dark:hover:text-primary dark:text-primary" href="/about#contacts">
-    Contact us to register a missing politician
+    Contact us to report any issue with the data
   </a>
 
 </div>
@@ -33,18 +66,9 @@ type = 'country'
 <script src="/js/shared.js"></script>
 <script src="/js/country.js"></script>
 <script>
-  document.getElementById('load-upload-form').addEventListener('click', function() {
-    const iframe = document.createElement('iframe');
-    iframe.src = "https://db.dontspy.eu/dashboard/#/nc/form/bf2949c3-56f3-4574-8d44-13b90551a995?embed";
-    iframe.width = '100%';
-    iframe.height = '1000';
-    iframe.frameborder = "0";
-    iframe.classList.add("nc-embed");
-    iframe.style.background = "transparent";
-    const destinationElement = document.getElementById('upload-form-container');
-    destinationElement.appendChild(iframe);
-    const button = document.getElementById('load-upload-form');
-    button.remove();
-  });
-  document.addEventListener('DOMContentLoaded', loadMaterial);
+  document
+    .getElementById('load-upload-form')
+    .addEventListener('click', loadUploadForm);
+  document
+    .addEventListener('DOMContentLoaded', loadMaterial);
 </script>

@@ -1,8 +1,10 @@
 .container {
-  max-width: 100%; /* Updated from 800px to allow the container to expand to full width */
+  max-width: 100%;
+  /* Updated from 800px to allow the container to expand to full width */
   margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box; /* This ensures padding doesn't add extra width */
+  box-sizing: border-box;
+  /* This ensures padding doesn't add extra width */
 }
 
 .official-role {
@@ -24,7 +26,8 @@
 
 .picture-description {
   display: flex;
-  flex-wrap: wrap; /* This will allow wrapping in case of small devices */
+  flex-wrap: wrap;
+  /* This will allow wrapping in case of small devices */
   align-items: center;
   margin-bottom: 20px;
   width: 100%;
@@ -32,23 +35,30 @@
 
 .picture-description img {
   /* max-width: 150px; */
-  width: 50%; /* Taking up 30% of container width, adjust if needed */
+  width: 50%;
+  /* Taking up 30% of container width, adjust if needed */
   margin-right: 10px;
-  box-sizing: border-box; /* This ensures margins don't add extra width */
+  box-sizing: border-box;
+  /* This ensures margins don't add extra width */
 }
 
 .picture-description p {
-  width: 40%; /* Taking up the remaining 70% of the container width */
-  box-sizing: border-box; /* This ensures padding doesn't add extra width */
+  width: 40%;
+  /* Taking up the remaining 70% of the container width */
+  box-sizing: border-box;
+  /* This ensures padding doesn't add extra width */
 }
 
 /* Responsive adjustments */
 @media only screen and (max-width: 600px) {
   .picture-description img {
-    width: 40%; /* Adjust image width for smaller devices */
+    width: 40%;
+    /* Adjust image width for smaller devices */
   }
+
   .picture-description p {
-    width: 60%; /* Adjust description width for smaller devices */
+    width: 60%;
+    /* Adjust description width for smaller devices */
   }
 }
 
@@ -87,3 +97,72 @@
   color: #721c24;
 }
 
+/* sotto è per il registered-faces */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 19%;
+  max-width: 20%;
+  margin: 1px;
+  font-size: 0.9em;
+  text-align: center;
+  border: 1px solid var(--color-accent);
+}
+
+.missing {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+}
+
+.help-in-progress {
+  background-color: var(--color-accent-dark) !important;
+  border-color: yellow  !important;
+}
+
+.help {
+  background-color: var(--color-primary);
+  font-size: 0.7em;
+  color: var(--color-secondary);
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  border-radius: 2px;
+}
+
+.loadhelp {
+  cursor: help;
+}
+
+.addpict {
+  cursor: pointer;
+}
+
+#help-us-form {
+  padding-top: 0.8em;
+}
+
+#send-help-button {
+  width: 13%;
+  background-color: var(--color-secondary);
+}
+
+.send-deny {
+  border: 1px solid #c00;
+  cursor: not-allowed;
+}
+
+.send-allow {
+  border: 3px solid green;
+  color: green;
+  cursor: pointer;
+}
+
+#input-form {
+  width: 83%;
+}

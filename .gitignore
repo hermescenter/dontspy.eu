@@ -23,3 +23,6 @@ config/express.json
 
 data/photos
 data/json
+
+# internal stuff
+helpReceived.log

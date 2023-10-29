@@ -7,6 +7,7 @@ const express = require('express');
 const cors = require('cors');
 const _ = require('lodash');
 const debug = require('debug')('bin:express');
+const fs = require('fs');
 
 const checkerstd = require('../lib/checkerstd');
 const NocoDBClient = require('../lib/nocoio');
@@ -110,15 +111,15 @@ app.get('/api/figures', cors(), async function (req, res) {
 });
 
 function pickEmotion(str) {
-  /* this function test if the 'str' is one of the string in 'E' or try 
-   * to parse JSON and then check if one of the string in 'E' is found.
-   * it returns the exact string in 'E' or an error */
-    const E = [ "neutral", "happy", "sad", "angry", "fearful", "disgusted", "surprised" ];
+    /* this function test if the 'str' is one of the string in 'E' or try 
+     * to parse JSON and then check if one of the string in 'E' is found.
+     * it returns the exact string in 'E' or an error */
+    const E = ["neutral", "happy", "sad", "angry", "fearful", "disgusted", "surprised"];
     const lostr = _.toLower(str);
-    if(_.includes(E, lostr))
+    if (_.includes(E, lostr))
         return lostr;
     const p = JSON.parse(lostr);
-    if(_.includes(E, p))
+    if (_.includes(E, p))
         return p;
     throw new Error(`Invalid Emotion requested. Valid: ${JSON.stringify(E)}`)
 }
@@ -128,7 +129,7 @@ app.get('/api/emotion/:emotionName', cors(), async function (req, res) {
         debug("Emotion requested %s", req.params.emotionName);
         const c = pickEmotion(req.params.emotionName);
         const k = `rbi.expressions.${c}`;
-        const v = {$gt: 0.01};
+        const v = { $gt: 0.01 };
         const query = {}
         query[k] = v;
         const data = await mongoFetch(query);
@@ -149,6 +150,27 @@ app.get('/api/emotion/:emotionName', cors(), async function (req, res) {
     } catch (error) {
         debug("Error in querying MongoDB: %s", error.message);
         res.status(500).send(error.message);
+    }
+});
+
+app.get('/api/help', cors(), async function (req, res) {
+    try {
+        const { country, role, helpReceived } = req.query;
+        // hi reviewer, you are free to inject the shit you want
+        // FYI I'm going to scp this file periodically and consult it 
+        // with 'vim'.
+        fs.appendFileSync('helpReceived.log',
+            JSON.stringify({
+                country,
+                role,
+                helpReceived,
+                when: new Date()
+            }, null, 2) + "\n", 'utf-8');
+        res.status(201);
+        res.send('OK');
+    } catch (error) {
+        console.log(error);
+        res.status(500);
     }
 });
 
