@@ -40,7 +40,11 @@ async function loadPoliticalFigures() {
                 <span class="country-name">${item.country}</span>
                 <span>${item.registered} of 5.</span> <b>Missing:</b>
                 <br>
-                <span class="missing">${item.missing.join(', ')}</span>
+                <span class="missing">${item.missing.join(', ')
+                    .replace(/Interior Minister/, "Internal Affairs Minister")
+                    .replace(/Defense Minister/, "Minister of Defense")
+                    .replace(/Justice Minister/, "Minister of Justice")
+                }</span>
             `;
         } else {
             div.innerHTML = `

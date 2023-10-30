@@ -54,6 +54,9 @@ async function fetchByEmotion(emotionName) {
     img.src = imageData.url;
     img.alt = imageData.description;
 
+    if(data.length === 1)
+      img.style.maxWidth = '25%';
+
     const caption = document.createElement('div');
     caption.className = 'slide-caption';
     caption.innerHTML = `${EUMS[imageData.nation]} ${imageData.fullName} <span class="percent">${imageData.percent}</span>`;

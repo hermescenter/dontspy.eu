@@ -121,7 +121,7 @@ We can only accept pictures with faces that belong to politicians already regist
 
 Below are all the European politicians' faces & info we've managed to collect and insert in our database. Each country can feature a maximum of **five politicians**, but you'll notice some countries only have 1 or 2 politicians.
 
-You can help us build a more complete database, if you want. We are looking for the following roles: **Prime Minister, AI Act Gov. Representative, Justice Minister, Interior Minister and Defense Minister**. To add new politicians, keep scrolling.
+You can help us build a more complete database, if you want. We are looking for the following roles: **Prime Minister, AI Act Gov. Representative, Minister of Justice, Internal Affairs Minister, and Minister of Defense**. To add new politicians, keep scrolling.
 
 </section>
 

@@ -9,9 +9,9 @@ type = 'country'
 <div class="row">
   <div class="item role-name-0">Prime Minister</div>
   <div class="item role-name-1">AIAct Gov Representative</div>
-  <div class="item role-name-2">Interior Minister</div>
-  <div class="item role-name-3">Justice Minister</div>
-  <div class="item role-name-4">Defense Minister</div>
+  <div class="item role-name-2">Internal Affairs Minister</div>
+  <div class="item role-name-3">Minister of Justice</div>
+  <div class="item role-name-4">Minister of Defense</div>
 </div>
 
 <div class="row" id="registered-names">

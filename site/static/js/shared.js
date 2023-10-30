@@ -12,7 +12,7 @@ function baseURL() {
 function serverURL(path, filter) {
   /* if we're in production the server is at the same address as the website, otherwise
    * the server is at localhost:2024 */
-  if(filter)
+  if (filter)
     return baseURL() + '/api/' + path + '/' + JSON.stringify(filter);
   else
     return baseURL() + '/api/' + path;
@@ -49,3 +49,11 @@ const EUMS = {
 };
 
 const displayOrder = ['Prime Minister', 'AIAct Gov Representative', 'Interior Minister', 'Justice Minister', 'Defense Minister'];
+
+const roleNameMap = {
+  "Prime Minister": "Prime Minister",
+  "AIAct Gov Representative": "AIAct Gov Representative",
+  "Interior Minister": "Internal Affairs Minister",
+  "Justice Minister": "Minister of Justice",
+  "Defense Minister": "Minister of Defense"
+};

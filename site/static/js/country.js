@@ -152,7 +152,7 @@ function loadHelpForm() {
 
   const role = this.getAttribute('data-role');
   const country = this.getAttribute('data-country');
-  const hint = `Please give us a wikipedia link or a reference on who is the ${role} of ${country}`;
+  const hint = `Please give us a wikipedia link or a reference on who is the ${roleNameMap[role]} of ${country}`;
 
   const inputf = document
     .getElementById('input-form')
@@ -250,7 +250,9 @@ function populateData(data) {
   headerFullTitle.classList = ['politician-name'];
   const officialTitle = document.createElement('span');
   officialTitle.classList = ['official-role'];
-  officialTitle.textContent = data.role;
+
+  officialTitle.textContent = roleNameMap[data.role];
+
   container.appendChild(officialTitle);
   container.appendChild(headerFullTitle);
 
@@ -321,7 +323,9 @@ function renderRBI(rbi, isfake, description) {
   let retval = "";
   if (isfake) {
     retval += `<div>
-      <span class="deepfake-label">deepfake</span>
+      <span class="deepfake-label">
+        <a href="/blog/why-deepfake">deepfake</a>
+      </span>
       <br>
       <code>${description}</code>
     </div>`;
