@@ -1,7 +1,7 @@
 +++
-title = "The Influence Opportunity is Running Out!"
+title = "This is our last chance to influence the public debate around the AI Act!"
 
-tags = ['campaign']
+tags = ['details']
 date = "2023-10-29"
 
 description = "36 days to pressure the Council of Europe are left"

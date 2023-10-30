@@ -1,6 +1,7 @@
 +++
 title="Let's draw limits on harmful and discriminatory surveillance"
 date = "2023-09-27"
+tags = ['details']
 description="Let's draw limits on harmful and discriminatory surveillance"
 banner = '/img/our-request-logotype.png'
 +++
