@@ -9,7 +9,6 @@ function reportRegisteredFaces(data, countryName) {
     // allora c'è almeno una foto, se no, segnala "Missing"
     if (!count) {
       container.classList.add('missing');
-      container.textContent = 'Missing ';
 
       const h = document.createElement('span');
       h.classList.add('help');
@@ -22,7 +21,8 @@ function reportRegisteredFaces(data, countryName) {
       const t = document
         .getElementById(`name-${order}`);
 
-      t.textContent = "🤷❓";
+      t.textContent = "Missing";
+      t.style.fontStyle = 'italic';
       t.setAttribute('data-role', role);
       t.setAttribute('data-country', countryName);
       t.classList.add('loadhelp');
