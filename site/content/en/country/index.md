@@ -4,7 +4,7 @@ type = 'country'
 
 <link rel="stylesheet" href="/css/country.css">
 
-# Since we're targeting the European Council, we'll use these 5 prominent political roles from <span class="country-name"></span> <span class="country-flag"></span> as an example
+# Since we’re targeting the European Council, we’ll use these 5 prominent political roles per Member State; See below: <span class="country-name"></span> <span class="country-flag"></span>
 
 <div class="row">
   <div class="item role-name-0">Prime Minister</div>
