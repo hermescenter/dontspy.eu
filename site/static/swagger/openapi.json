@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Individuals Analysis API",
+    "title": "Don't Spy EU Faces API",
     "version": "1.0.0",
-    "description": "API for retrieving information about individuals, emotions in images, and availability statistics"
+    "description": "These APIs are interfaces to a MongoDB database. There is only one collection. <br>In these interfaces, mostly, are filter applied to the collection, for example, returning only politicians from a certain country or providing only the expressions they convey.<br><b>Emotion recognition/attribution</b>, such as 'sadness', happens according to a <a href='https://github.com/vladmandic/face-api/'>facial recognition library</a>.<br><h3>One should not expect accurate data regarding emotion attribution!</h3>...as it is a pseudoscience that will always be inaccurate. Unfortunately, surveillance capitalism and a predictive securitarian attitude have propagated this misconception, and similar technologies are proliferating in both private and public sectors.<h3>The goal of this initiative, is to o scan the faces of a few representative from the Council of Europe through a face recognition algorithm — They’re the ones in charge of finalizing the AI Act, and there is the strong risk that biometric surveillance would be allowed. So let’s make sure they fully understand the risks of such choice!</h3>"
   },
   "servers": [
     {
