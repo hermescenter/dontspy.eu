@@ -17,6 +17,8 @@ type = "deepfake"
 
 #### The EU currently has the power to forbid the use of face biometry in the AI Act. To know more on how the AI Act can prevent the spread of deepfakes, you can read [this informative piece](/blog/why-deepfake) we’ve prepared – with some input from ChatGPT. Or, you can also
 
+<br>
+
 <div style="text-align:center">
   <button>
     <a id="clickable" onclick="renderNocodb()" >Upload a deepfake of your fave Minister!</a>

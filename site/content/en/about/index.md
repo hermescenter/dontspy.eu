@@ -37,7 +37,7 @@ date_format = "Jan 2006"
 
 **Hermes Center for Transparency and Digital Human Rights**, along with fellow nonprofits **The Good Lobby Italy** and info.nodes (_we_), first launched a campaign called _Don’t Spy On Us EU_ in March 2023.
 
-The campaign’s early phase was about encouraging the general public to challenge European Parliamentarians who were involved in the EU **Artificial Intelligence Act** negotiations and supported biometric surveillance. On the [old version](//dontspyonus.eu/) of our website, users could scan politicians’ faces with a **facial recognition algorithm**.
+The campaign’s early phase was about encouraging the general public to challenge the Members of European Parliament who were involved in the EU **Artificial Intelligence Act** negotiations and supported biometric surveillance. On the [old version](//dontspyonus.eu/) of our website, users could scan politicians’ faces with a **face recognition algorithm**.
 
 Now we are proud to announce the launch of **Don't Spy EU**, our new campaign, on a brand new website. The goal remains the same, that is, to show how, by using publicly-available technology, governments and private companies could potentially access sensitive information about citizens (age, gender, even emotional state) and use it as they please – should Remote Biometric Identification (RBI) ever become legal in the EU.
 
@@ -45,7 +45,7 @@ Now we are proud to announce the launch of **Don't Spy EU**, our new campaign, o
 
 # But wait, isn’t a ban on RBI already in place? 
 
-And didn’t the AI Act’s draft include a **total ban**, initially?  Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification. However, when the AI Act becomes effective, RBI systems will be subject to that law only since their software employs Artificial Intelligence.
+And didn’t the AI Act’s draft include a **total ban**, initially?  Well, the **General Data Protection Regulation** (GDPR) does include a ban on biometric identification. However, when the AI Act becomes effective, RBI systems will be subject mainly to that law, since their software employs Artificial Intelligence.
 
 Like many other nonprofit organizations all over the continent, we are **deeply concerned** about the trajectory the AI Act is taking.
 
@@ -57,7 +57,7 @@ As we write (October 2023), dozens of fellow digital rights organizations have a
 
 # Yes, RBI might be banned… but with some exceptions
 
-As of now, **predictive policing** tools, **real-time remote** facial recognition and biometric identification in public spaces are forbidden, and the AI Act’s current version maintains this ban as well.
+As of now, **predictive policing** tools, **real-time remote** face recognition and biometric identification in public spaces are forbidden, and the AI Act’s current version maintains this ban as well.
 
 However, exceptions will be granted for **ex-post technologies** employed in the prosecution of serious crimes and under judicial authorization; law enforcement will also be able to use predictive policing algorithms that analyse personal data in order to identify potential **future offenders**. And who gets to determine who could turn into an “offender”?
 
