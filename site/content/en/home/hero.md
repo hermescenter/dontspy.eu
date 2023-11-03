@@ -25,7 +25,7 @@ hero_media = "/img/portrait.jpg"
 
 #### Ever wondered what living under AI surveillance in Europe would feel like?
 
-#### Don’t Spy EU allows you to scan the faces of European lawmakers through a face recognition algorithm.
+#### Don’t Spy EU allows you to scan the faces of European lawmakers with a face recognition algorithm.
 
 #### They're the ones in charge of finalizing the AI Act, so let's make sure they fully understand the risks of biometric surveillance.
 
