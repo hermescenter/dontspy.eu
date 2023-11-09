@@ -5,7 +5,7 @@ subtitle = "We face-scanned 500+ Members of the EU Parliament"
 # Nota per Alessandra: la tag 'campaign' deve esserci perchè appaia in homepage,
 # in assenza, apparirebbe nella lista dei blog e nella lista per categoria,
 # ma non in homepage
-tags = ['campaign']
+tags = ['details']
 date = "2023-06-25"
 
 # For description meta tag
