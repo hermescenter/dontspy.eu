@@ -5,9 +5,9 @@ subtitle = "It’s the first attempt of the United States at regulating AI at th
 tags = ['campaign']
 date = "2023-11-08"
 
-description = "The preliminary campaign we made"
+description = "It’s the first attempt of the United States at regulating AI at the federal level. Some of its key points seem to go in the right direction, but there are still concerns."
 
-banner = '/img/joe-biden-eyes-1200.jpg'
+banner = "/img/joe-biden-eyes-1200.jpg"
 +++
 
 On October 30, the Biden administration issued the AI Executive Order, a federal attempt at regulating AI in (temporary) absence of a dedicated law.
