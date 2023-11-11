@@ -6,7 +6,7 @@ type = 'country'
 
 # Since we’re targeting the European Council, we’ll use these 5 prominent political roles per Member State; See below: <span class="country-name"></span> <span class="country-flag"></span>
 
-<div class="row">
+<div class="role-row">
   <div class="item role-name-0">Prime Minister</div>
   <div class="item role-name-1">AIAct Gov Representative</div>
   <div class="item role-name-2">Internal Affairs Minister</div>
@@ -14,7 +14,7 @@ type = 'country'
   <div class="item role-name-4">Minister of Defense</div>
 </div>
 
-<div class="row" id="registered-names">
+<div class="role-row" id="registered-names">
   <div class="item" id="name-0"></div>
   <div class="item" id="name-1"></div>
   <div class="item" id="name-2"></div>
@@ -22,7 +22,7 @@ type = 'country'
   <div class="item" id="name-4"></div>
 </div>
 
-<div class="row" id="registered-faces">
+<div class="role-row" id="registered-faces">
   <div class="item" id="role-0"></div>
   <div class="item" id="role-1"></div>
   <div class="item" id="role-2"></div>

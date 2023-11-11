@@ -244,22 +244,33 @@ function loadUploadForm() {
 function populateData(data) {
   const container = document.querySelector('.container');
 
-  // data.role and data.name shape this element
-  const headerFullTitle = document.createElement('p');
-  headerFullTitle.textContent = data.fullname;
-  headerFullTitle.classList = ['politician-name'];
-  const officialTitle = document.createElement('span');
-  officialTitle.classList = ['official-role'];
+  // create the politician header 
+  const header = document.createElement('div');
 
-  officialTitle.textContent = roleNameMap[data.role];
+  if (data.fullname && data.role) {
+    header.classList.add('politician-header');
 
-  container.appendChild(officialTitle);
-  container.appendChild(headerFullTitle);
+    // data.role and data.name shape this element
+    const headerFullTitle = document.createElement('p');
+    headerFullTitle.textContent = data.fullname;
+    headerFullTitle.classList = ['politician-name'];
+
+    const officialTitle = document.createElement('span');
+    officialTitle.classList = ['official-role'];
+    officialTitle.textContent = roleNameMap[data.role];
+
+    header.appendChild(officialTitle);
+    header.appendChild(headerFullTitle);
+  }
+
+  /* header is appended in both cases because here the pictures get attached */
+  container.appendChild(header);
 
   // data.items is an array of objects with img src and all the RBI metas
   data.items.forEach(item => {
-    const pictureDescription = document.createElement('div');
-    pictureDescription.classList.add('picture-description');
+
+    const column1 = document.createElement('div');
+    column1.classList.add('column');
 
     const img1Normal = new Image();
     img1Normal.src = item.src;
@@ -267,6 +278,7 @@ function populateData(data) {
     img2Box.src = item.boxpic;
 
     const img = document.createElement('img');
+    img.classList.add('image');
     img.src = item.src;
     img.alt = item.description; // using the description as alt text
 
@@ -281,14 +293,19 @@ function populateData(data) {
       img.src = img1Normal.src;
     });
 
+    column1.appendChild(img);
+    header.appendChild(column1); // left side
+
+    // and now the text
+    const column2 = document.createElement('div');
+    column2.classList.add('column');
     /* render RBI produces the text on the right of the picture */
     const details = document.createElement('p');
+    details.classList.add('details');
     details.innerHTML = renderRBI(item.rbi, item.isfake, item.description);
 
-    /* append to the container */
-    pictureDescription.appendChild(img);
-    pictureDescription.appendChild(details);
-    container.appendChild(pictureDescription);
+    column2.appendChild(details); // it would render on the right or bottom
+    header.appendChild(column2);
   });
 }
 
@@ -324,10 +341,10 @@ function renderRBI(rbi, isfake, description) {
   if (isfake) {
     retval += `<div>
       <span class="deepfake-label">
-        <a href="/blog/why-deepfake">deepfake</a>
+      deepfake <a class="why-deepfake" href="/blog/why-deepfake">(why?)</a>
       </span>
       <br>
-      <code>${description}</code>
+      <span class="deepfake-description">${description}</span>
     </div>`;
   }
 

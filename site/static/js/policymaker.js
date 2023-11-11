@@ -75,8 +75,8 @@ async function loadIndividual() {
   });
 
   const formatted = [{
-    role: data[0].OfficialRole,
-    fullname: cleanName,
+    /* if both are null, the politician header name/role will not be there */
+    role: null, fullname: null,
     items
   }];
 
