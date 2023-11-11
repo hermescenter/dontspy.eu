@@ -283,12 +283,10 @@ function populateData(data) {
     img.alt = item.description; // using the description as alt text
 
     img.addEventListener('mouseenter', (event) => {
-      // console.log("enter");
       /* when the mouse is over the image, we need to show the boxpic */
       img.src = img2Box.src;
     });
     img.addEventListener('mouseout', (event) => {
-      // console.log("out");
       /* when the mouse is over the image, we need to show the boxpic */
       img.src = img1Normal.src;
     });
@@ -339,21 +337,14 @@ function renderRBI(rbi, isfake, description) {
  */
   let retval = "";
   if (isfake) {
-    retval += `<div>
-      <span class="deepfake-label">
-      deepfake <a class="why-deepfake" href="/blog/why-deepfake">(why?)</a>
-      </span>
-      <br>
+    retval +=`<div>
+      <div class="rbi-label">
+        deepfake description <a class="why-deepfake" href="/blog/why-deepfake">(why?)</a>
+      </div>
       <span class="deepfake-description">${description}</span>
-    </div>`;
+    </div>`
   }
 
-  retval += `<div><b>Estimated Gender:</b><br>
-    <code>${_.upperFirst(rbi.gender)}</b> ${_.round(rbi.genderProbability * 100, 1)}%</code>
-  </div>`;
-  retval += `<div><b>Estimated Age:</b><br>
-    <code>${_.round(rbi.age, 1)} years</code>
-  </div>`;
   /* expressions contains a dictionary of probabilities, we want to show the top 2 */
   /* sort the estimated expressions first */
   const sortedExpressions = _.sortBy(_.toPairs(rbi.expressions), (pair) => pair[1]).reverse();
@@ -365,13 +356,36 @@ function renderRBI(rbi, isfake, description) {
     return memo;
   }, []);
 
-  retval += `
-    <div><b>Expressions:</b>
-    <br>
+  const firstTwoExpressions = `
     <code>${formatted[0].exprname} ${formatted[0].amount}%</code>
     <br>
     <code>${formatted[1].exprname} ${formatted[1].amount}%</code>
+  `;
+
+  retval += `
+    <div class="rbi-label">
+      Remote Biometric Identification report
     </div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <code>${_.upperFirst(rbi.gender)}</b> ${_.round(rbi.genderProbability * 100, 1)}%</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td>
+            <code>${_.round(rbi.age, 1)} years</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Expressions:</td>
+          <td>${firstTwoExpressions}</td>
+        </tr>
+      </tbody>
+    </table>
   `;
 
   return retval;

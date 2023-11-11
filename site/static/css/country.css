@@ -11,33 +11,16 @@
   font-size: 1.5em;
 }
 
-.deepfake-label {
-  color: var(--color-accent-dark);
-
-}
-
-.why-deepfake {
-  font-size: 0.8em;
-}
-
-.deepfake-description {
-  font-size: 0.9em;
-  font-style: italic;
-}
-
-/* Contenitore principale */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  /* Pulisce il float */
 }
 
 /* Colonne */
 .column {
   float: left;
   width: 100%;
-  padding: 10px;
 }
 
 .column:nth-child(odd) {
@@ -48,8 +31,45 @@
   clear: both;
 }
 
+/* Dettagli */
+.rbi-label {
+  color: var(--color-accent);
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 0.5em;
+}
+
+.why-deepfake {
+  font-size: 0.8em;
+}
+
+.deepfake-description {
+  font-size: 0.9em;
+  font-style: italic;
+  padding-left: 0.5em;
+}
+
+
+/* Stile della tabella */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 0px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Larghezza fissa per la colonna sinistra */
+td:first-child {
+  font-weight: bold;
+  width: 150px;
+}
+
 .details {
-  font-size: 0.7em;
+  font-size: 0.8em;
+  margin-top: 0px !important;
 }
 
 /* Stile desktop */
@@ -57,6 +77,7 @@
   .column {
     width: 50%;
   }
+
   .details {
     font-size: 1.1em;
   }
@@ -64,6 +85,7 @@
 
 /* Immagine */
 .image {
+  border-radius: 1em;
   width: 100%;
   height: auto;
 }

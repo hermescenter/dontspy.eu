@@ -6,7 +6,7 @@ type = 'country'
 
 Since we’re targeting the European Council, we picked [5 prominent political roles per Member State](/blog/five-meaningful-figures/), and this page is about:
 
-# <span class="policymaker-name"></span> <span class="policymaker-role"></span> of <span class="country-flag"></span> <a href="" class="country-link"><span class="country-name"></span></a>
+# <span class="policymaker-name"></span>, <span class="policymaker-role"></span> of <span class="country-flag"></span> <a href="" class="country-link"><span class="country-name"></span></a>
 
 <div class="container" id="face-list"></div>
 
