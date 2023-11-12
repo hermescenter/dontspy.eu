@@ -1,0 +1,11 @@
+{{ $photos := getJSON "https://dontspy.eu/api/individuals/%7B%22isfake%22:true%7D " }}
+{{ range $photo := $photos }}
+<figure>
+  <img src="https://dontspy.eu/{{ $photo.boxfile }}" alt="{{ $photo.Name }}">
+  <figcaption>
+    <a href="/policymaker#{{ $photo.Name}} {{ $photo.Surname}}">{{ $photo.Name}} {{ $photo.Surname }}</a> {{ $photo.OfficialRole }} 
+    <a href="/country#{{ $photo.Country }}">{{ $photo.Country }}</a>
+  </figcaption>
+</figure>
+{{ end }}
+

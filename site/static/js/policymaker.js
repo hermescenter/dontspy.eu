@@ -62,12 +62,12 @@ async function loadIndividual() {
       e.setAttribute('href', `/country#${countryName}`);
     });
 
-  /* mock existing format even if we have only one policymaker,
+  /* reused the existing format even if we have only one policymaker,
      but in this case we invert the presence of the 'box' file */
   const items = _.map(data, (photo) => {
     return {
-      src: `${baseURL()}/${photo.image}`,
-      boxpic: `${baseURL()}/${photo.boxfile}`,
+      boxpic: `${baseURL()}/${photo.image}`,
+      src: `${baseURL()}/${photo.boxfile}`,
       rbi: photo.rbi,
       isfake: photo.isfake,
       description: photo.Description ?? `Official potrait of ${cleanName}`,

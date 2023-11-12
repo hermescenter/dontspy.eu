@@ -44,3 +44,16 @@
 
     border-radius: 10px 10px 0px 0px;
 }
+
+.click-to-next {
+    /* this is a class used for a small label that need to 
+     * inform the user that he can click on the image */
+    color: var(--color-primary);
+    font-size: 0.8em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-radius: 2px;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-accent);
+    cursor: grab;
+}

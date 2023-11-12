@@ -302,6 +302,15 @@ function populateData(data) {
     details.classList.add('details');
     details.innerHTML = renderRBI(item.rbi, item.isfake, item.description);
 
+    column2.addEventListener('mouseenter', (event) => {
+      /* when the mouse is over the image, we need to show the boxpic */
+      img.src = img2Box.src;
+    });
+    column2.addEventListener('mouseout', (event) => {
+      /* when the mouse is over the image, we need to show the boxpic */
+      img.src = img1Normal.src;
+    });
+
     column2.appendChild(details); // it would render on the right or bottom
     header.appendChild(column2);
   });

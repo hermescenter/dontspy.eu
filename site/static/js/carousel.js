@@ -33,12 +33,10 @@ async function loadCarousel() {
   const imgContainer = document.getElementById('img-container');
 
   imgContainer.addEventListener('touchstart', function (e) {
-    console.log('handling event touchstart');
     touchStartX = e.touches[0].clientX;
   });
 
   imgContainer.addEventListener('touchend', function (e) {
-    console.log('handling event touchend');
     let touchEndX = e.changedTouches[0].clientX;
     handleSwipe(touchStartX, touchEndX);
   });
@@ -46,19 +44,16 @@ async function loadCarousel() {
   let startMouseY = 0;
 
   imgContainer.addEventListener('mousedown', function (e) {
-    console.log('handling event mousedown');
     startMouseY = e.clientY;
     e.preventDefault(); // Prevenire il drag di default delle immagini
   });
 
   imgContainer.addEventListener('mouseup', function (e) {
-    console.log('handling event mouseup');
     let endMouseY = e.clientY;
     handleSwipe(startMouseY, endMouseY);
   });
 
   imgContainer.addEventListener('click', function (e) {
-    console.log('handling event click');
     displayImage(data, 1);
   });
 
@@ -76,8 +71,8 @@ function displayImage(data, direction) {
 
   const nation = data[currentIndex].Country;
   imgContainer.src = data[currentIndex].srcurl;
-  descriptionContainer.textContent = 
-    `${EUMS[nation]} ${data[currentIndex].Description}`
+  descriptionContainer.innerHTML = 
+    `${EUMS[nation]} ${data[currentIndex].Description} <span class="click-to-next">Click to next</span>`
 
   window.setTimeout(() => {
     imgContainer.src = data[currentIndex].box.src;
@@ -87,6 +82,10 @@ function displayImage(data, direction) {
     }, 400);
 
   }, 200); 
+
+  document.querySelector('.click-to-next').addEventListener('click', function (e) {
+    displayImage(data, 1);
+  });
 }
 
 function handleSwipe(start, end) {
