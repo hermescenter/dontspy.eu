@@ -81,7 +81,7 @@ async function main() {
         const boxfile = await drawBox(imagePath, photo.Id);
         if (_.isNull(boxfile)) {
 
-            debug("Ensuring mongodb entry %O DO NOT EXIST", photo);
+            debug("Boxfile not done! Deleting everything of %O", photo);
             const dbc = await checkerstd.connectMongoDB();
             const collection = dbc.db('dontspy').collection('safety');
             /* here we've to remove by 'image' and then insert one by one */
@@ -94,8 +94,8 @@ async function main() {
             debug("Deleted photo %s %s", photo.Id, imagePath);
 
             /* delete the ID from the DB */
-            const result = await client.deleteOne('photos', photo.Id);
-            debug("deleted nocodb entry %O", result);
+            // const result = await client.deleteOne('photos', photo.Id);
+            debug("Not deleted nocodb entry %O", result);
         }
 
         const subject = await client.findOne('subjects', _.first(photo.subject).Id);

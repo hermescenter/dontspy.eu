@@ -1,0 +1,18 @@
+figure > img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+figure > figcaption {
+    text-align: center;
+    size: 0.9em;
+
+    line-height: 1.5em !important;
+    border-left: 1px solid var(--color-primary);
+    border-right: 1px solid var(--color-primary);
+    border-radius: 0px 0px 10px 10px;
+}
+
+figcaption > p {
+    margin-top: 0px;
+    padding: 1em;
+}
