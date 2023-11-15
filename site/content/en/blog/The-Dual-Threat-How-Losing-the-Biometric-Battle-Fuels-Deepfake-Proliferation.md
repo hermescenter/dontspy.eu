@@ -12,8 +12,6 @@ banner = "https://dontspy.eu/dall-e/serpent-like%20creature%20with%20a%20deceitf
 
 <link rel="stylesheet" type="text/css" href="/css/blog.css" />
 
-###### Work In Progress :D 
-
 # Biometrics and Deepfakes: Tracking the Uniqueness
 
 Three factors are converging and present a unique opportunity: the Executive Order on Artificial Intelligence signed by U.S. President Biden, the regulatory vacuum and lack of safeguards that deepfakes have been exploiting in recent months, and the imminent conclusion of the trilogues on the AI Act.
@@ -98,8 +96,15 @@ Because this connection is complex, the time is running out, we play with [deepf
 
 So let's use this measure to our advantage as Europeans, knowing that such marked and "certified" datapoints can be identified. Let's enforce transparency on the models adopted, and ban the use of products based on models trained on biometric data.
 
+# 💡 API
 
-# 
+To better remind that once your Biometric data gets into the surveillance capitalist internet, personal data flow uncontrolled, we setup a method to:
+
+###### pick the deepfakes pictures and biometric information, in JSON, via API:
+
+[`https://dontspy.eu/api/individuals/%7B%22isfake%22:true%7D`](https://dontspy.eu/api/individuals/%7B%22isfake%22:true%7D)
+
+###### You're invited [to submit more](/deepfake)!
 
 # 🤔 Discriminator
 
