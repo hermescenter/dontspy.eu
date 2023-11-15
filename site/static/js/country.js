@@ -252,13 +252,17 @@ function populateData(data) {
 
     // data.role and data.name shape this element
     const headerFullTitle = document.createElement('p');
-    headerFullTitle.textContent = data.fullname;
     headerFullTitle.classList = ['politician-name'];
+
+    const clickable = document.createElement('a');
+    clickable.textContent = data.fullname;
+    clickable.href = `/policymaker/#${encodeURIComponent(data.fullname)}`;
 
     const officialTitle = document.createElement('span');
     officialTitle.classList = ['official-role'];
     officialTitle.textContent = roleNameMap[data.role];
 
+    headerFullTitle.appendChild(clickable);
     header.appendChild(officialTitle);
     header.appendChild(headerFullTitle);
   }
