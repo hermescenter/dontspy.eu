@@ -286,11 +286,11 @@ function populateData(data) {
     img.src = item.src;
     img.alt = item.description; // using the description as alt text
 
-    img.addEventListener('mouseenter', (event) => {
+    img.addEventListener('mouseenter', () => {
       /* when the mouse is over the image, we need to show the boxpic */
       img.src = img2Box.src;
     });
-    img.addEventListener('mouseout', (event) => {
+    img.addEventListener('mouseout', () => {
       /* when the mouse is over the image, we need to show the boxpic */
       img.src = img1Normal.src;
     });
@@ -306,13 +306,13 @@ function populateData(data) {
     details.classList.add('details');
     details.innerHTML = renderRBI(item.rbi, item.isfake, item.description);
 
-    column2.addEventListener('mouseenter', (event) => {
-      /* when the mouse is over the image, we need to show the boxpic */
+    /* In column2, the logic is slightly different. when the mouseover,
+     * the image should change for 3000 ms, and then go back to the original */
+    column2.addEventListener('mouseover', () => {
       img.src = img2Box.src;
-    });
-    column2.addEventListener('mouseout', (event) => {
-      /* when the mouse is over the image, we need to show the boxpic */
-      img.src = img1Normal.src;
+      window.setTimeout(() => {
+        img.src = img1Normal.src;
+      }, 3000);
     });
 
     column2.appendChild(details); // it would render on the right or bottom
