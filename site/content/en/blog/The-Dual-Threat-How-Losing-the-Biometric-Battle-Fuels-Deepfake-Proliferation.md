@@ -1,10 +1,9 @@
 +++
 title = "The Dual Threat: How Losing the Biometric Battle Fuels Deepfake Proliferation"
 subtitle = "Exploring the Double-Edged Sword of Human and Machine-Based Face Recognition"
-draft = true
 
 tags = ['details']
-date = "2023-11-12"
+date = "2022-11-12"
 
 description = "Why it is imperative to approach the issue with attention to the foundational elements. The technologies that extract identifying points from faces have a lot in common with those used to produce fake images for the same faces."
 
@@ -12,6 +11,8 @@ banner = "https://dontspy.eu/dall-e/serpent-like%20creature%20with%20a%20deceitf
 +++
 
 <link rel="stylesheet" type="text/css" href="/css/blog.css" />
+
+###### Work In Progress :D 
 
 # Biometrics and Deepfakes: Tracking the Uniqueness
 
@@ -118,7 +119,7 @@ Google recently release some additional tool for "image trustworthyness" this is
     caption="Screenshot from Google image 'About this Image' feature. It fully detect one of our fake, but because the picture was existing already"
 >}}
 
-This do not happen with pictures that are fully AI generated or pictures that have never been published online before. And the tools and request of watermarking 
+This do not happen with pictures that are fully AI generated or pictures that have never been published online before.
 
 <div id="upload-form-container"></div>
 
