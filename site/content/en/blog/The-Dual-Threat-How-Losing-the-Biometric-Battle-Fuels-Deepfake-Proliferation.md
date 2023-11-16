@@ -23,32 +23,34 @@ Three factors are converging and present a unique opportunity: The debate on Fou
 
 > An emerging type of AI system is a ‘foundation model’, sometimes called a ‘general-purpose AI’ or ‘GPAI’ system. These are capable of a range of general tasks (such as text synthesis, image manipulation and audio generation). Notable examples are OpenAI’s GPT-3 and GPT-4, foundation models that underpin the conversational chat agent ChatGPT.
 
-via [Explainer: What is a foundation model?](https://www.adalovelaceinstitute.org/resource/foundation-models-explainer/)
+via [Explainer: What is a foundation model?](https://www.adalovelaceinstitute.org/resource/foundation-models-explainer/) _Ada Lovelace Institute._
 
 It is clear that a **foundation model capable of producing images that resemble an individual has two fundamental problems**: it has been trained over countless personal biometric information, **from people who never consented to it**, and, to produce a realistic figure of a subject, it **must have a biometric detail** to so produce a matching equivalent. In modern times, the computatational resources to produce fakes of quality enough to fool both computer and human vision (deepfake), is become affordable to the mainstream.
 
 # The Corporate answer
 
-###### The author's thesis is that corporate lobbiesm try to describe certain "advances" as undeniable realities, and contextually pretend to be the only one responsible enough to handle such technology. This is evident in statements such as Microsoft's responsible use of AI in elections:
+###### The author's thesis is that corporate lobbiesm try to describe certain "advances" as undeniable realities, and contextually pretend to be the only one responsible enough to handle such technology. This is evident in statements such as [Microsoft's responsible use of AI in elections](https://blogs.microsoft.com/on-the-issues/2023/11/07/microsoft-elections-2024-ai-voting-mtac/):
 
 > First, Microsoft will help candidates and campaigns maintain greater control over their content and likeness by launching Content Credentials as a Service. This new tool enables users to digitally sign and authenticate media using the Coalition for Content Provenance and Authenticity’s (C2PA) digital watermarking credentials, a set of metadata that encode details about the content’s provenance using cryptography.
 
+<br>
 
 **Translated from corporate newspeak**, this means:
 
 * Only Microsoft can issue a certificate of trustworthiness.
 * If there is no such certificate, you should assume that the content is fake.
 
-And this assumes that:
+And **this assumes that**:
 
 * Fake content can be generated thanks to Microsoft technology, so they can't avoid it.
 * You have to go to the trouble of getting a certificate because Microsoft technology has made the Internet less reliable.
 
 ###### This should not an underlay assumption the AI Act regulators should buy!
 
+We should reflect on the strong links between:
 
-
-
+* The massive GDPR/biometric personal data violation happening when a Foundamental Model is trained
+* The intrinsic co-dependence between biometric profiling and deepfake
 
 {{<figure
     class="blog-figures"
@@ -56,9 +58,9 @@ And this assumes that:
     caption="This reflection naturally takes into account that _the genie is out of the bottle,_ and malicious actors will still manage to produce fakes, This is known and cannot be hindered by watermarking, detection, or prohibition. <br>So far, none can help the detection, despite what Google says [🤔](blog/the-dual-threat-how-losing-the-biometric-battle-fuels-deepfake-proliferation#-google-said-what)"
 >}}
 
-What we can aspire to is addressing ethical and practical issues related to safeguarding our identity. Two areas in particular, facial biometric recognition and deepfakes, are becoming increasingly prominent in public debate. But why are these two domains particularly concerning? The answer lies in the heart of human uniqueness.
+What we can aspire to is addressing ethical and practical issues related to safeguarding our identity. **Two areas in particular, facial biometric recognition and deepfakes, are becoming increasingly prominent in public debate**. But why are these two domains particularly concerning? The answer lies in the heart of human uniqueness.
 
-**Facial biometric** recognition is not limited to recognizing an individual's physical features; rather, it **deals with a category of particularly sensitive data**. Like genetic codes, the features of our faces are immutable. It's not merely an image or temporary information, but the very essence of our individuality. Once acquired and recorded, these data become a permanent tracker. Unlike computer cookies, which can be deleted, or phone numbers, which can be changed, our faces and DNA remain unaltered.
+**Facial biometric** recognition is not limited to recognizing an individual's physical features; rather, it **deals with a category of particularly sensitive data**. Like genetic codes, the features of our faces are immutable. It's not merely an image or temporary information, but the very essence of our individuality. **Once acquired and recorded**, these data become a permanent tracker. Unlike computer cookies, which can be deleted, or phone numbers, which can be changed, our faces and DNA remain unaltered.
 
 {{<figure
     class="blog-figures"
@@ -66,7 +68,7 @@ What we can aspire to is addressing ethical and practical issues related to safe
     caption="Conceptual illustration of a Generative Adversarial Network (GAN) in action. The scene shows two different anthropomorphised machines, one of which is about to replicate the other."
 >}}
 
-This is why it is imperative to approach the issue with extreme attention to the foundational elements. The technologies that extract identifying points from faces have a lot in common with those used to produce fake images or videos, the so-called deepfakes. The adoption of technologies that process biometric data should not be taken lightly as it is based on the dissemination of models that can be used to infringe rights more than to protect them.
+This is why it is imperative to approach the issue with extreme attention to the foundational elements. **The technologies that extract identifying points from faces have a lot in common with those used to produce fake images or videos**, the so-called deepfakes. The adoption of technologies that process biometric data should not be taken lightly as it is based on the dissemination of models that can be used to infringe rights more than to protect them.
 
 A central element in the production of deepfakes is called "the discriminator,"[🤔](blog/the-dual-threat-how-losing-the-biometric-battle-fuels-deepfake-proliferation#-discriminator) which is a component of Artificial Intelligence responsible for verifying the "quality" of the generated images, discerning whether the AI's chosen path is the most effective in producing a fake or if it needs to explore others. **To perform this function, the discriminator uses a model trained on faces, a constant facial recognition**, an alignment between the biometric characteristics of the victim and those of the image it aims to achieve. The recognition model is essential in creating convincing deepfakes.
 
@@ -115,16 +117,23 @@ Because this connection is complex, the time is running out, we play with [deepf
   </button>
 </div>
 
+# How Does This Connect to the (unregulation of) Foundation Models?
 
-# How Does This Connect to the Executive Order on Artificial Intelligence?
+In the last phases of the Trilogue, as explained by Connor Dunlop in [Regulating AI foundation models is crucial for innovation](https://www.euractiv.com/section/artificial-intelligence/opinion/regulating-ai-foundation-models-is-crucial-for-innovation/), Germany, France and Italy are pushing for **Zero Regulation on Foundation Models**.
 
 {{<figure
     src="/dall-e/visual%20representation%20of%20the%20production%20of%20an%20AI%20model%20trained%20on%20countless%20data%2C%20combining%20technology%20with%20natural%20elements-2.jpg"
-    caption="One certainty we can expect is the supervision of the Department of Commerce over the production of models, and this could ensure that the models produced and used in apps and services in the European market do not allow for the processing of biometric data."
+    caption="Even in the Executive Order of Biden ([our blogpost](/blog/what-us-say-on-rbi/)), one certainty we can expect is the supervision of the Department of Commerce over the production of models, and this could ensure that the models produced and used in apps and services in the European market do not allow for the processing of biometric data."
     class="blog-figures"
 >}}
 
 So let's use this measure to our advantage as Europeans, knowing that such marked and "certified" datapoints can be identified. Let's enforce transparency on the models adopted, and ban the use of products based on models trained on biometric data.
+
+As a conclusion, this infographic by EDRI, updates on the status of [Our Requests](/blog/requests):
+
+{{<figure
+    src="/img/Trilogue-Infographic.png"
+>}}
 
 # 💡 API
 
