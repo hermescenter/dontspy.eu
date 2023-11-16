@@ -1,6 +1,7 @@
 +++
 title = "The Dual Threat: How Losing the Biometric Battle Fuels Deepfake Proliferation"
 subtitle = "Exploring the Double-Edged Sword of Human and Machine-Based Face Recognition"
+draft = true
 
 tags = ['details']
 date = "2022-11-12"
@@ -14,11 +15,40 @@ banner = "https://dontspy.eu/dall-e/serpent-like%20creature%20with%20a%20deceitf
 
 # Biometrics and Deepfakes: Tracking the Uniqueness
 
-Three factors are converging and present a unique opportunity: the Executive Order on Artificial Intelligence signed by U.S. President Biden, the regulatory vacuum and lack of safeguards that deepfakes have been exploiting in recent months, and the imminent conclusion of the trilogues on the AI Act.
+Three factors are converging and present a unique opportunity: The debate on Foundation Model in the AIAct, the regulatory vacuum and lack of safeguards that deepfakes have been exploiting in recent months, and the imminent conclusion of the trilogues on the AI Act.
 
 ###### The author's thesis is that, with a few caveats, the AI Act can still be finalised in time to protect fundamental rights, as European regulation is praised for doing, while tackling the problem of deepfakes by going to the root of the technology that enables them.
 
-It would also take advantage of one of the provision from the Executive Order (we wrote a [brief blog on this](/what-us-say-on-rbi/)).
+# What are the Foundation Model?
+
+> An emerging type of AI system is a ‘foundation model’, sometimes called a ‘general-purpose AI’ or ‘GPAI’ system. These are capable of a range of general tasks (such as text synthesis, image manipulation and audio generation). Notable examples are OpenAI’s GPT-3 and GPT-4, foundation models that underpin the conversational chat agent ChatGPT.
+
+via [Explainer: What is a foundation model?](https://www.adalovelaceinstitute.org/resource/foundation-models-explainer/)
+
+It is clear that a **foundation model capable of producing images that resemble an individual has two fundamental problems**: it has been trained over countless personal biometric information, **from people who never consented to it**, and, to produce a realistic figure of a subject, it **must have a biometric detail** to so produce a matching equivalent. In modern times, the computatational resources to produce fakes of quality enough to fool both computer and human vision (deepfake), is become affordable to the mainstream.
+
+# The Corporate answer
+
+###### The author's thesis is that corporate lobbiesm try to describe certain "advances" as undeniable realities, and contextually pretend to be the only one responsible enough to handle such technology. This is evident in statements such as Microsoft's responsible use of AI in elections:
+
+> First, Microsoft will help candidates and campaigns maintain greater control over their content and likeness by launching Content Credentials as a Service. This new tool enables users to digitally sign and authenticate media using the Coalition for Content Provenance and Authenticity’s (C2PA) digital watermarking credentials, a set of metadata that encode details about the content’s provenance using cryptography.
+
+
+**Translated from corporate newspeak**, this means:
+
+* Only Microsoft can issue a certificate of trustworthiness.
+* If there is no such certificate, you should assume that the content is fake.
+
+And this assumes that:
+
+* Fake content can be generated thanks to Microsoft technology, so they can't avoid it.
+* You have to go to the trouble of getting a certificate because Microsoft technology has made the Internet less reliable.
+
+###### This should not an underlay assumption the AI Act regulators should buy!
+
+
+
+
 
 {{<figure
     class="blog-figures"
