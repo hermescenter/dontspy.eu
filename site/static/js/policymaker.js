@@ -1,3 +1,33 @@
+function processWeirdNames(listofp) {
+
+  /* if there are 2, good */
+  if(listofp.length === 2) {
+    return {
+      Name: listofp[0].trim(),
+      Surname: listofp[1].trim()
+    }
+  } else if(listofp.length === 3) {
+    console.log("3 -> %o", listofp);
+    /* assume is name name surname */
+    return {
+      Name: `${listofp[0].trim()} ${listofp[1].trim()}`,
+      Surname: listofp[2].trim()
+    }
+  } else if(listofp.length === 4) {
+    console.log("4 -> %o", listofp);
+    /* assume is name name surname surname */
+    return {
+      Name: `${listofp[0].trim()} ${listofp[1].trim()}`,
+      Surname: `${listofp[2].trim()} ${listofp[3].trim()}`
+    }
+  } else {
+    console.log("Unable to process name %o", listofp);
+    return {
+      Name: "Error",
+      Surname: "Please Debug",
+    }
+  }
+}
 
 async function loadIndividual() {
   /* pick from the URL, after the #, the country name */
@@ -6,8 +36,9 @@ async function loadIndividual() {
   let Name, Surname, response, data = [];
   try {
     const zipped = decodeURIComponent(mixedFullName).split(' ');
-    Name = zipped[0];
-    Surname = zipped[1];
+    const NB = processWeirdNames(zipped);
+    Name = NB.Name;
+    Surname = NB.Surname;
     console.log(`-> Name: ${Name} Surname: ${Surname}`);
     const url = serverURL('individuals', { Name, Surname });
     response = await fetch(url);
@@ -20,7 +51,7 @@ async function loadIndividual() {
   if (data.length === 0) {
     const container = document.querySelector('#face-list');
     container.innerHTML = `<div class="alert error">
-      No data for ${Name} ${Surname}}!
+      No data for ${Name} ${Surname}!
     </div>
     <div class="alert info">
       Solve by ensuring this policy maker is registered, and then "Upload a new picture"

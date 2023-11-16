@@ -256,7 +256,7 @@ function populateData(data) {
 
     const clickable = document.createElement('a');
     clickable.textContent = data.fullname;
-    clickable.href = `/policymaker/#${encodeURIComponent(data.fullname)}`;
+    clickable.href = `/policymaker/#${encodeURIComponent(data.fullname.trim())}`;
 
     const officialTitle = document.createElement('span');
     officialTitle.classList = ['official-role'];
