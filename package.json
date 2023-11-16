@@ -18,6 +18,7 @@
     "express:dev": "DEBUG=*,-follow-redirects,send,-nodemon:* $(npm/bin)nodemon bin/express.js",
     "upgrade": "npm uninstall --save nocodb && npm install --save nocodb",
     "setup": "cd node_modules/@vladmandic/face-api; npm i --legacy-peer-deps; cd ../../../",
-    "copy": "cp bin/duckface-analyzer.js node_modules/@vladmandic/face-api/demo/"
+    "copy": "cp bin/duckface-analyzer.js node_modules/@vladmandic/face-api/demo/",
+    "linkable": "DEBUG=bin:* node bin/fill-linkable.js"
   }
 }

@@ -16,3 +16,15 @@ figcaption > p {
     margin-top: 0px;
     padding: 1em;
 }
+
+/* questi sotto sono usati in '/x/' */
+.label {
+    width: 15%;
+    display: inline-block;
+}
+
+.is-fake {
+    margin: 1em;
+    font-size: 1.3em;
+    color: var(--color-accent);
+}
