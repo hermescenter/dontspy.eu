@@ -14,7 +14,7 @@
   },
   "scripts": {
     "noco": "DEBUG=*,-follow-redirects,-nc:cache,send node bin/nocoserver.js",
-    "express": "DEBUG=*,-follow-redirects,-send node bin/express.js",
+    "express": "DEBUG=*,-follow-redirects,-send,-express:* node bin/express.js",
     "express:dev": "DEBUG=*,-follow-redirects,send,-nodemon:* $(npm/bin)nodemon bin/express.js",
     "upgrade": "npm uninstall --save nocodb && npm install --save nocodb",
     "setup": "cd node_modules/@vladmandic/face-api; npm i --legacy-peer-deps; cd ../../../",

@@ -45,7 +45,7 @@ async function main() {
         config.nocoio.apiKey
     );
 
-    const filter = { analyzed: false }
+    const filter = { analyzed: false, priority: false }
     const received = await client.findMany('photos', {}, 1000, 0);
     /* well, the bad news is thay I've to do the filtering here */
     const filtered = _.filter(received.list, filter);
