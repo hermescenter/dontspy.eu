@@ -1,7 +1,6 @@
 +++
 title = "The Dual Threat: How Losing the Biometric Battle Fuels Deepfake Proliferation"
 subtitle = "Exploring the Double-Edged Sword of Human and Machine-Based Face Recognition"
-draft = true
 
 tags = ['details']
 date = "2022-11-12"
