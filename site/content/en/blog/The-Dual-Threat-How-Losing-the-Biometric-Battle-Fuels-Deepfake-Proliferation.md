@@ -24,19 +24,15 @@ The goal is to ensure the safety and transparency of these complex systems, alon
 
 Can the AI Act be finalised in time to protect fundamental rights (as European regulation is praised for doing), while tackling the issue of deepfakes proliferation? The answer is yes, it sure can! It is the author's belief that, in order to solve the problem, the AI Act should target the very root of the technology with which deepfakes are created.
 
-###### TOGLIEREI > The author's thesis is that, with a few caveats, the AI Act can still be finalised in time to protect fundamental rights, as European regulation is praised for doing, while tackling the problem of deepfakes by going to the root of the technology that enables them.
-
 # What are foundation models?
 
 > An emerging type of AI system is a ‘foundation model’, sometimes called a ‘general-purpose AI’ or ‘GPAI’ system. These are capable of a range of general tasks (such as text summary, image manipulation and audio generation). Notable examples are OpenAI’s GPT-3 and GPT-4, foundation models that underpin the conversational chat agent ChatGPT.
 
 via [Explainer: What is a foundation model?](//www.adalovelaceinstitute.org/resource/foundation-models-explainer/) _Ada Lovelace Institute._
 
-> Foundation models that generate **images resembling individuals** pose **two critical challenges**: they rely on vast amounts of personal biometric data, often **without consent,** and require **biometric details** to produce realistic representations.
+Foundation models that generate **images resembling individuals** pose **two critical challenges**: they rely on vast amounts of personal biometric data, often **without consent,** and require **biometric details** to produce realistic representations.
 
 The proliferation of affordable computational resources has democratized the creation of deepfakes, making it almost a **mainstream practice,** and blurring the lines between reality and fabrication.
-
-###### The author's thesis is that corporate lobbiesm try to describe certain "advances" as undeniable realities, and contextually pretend to be the only one responsible enough to handle such technology. This is evident in statements such as [Microsoft's responsible use of AI in elections](//blogs.microsoft.com/on-the-issues/2023/11/07/microsoft-elections-2024-ai-voting-mtac/):
 
 # The corporate world tries to answer
 
