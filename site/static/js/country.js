@@ -241,6 +241,15 @@ function loadUploadForm() {
   destinationElement.scrollIntoView({ behavior: 'smooth' });
 };
 
+function produceDirectLink(src) {
+    /* from the 'image' field pick the numeric ID */
+    const blobs = src.match(/\/(\d+)[-_]/);
+    if(!blobs) return `Error`;
+    console.log(blobs); 
+    return `https://dontspy.eu/x/${blobs[1]}`;
+}
+
+
 function populateData(data) {
   const container = document.querySelector('.container');
 
@@ -304,7 +313,8 @@ function populateData(data) {
     /* render RBI produces the text on the right of the picture */
     const details = document.createElement('p');
     details.classList.add('details');
-    details.innerHTML = renderRBI(item.rbi, item.isfake, item.description);
+    details.innerHTML = renderRBI(item.rbi, item.isfake,
+      item.description, produceDirectLink(item.src));
 
     /* In column2, the logic is slightly different. when the mouseover,
      * the image should change for 3000 ms, and then go back to the original */
@@ -320,7 +330,7 @@ function populateData(data) {
   });
 }
 
-function renderRBI(rbi, isfake, description) {
+function renderRBI(rbi, isfake, description, directLink) {
   /* this function return an HTML string, and would go inside of a 'p' */
   /* rbi is an object with:
     "gender": "female",
@@ -350,7 +360,7 @@ function renderRBI(rbi, isfake, description) {
  */
   let retval = "";
   if (isfake) {
-    retval +=`<div>
+    retval +=`<div class="deepfake-description-container">
       <div class="rbi-label">
         deepfake description <a class="why-deepfake" href="/blog/why-deepfake">(why?)</a>
       </div>
@@ -382,20 +392,26 @@ function renderRBI(rbi, isfake, description) {
     <table>
       <tbody>
         <tr>
-          <td>Gender:</td>
+          <td class="label">Gender:</td>
           <td>
             <code>${_.upperFirst(rbi.gender)}</b> ${_.round(rbi.genderProbability * 100, 1)}%</code>
           </td>
         </tr>
         <tr>
-          <td>Age:</td>
+          <td class="label">Age:</td>
           <td>
             <code>${_.round(rbi.age, 1)} years</code>
           </td>
         </tr>
         <tr>
-          <td>Expressions:</td>
+          <td class="label">Expressions:</td>
           <td>${firstTwoExpressions}</td>
+        </tr>
+        <tr>
+          <td class="label">Share</td>
+	  <td>
+	    <input type="text" value="${directLink}" readonly>
+	  </td>
         </tr>
       </tbody>
     </table>
