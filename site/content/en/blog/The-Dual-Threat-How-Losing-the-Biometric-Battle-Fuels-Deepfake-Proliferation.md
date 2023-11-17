@@ -2,8 +2,8 @@
 title = "Double threat: why losing the battle against Face Biometrics would fuel the proliferation of deepfakes"
 subtitle = "The double-edged sword of human and machine-based face recognition"
 
-tags = ['details']
-date = "2022-11-12"
+tags = ['campaign']
+date = "2023-11-16"
 
 description = "Why it is imperative to approach the issue with attention to the foundational elements. The technologies that extract identifying points from faces have a lot in common with those used to produce fake images for the same faces."
 
@@ -28,15 +28,15 @@ Can the AI Act be finalised in time to protect fundamental rights (as European r
 
 # What are foundation models?
 
-> An emerging type of AI system is a ‘foundation model’, sometimes called a ‘general-purpose AI’ or ‘GPAI’ system. These are capable of a range of general tasks (such as text synthesis, image manipulation and audio generation). Notable examples are OpenAI’s GPT-3 and GPT-4, foundation models that underpin the conversational chat agent ChatGPT.
+> An emerging type of AI system is a ‘foundation model’, sometimes called a ‘general-purpose AI’ or ‘GPAI’ system. These are capable of a range of general tasks (such as text summary, image manipulation and audio generation). Notable examples are OpenAI’s GPT-3 and GPT-4, foundation models that underpin the conversational chat agent ChatGPT.
 
-via [Explainer: What is a foundation model?](https://www.adalovelaceinstitute.org/resource/foundation-models-explainer/) _Ada Lovelace Institute._
+via [Explainer: What is a foundation model?](//www.adalovelaceinstitute.org/resource/foundation-models-explainer/) _Ada Lovelace Institute._
 
-AL POSTO DI QUESTO PARAGRAFO > A **foundation model capable of producing images that resemble an individual has two fundamental problems**: it has been trained over countless personal biometric information, **from people who never consented to it**, and, to produce a realistic figure of a subject, it **must have a biometric detail** to so produce a matching equivalent. In modern times, the computatational resources to produce fakes of quality enough to fool both computer and human vision (deepfake), is become affordable to the mainstream.
-
-SUGGERISCO QUESTO > Foundation models that generate **images resembling individuals** pose **two critical challenges**: they rely on vast amounts of personal biometric data, often **without consent,** and require **biometric details** to produce realistic representations.
+> Foundation models that generate **images resembling individuals** pose **two critical challenges**: they rely on vast amounts of personal biometric data, often **without consent,** and require **biometric details** to produce realistic representations.
 
 The proliferation of affordable computational resources has democratized the creation of deepfakes, making it almost a **mainstream practice,** and blurring the lines between reality and fabrication.
+
+###### The author's thesis is that corporate lobbiesm try to describe certain "advances" as undeniable realities, and contextually pretend to be the only one responsible enough to handle such technology. This is evident in statements such as [Microsoft's responsible use of AI in elections](//blogs.microsoft.com/on-the-issues/2023/11/07/microsoft-elections-2024-ai-voting-mtac/):
 
 # The corporate world tries to answer
 
@@ -130,7 +130,15 @@ Because this connection is complex, the time is running out, we play with [deepf
 
 # How Does This Connect to the (unregulation of) Foundation Models?
 
-In the last phases of the Trilogue, as explained by Connor Dunlop in [Regulating AI foundation models is crucial for innovation](https://www.euractiv.com/section/artificial-intelligence/opinion/regulating-ai-foundation-models-is-crucial-for-innovation/), Germany, France and Italy are pushing for **Zero Regulation on Foundation Models**.
+In the last phases of the Trilogue, as explained by Connor Dunlop in [Regulating AI foundation models is crucial for innovation](//www.euractiv.com/section/artificial-intelligence/opinion/regulating-ai-foundation-models-is-crucial-for-innovation/), Germany, France and Italy are pushing for **Zero Regulation on Foundation Models**. Quote:
+
+> Given the range and severity of risks that foundation models raise, these proposals are reasonable steps for ensuring public safety and trust – and for ensuring that the SMEs using these products can be confident they are safe.
+
+> But last week, France, Germany and Italy rejected these requirements and proposed that foundation models should be exempt from any regulatory obligations.
+
+> This position has now raised the prospect of indefinitely delaying the entire EU AI Act – which covers all kinds of AI systems, from biometrics technologies to systems that impact our electoral processes.
+
+> France and Germany claim these regulatory obligations will be too burdensome for a handful of companies that have raised hundreds of millions in funding to build open-source foundation models.
 
 {{<figure
     src="/dall-e/visual%20representation%20of%20the%20production%20of%20an%20AI%20model%20trained%20on%20countless%20data%2C%20combining%20technology%20with%20natural%20elements-2.jpg"
@@ -152,7 +160,7 @@ To better remind that once your Biometric data gets into the surveillance capita
 
 ###### pick the deepfakes pictures and biometric information, in JSON, via API:
 
-[`https://dontspy.eu/api/individuals/%7B%22isfake%22:true%7D`](https://dontspy.eu/api/individuals/%7B%22isfake%22:true%7D)
+[`https://dontspy.eu/api/individuals/%7B%22isfake%22:true%7D`](/api/individuals/%7B%22isfake%22:true%7D)
 
 ###### You're invited [to submit more](/deepfake)!
 
