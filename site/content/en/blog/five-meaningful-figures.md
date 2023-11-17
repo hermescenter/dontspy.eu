@@ -1,7 +1,7 @@
 +++
 title = "Five Meaningful Political Figures That Could Influence The AI Act"
 
-tags = ['campaign']
+tags = ['details']
 date = "2023-09-02"
 
 description = "Who are the five politicians we want for every member state? Let's review their roles"
