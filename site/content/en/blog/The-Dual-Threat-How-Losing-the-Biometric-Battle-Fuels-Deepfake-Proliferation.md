@@ -30,7 +30,7 @@ Can the AI Act be finalised in time to protect fundamental rights (as European r
 
 via [Explainer: What is a foundation model?](//www.adalovelaceinstitute.org/resource/foundation-models-explainer/) _Ada Lovelace Institute._
 
-Foundation models that generate **images resembling individuals** pose **two critical challenges**: they rely on vast amounts of personal biometric data, often **without consent,** and require **biometric details** to produce realistic representations.
+> Foundation models that generate **images resembling individuals** pose **two critical challenges**: they rely on vast amounts of personal biometric data, often **without consent,** and require **biometric details** to produce realistic representations.
 
 The proliferation of affordable computational resources has democratized the creation of deepfakes, making it almost a **mainstream practice,** and blurring the lines between reality and fabrication.
 
