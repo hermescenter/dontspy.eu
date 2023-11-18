@@ -54,12 +54,16 @@ async function fetchByEmotion(emotionName) {
     img.src = imageData.url;
     img.alt = imageData.description;
 
-    if(data.length === 1)
-      img.style.maxWidth = '25%';
+    const id = imageData.url.match(/\/(\d+)[-_]/)[1];
+    const durectLink = `https://dontspy.eu/x/${id}`;
 
     const caption = document.createElement('div');
     caption.className = 'slide-caption';
     caption.innerHTML = `${EUMS[imageData.nation]} ${imageData.fullName} <span class="percent">${imageData.percent}</span>`;
+    caption.addEventListener('click', function () {
+      /* open the direct link */
+      window.location.href = durectLink;
+    });
 
     slide.appendChild(caption);
     slide.appendChild(img);
