@@ -36,7 +36,7 @@ The proliferation of affordable computational resources has democratized the cre
 
 # The corporate world tries to answer
 
-Big-tech corporations tend to portray certain technological "advancements" as inevitable and necessary, while claiming to be responsible enough to handle such major changes. This is evident in statements such as [Microsoft's responsible use of AI during the elections](https://blogs.microsoft.com/on-the-issues/2023/11/07/microsoft-elections-2024-ai-voting-mtac/):
+Big-tech corporations tend to portray certain technological "advancements" as inevitable and necessary, while claiming to be responsible enough to handle such major changes. This is evident in statements such as [Microsoft's responsible use of AI during the elections](//blogs.microsoft.com/on-the-issues/2023/11/07/microsoft-elections-2024-ai-voting-mtac/):
 
 > Microsoft will help candidates and campaigns retain greater control over their content and digital personas by launching Content Credentials as a Service (CCaaS). This new tool enables users to digitally sign and authenticate media using the Coalition for Content Provenance and Authenticity’s (C2PA) digital watermarking credentials, a set of metadata that encode details about the content’s provenance using cryptography.
 
