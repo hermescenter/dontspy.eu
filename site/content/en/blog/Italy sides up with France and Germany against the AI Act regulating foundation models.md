@@ -8,7 +8,7 @@ date = "2023-11-24"
 
 description = "‘Self-regulation’ of AI foundation models by their providers is against every citizen’s digital rights and must be stopped at all costs"
 
-banner = "https%3A%2F%2Fdontspy.eu%2Fdall-e%2Fa%2520detailed%2520image%2520showcasing%2520a%2520central%2520high-tech%2520server%2520with%2520a%2520radiant%2520light%2520core%2520and%2520complex%2520circuitry%252C%2520symbolizing%2520an%2520AI%27s%2520neural%2520network-1.jpg"
+banner = "https://dontspy.eu/dall-e/a%20detailed%20image%20showcasing%20a%20central%20high-tech%20server%20with%20a%20radiant%20light%20core%20and%20complex%20circuitry%2C%20symbolizing%20an%20AI's%20neural%20network-1.jpg"
 +++
 
 As the negotiations surrounding the AI Act **draw to a close,** dozens of nonprofit organizations across Europe – [including us](/about/) behind Don’t Spy EU – maintain that **several ethical issues** around certain types of AI systems and technologies remain, to this day, **unresolved.**
