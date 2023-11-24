@@ -2,7 +2,7 @@
 title = "How the AI Act can prevent the spread of deepfakes"
 subtitle = "Two scenarios in which deepfakes play a pivotal role"
 
-tags = ['campaign']
+tags = ['details']
 date = "2023-10-15"
 
 # For description meta tag
