@@ -19,7 +19,7 @@ While the next political _**trilogue**_ (=round of negotiations) is scheduled fo
 
 If the issues already mentioned are not adequately **tackled** in the next couple of weeks, European citizens may face the possibility of **a dystopian AI Act’s draft** being approved.
 
-# Unregulated foundation models: an emerging threat
+###### Unregulated foundation models: an emerging threat
 
 Foundation models are **the backbone** of artificial intelligence. They are _**machine learning**_ **models** that, unlike earlier models, are not designed and trained to solve one specific problem or perform one specific task but can be used for several applications (_**general-purpose**_ **AI**).
 
@@ -33,7 +33,11 @@ Now, providing a **regulatory framework** for these ever-evolving artificial neu
 
 However, negotiators have not agreed on a **definitive plan** yet. MEP Dragoş Tudorache has recently reiterated the need for **a comprehensive approach** that addresses the unique characteristics of these models, and MEP Brando Benifei has emphasized the importance of maintaining **parliamentary oversight** to ensure accountability – rather than delegating key decision-making processes to **the EU's AI Office.**
 
-# France, Germany and Italy’s proposal
+# 
+
+{{<figure src="https://dontspy.eu/dall-e/a%20detailed%20image%20showcasing%20a%20central%20high-tech%20server%20with%20a%20radiant%20light%20core%20and%20complex%20circuitry%2C%20symbolizing%20an%20AI's%20neural%20network-1.jpg" >}}
+
+###### France, Germany and Italy’s proposal
 
 Meanwhile, **France, Germany and Italy** have proposed an alternative approach to regulating foundation models. According to [a document](/C:/Users/aleek/Downloads/AIA%20-%20FR%20DE%20IT%20joint%20non-paper%20Nov%202023.pdf) leaked by Politico, they advocate for **self-regulation through** **«codes of conduct»** aligned with international principles («at the G7 level»).
 
@@ -45,8 +49,7 @@ According to the letter they issued for some legislators, they believe that foun
 
 They also express **concerns** about revealing how they have used their protected training data, as they argue that doing so could jeopardize their **trade secrets.**
 
-
-# Let’s persuade the Italian government to drop the proposal!
+## Let’s persuade the Italian government to drop the proposal!
 
 Upon learning of **Italy’s involvement** in the foundation models proposal, we came up with a few questions. Why would the Italian government align with the position of Germany and France, two countries deeply concerned with protecting **national interests** and their **big-tech corporations?**
 

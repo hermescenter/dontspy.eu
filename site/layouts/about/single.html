@@ -1,7 +1,11 @@
 {{ define "main" }}
 
+<div class="blog-content font-blogpost mb-12 mx-auto sm:max-w-vw-5/6 text-md">
+
 {{ .Content }}
 
 {{ partial "widgets/timeline.html" . }}
+
+</div>
 
 {{ end }}
