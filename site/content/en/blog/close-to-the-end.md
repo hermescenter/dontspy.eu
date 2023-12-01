@@ -22,7 +22,7 @@ While it may sound like pure dystopia, RBI is currently in use in several count
 
 Now, here is the position currently adopted by the EU (as per the latest updates). As reported by [Euractiv](//www.euractiv.com/section/artificial-intelligence/news/leading-meps-make-counter-proposal-on-ai-rulebooks-law-enforcement-chapter), the co-rapporteurs' latest proposals allow law enforcement agencies, in limited and well-defined cases, to use RBI in real time and retrospectively (on previously recorded footage) in public spaces (squares, crossroads, etc.); this second case having been added.
 
-{{<figure src="/img/EC.jpg" >}}
+{{<figure src="/img/EC1.jpg" >}}
 
 The co-rapporteurs also propose a wording to advance the debate on national security, which the Council wishes to exclude from the scope of application, by specifying that the regulation is «without prejudice to Member States' competences» in military, defence or national security matters.
 
