@@ -2,7 +2,7 @@
 title = "Biden’s AI Executive Order and what it says about face recognition"
 subtitle = "It’s the first attempt of the United States at regulating AI at the federal level. Some of its key points seem to go in the right direction, but there are still concerns."
 
-tags = ['campaign']
+tags = ['details']
 date = "2023-11-08"
 
 description = "It’s the first attempt of the United States at regulating AI at the federal level. Some of its key points seem to go in the right direction, but there are still concerns."
