@@ -1,11 +1,11 @@
 +++
-title = "AI Act – the fight for digital rights is yet to end"
+title = "AI Act – The fight for digital rights is yet to end"
 subtitle = "Organizations across Europe have one week left to pressure policymakers, as the trilogues are set to conclude on December 6"
 
 tags = ['campaign']
 date = "2023-12-01"
 
-descriotion = "Organizations across Europe have one week left to pressure policymakers, as the trilogues are set to conclude on December 6"
+description = "Organizations across Europe have one week left to pressure policymakers, as the trilogues are set to conclude on December 6"
 
 banner = "https://dontspy.eu/img/EC.jpg"
 +++
