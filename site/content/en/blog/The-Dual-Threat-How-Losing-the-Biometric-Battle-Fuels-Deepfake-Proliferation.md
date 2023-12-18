@@ -2,7 +2,7 @@
 title = "Double threat: why losing the battle against Face Biometrics would fuel the proliferation of deepfakes"
 subtitle = "The double-edged sword of human and machine-based face recognition"
 
-tags = ['campaign']
+tags = ['details']
 date = "2023-11-16"
 
 description = "Why it is imperative to approach the issue with attention to the foundational elements. The technologies that extract identifying points from faces have a lot in common with those used to produce fake images for the same faces."
