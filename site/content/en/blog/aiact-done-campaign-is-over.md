@@ -10,7 +10,9 @@ description = "While Hermes, along with fellow partners The Good Lobby and info.
 banner = "https://dontspy.eu/img/joe-gadd-camera.jpg"
 +++
 
-## Final statement by Hermes Center, The Good Lobby and info.nodes
+{{<figure src="/img/joe-gadd-camera.jpg" >}}
+
+## 
 
 While **Hermes Center for Transparency and Digital Human Rights,** along with fellow partners **The Good Lobby** and **info.nodes,** are happy to learn that the European Parliament, Commission and Council have finally reached an agreement on the AI Act, they believe that some **important aspects** still need to be properly tackled by the legislation.
 
