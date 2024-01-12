@@ -4,6 +4,24 @@ A website, a campaign, and a mixture of different technologies. Know about us [H
 
 ### [DontSpyEU](https://dontspy.eu) is the the second iteration of [DontSpyONUS](https://dontspyonus.eu).
 
+reminder:
+
+## How this was running?
+
+in tmux three sessions:
+
+1. `DEBUG=*,-follow-redirects,-nc:cache,-send,-express:* node bin/nocoserver.js`
+2. `cd site; while true; do git pull; hugo; sleep 120; done`
+3. `while true; do DEBUG=*,-follow* node bin/single-photo-processor.js --update; done`
+4. `npm run express`; this is the only command still running after the project discontinuation.
+
+```
+dontspy> db.safety.count()
+270
+```
+
+👋
+
 ---
 
 ## How to run this code spaghetti combo?
